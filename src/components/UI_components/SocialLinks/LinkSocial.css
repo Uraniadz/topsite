@@ -1,0 +1,46 @@
+/* Соцмережі */
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.socials a {
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  display: flex;
+  align-self: center;
+}
+
+.socials a:hover {
+  color: #007bff;
+}
+/* Спільний стиль соцмереж */
+.socials a {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+/* Індивідуальні кольори */
+.socials a.tiktok {
+  color: #000000; /* чорний */
+}
+
+.socials a.facebook {
+  color: #1877f2; /* синій */
+}
+
+.socials a.instagram {
+  color: #e4405f; /* рожево-помаранчевий */
+}
+.socials a.youtube {
+  color: #ff0000; /* червоний */
+}
+.viberBtn {
+  margin-top: 2px;
+}

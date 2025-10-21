@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import routesPath from '@/routes/routesPath';
 import NotFoundPage404 from '@/pages/NotFoundPage404/NotFoundPage404';
 import LayOut from '@/layout/LayOut';
-import HomePage from '@/pages/NotFoundPage404/HomePage/HomePage';
+import HomePage from '@/pages/HomePage/HomePage';
 
 function AppRouter() {
   return (

@@ -1,0 +1,28 @@
+/* WhatsApp */
+.my-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #25d366;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.my-whatsapp:hover {
+  color: #128c7e;
+}
+@media (max-width: 500px) {
+  .my-whatsapp span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 380px) {
+  .my-whatsapp span {
+    display: none;
+  }
+  .my-whatsapp {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,45 @@
+.header {
+  padding-top: 60px;
+}
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 40px;
+  box-sizing: border-box;
+}
+
+/* Блок контактів */
+.contacts {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.icon-siviber {
+  fill: #7360f2;
+  font-size: 19px;
+}
+@media (max-width: 500px) {
+  .top-bar .contacts {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  .top-bar {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 380px) {
+  .top-bar .contacts {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+}
