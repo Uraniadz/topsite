@@ -1,0 +1,135 @@
+:root {
+  --ff-body: 'Inter', system-ui, -apple-system, Segoe UI, Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --ff-head: 'Manrope', var(--ff-body);
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Inter/inter-v20-latin-regular.woff2') format('woff2');
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/Inter/inter-v20-latin-500.woff2') format('woff2');
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/Inter/inter-v20-latin-700.woff2') format('woff2');
+}
+/* manrope */
+/* manrope-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/manrope/manrope-regular.woff2') format('woff2');
+}
+
+/* manrope-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/manrope/manrope-600.woff2') format('woff2');
+}
+
+/* manrope-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/manrope/manrope-700.woff2') format('woff2');
+}
+
+/* --- RESET / NORMALIZE --- */
+/* прибираємо відступи і уніфікуємо box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* базова типографіка */
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth; /* плавний скрол */
+  /* щоб браузер не вигадував свій варіант шрифтів italic or bold */
+  font-synthesis: none;
+}
+
+body {
+  font-family: var(--ff-body);
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+}
+
+/* посилання */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* списки */
+ul,
+ol {
+  list-style: none;
+}
+
+/* картинки */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-head);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* кнопки */
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* секції для відступів */
+section {
+  padding: 40px 24px;
+}
+@media (max-width: 768px) {
+  section {
+    padding: 20px 16px;
+  }
+}

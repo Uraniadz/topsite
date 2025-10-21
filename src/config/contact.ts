@@ -1,6 +1,7 @@
 // src/config/contact.ts
 export const CONTACTS = {
-  phone: '+48453265961',
-  whatsapp: '+48453265961',
-  viber: '+48453265961',
+  phone: '+380950835934',
+  whatsapp: '+380950835934',
+  viber: '+380950835934',
+  telegram: '+380950835934',
 };
