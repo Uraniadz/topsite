@@ -1,0 +1,66 @@
+.lang-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* кнопка */
+.lang-trigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* прапор */
+.lang-flag {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* меню */
+.lang-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+
+  min-width: 150px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}
+
+/* пункт */
+.lang-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+  padding: 8px 12px;
+  text-align: left;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.lang-item:hover {
+  background: #f5f5f5;
+}
+
+/* активний */
+.lang-item.active {
+  background: #e6f0ff;
+  font-weight: 500;
+}

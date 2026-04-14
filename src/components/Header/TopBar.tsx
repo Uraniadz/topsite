@@ -1,4 +1,4 @@
-import MyPhone from '../UI_components/MyPhone/MyPhone';
+import LanguageSwitcher from '../UI_components/LanguageSwitcher/LanguageSwitcher';
 import LinkSocial from '../UI_components/SocialLinks/LinkSocial';
 import Whatsapp from '../UI_components/Whatsapp/Whatsapp';
 import './Header.css';
@@ -6,7 +6,7 @@ import './Header.css';
 const TopBar = () => {
   return (
     <div className="top-bar">
-      <MyPhone />
+      <LanguageSwitcher />
 
       <div className="contacts">
         <LinkSocial />

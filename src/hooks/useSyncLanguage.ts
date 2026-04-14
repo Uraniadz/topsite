@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import i18next from 'i18next';
-
-const supportedLngs = ['en', 'pl', 'uk'];
+import { supportedLngs } from '@/config/i18nConfig';
 
 export const useSyncLanguage = () => {
   const { lng } = useParams();
