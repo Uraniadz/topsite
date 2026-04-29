@@ -3,8 +3,7 @@ import Header from '@/components/Header/Header';
 import { Outlet, useParams } from 'react-router-dom';
 import { useSyncLanguage } from '@/hooks/useSyncLanguage';
 import NotFoundPage404 from '@/pages/NotFoundPage404/NotFoundPage404';
-
-const supportedLngs = ['en', 'pl', 'uk'];
+import { supportedLngs } from '@/config/i18nConfig';
 
 function LayOut() {
   useSyncLanguage();

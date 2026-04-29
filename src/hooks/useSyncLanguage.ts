@@ -1,18 +1,13 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import i18next from 'i18next';
-import { supportedLngs } from '@/config/i18nConfig';
 
 export const useSyncLanguage = () => {
   const { lng } = useParams();
 
   useEffect(() => {
-    if (!lng) return;
+    if (!lng || i18next.language === lng) return;
 
-    const validLng = supportedLngs.includes(lng) ? lng : 'en';
-
-    if (i18next.language !== validLng) {
-      i18next.changeLanguage(validLng);
-    }
+    i18next.changeLanguage(lng);
   }, [lng]);
 };
