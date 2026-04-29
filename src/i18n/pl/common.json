@@ -1,4 +1,7 @@
 {
+  "buttons": {
+    "orderSite": "Zamów stronę"
+  },
   "services": {
     "web": {
       "landing": "Strona landing page",

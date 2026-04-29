@@ -1,3 +1,4 @@
+import ContactModalButton from '../UI_components/ContactModal/ContactModalButton';
 import LanguageSwitcher from '../UI_components/LanguageSwitcher/LanguageSwitcher';
 import MessengerLinks from '../UI_components/MessengerLinks/MessengerLinks';
 
@@ -10,6 +11,7 @@ const TopBar = () => {
 
       <div className="contacts">
         <MessengerLinks />
+        <ContactModalButton />
       </div>
     </div>
   );

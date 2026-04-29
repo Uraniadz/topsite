@@ -1,1 +1,66 @@
-{ "menu": "" }
+{
+  "buttons": {
+    "orderSite": "Order a website"
+  },
+  "services": {
+    "web": {
+      "landing": "Landing page",
+      "business": "Business website (multi-page)",
+      "shop": "Online store",
+      "other": "Other project"
+    }
+  },
+  "contactForm": {
+    "title": "Order a website",
+    "subtitle": "We create modern websites for businesses. Leave your details — we will contact you with a quote within 24 hours.",
+
+    "chips": {
+      "1": "Fill in your basic details",
+      "2": "Choose the type of website",
+      "3": "Briefly describe your project (optional)"
+    },
+
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name",
+        "required": "Name is required",
+        "max": "Maximum 50 characters"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "Phone number",
+        "required": "Phone number is required"
+      },
+      "email": {
+        "label": "Email (optional)",
+        "placeholder": "Your email",
+        "invalid": "Invalid email address"
+      },
+      "service": {
+        "label": "What type of website do you need?",
+        "placeholder": "Select a type or enter your own",
+        "required": "Please select or enter a type",
+        "max": "Maximum 100 characters",
+        "custom": "Other type (enter manually)…",
+        "add": "Add: “{{input}}”",
+        "noOptions": "No results found"
+      },
+      "message": {
+        "label": "Project description (optional)",
+        "placeholder": "Briefly describe your project, features or idea (max. 500 characters)",
+        "max": "Maximum 500 characters"
+      }
+    },
+
+    "submit": {
+      "sending": "Sending…",
+      "send": "Get a quote",
+      "success": "✔️ Form submitted successfully! We’ll contact you soon.",
+      "error": {
+        "network": "Network error.",
+        "server": "Error while sending."
+      }
+    }
+  }
+}
