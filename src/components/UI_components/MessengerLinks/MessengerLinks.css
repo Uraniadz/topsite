@@ -1,0 +1,52 @@
+.messengers {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* база */
+.messenger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  font-size: 16px;
+
+  color: white;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+/* hover */
+.messenger:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+
+/* брендові кольори */
+.messenger.whatsapp {
+  background: #25d366;
+}
+
+.messenger.telegram {
+  background: #0088cc;
+}
+
+.messenger.facebook {
+  background: #0084ff;
+}
+
+.messenger.instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+.messenger.email {
+  background: #555;
+}

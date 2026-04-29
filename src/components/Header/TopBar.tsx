@@ -1,6 +1,6 @@
 import LanguageSwitcher from '../UI_components/LanguageSwitcher/LanguageSwitcher';
-import LinkSocial from '../UI_components/SocialLinks/LinkSocial';
-import Whatsapp from '../UI_components/Whatsapp/Whatsapp';
+import MessengerLinks from '../UI_components/MessengerLinks/MessengerLinks';
+
 import './Header.css';
 
 const TopBar = () => {
@@ -9,8 +9,7 @@ const TopBar = () => {
       <LanguageSwitcher />
 
       <div className="contacts">
-        <LinkSocial />
-        <Whatsapp />
+        <MessengerLinks />
       </div>
     </div>
   );

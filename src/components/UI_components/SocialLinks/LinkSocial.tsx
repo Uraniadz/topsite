@@ -1,38 +1,63 @@
-import { FaFacebookF, FaInstagram } from 'react-icons/fa';
-import { SiViber } from 'react-icons/si';
+import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
 
 import './LinkSocial.css';
-import { CONTACTS } from '../../../config/contact';
+import { CONTACTS } from '@/config/contact';
+
+type SocialItem = {
+  key: string;
+  url?: string;
+  icon: React.ReactNode;
+  style: string;
+};
 
 function LinkSocial() {
+  const socials: SocialItem[] = [
+    {
+      key: 'facebook',
+      url: CONTACTS.facebook,
+      icon: <FaFacebookF />,
+      style: 'facebook',
+    },
+    {
+      key: 'instagram',
+      url: CONTACTS.instagram,
+      icon: <FaInstagram />,
+      style: 'instagram',
+    },
+    {
+      key: 'tiktok',
+      url: CONTACTS.tiktok,
+      icon: <FaTiktok />,
+      style: 'tiktok',
+    },
+    {
+      key: 'youtube',
+      url: CONTACTS.youtube,
+      icon: <FaYoutube />,
+      style: 'youtube',
+    },
+  ];
+
   return (
     <div className="socials">
-      <a
-        href="https://www.facebook.com/profile.php?id=61561085115539"
-        target="_blank"
-        rel="noreferrer"
-        className="facebook"
-        title={'Facebook'}
-      >
-        <FaFacebookF />
-      </a>
-
-      <a
-        href="https://www.instagram.com/top_site_com?igsh=MXAzcTN4NXpmdHRyNA=="
-        target="_blank"
-        rel="noreferrer"
-        title={'Instagram'}
-        className="instagram"
-      >
-        <FaInstagram />
-      </a>
-      <a
-        href={`viber://chat?number=${CONTACTS.viber.replace('+', '')}`}
-        title={'Viber'}
-        className={`$ ${'viberBtn'}`}
-      >
-        <SiViber className="icon-siviber" />
-      </a>
+      {socials.map((el) => {
+        if (!el.url) {
+          return null;
+        }
+        return (
+          <a
+            href={el.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`social ${el.style}`}
+            title={el.key}
+            aria-label={el.key}
+            key={el.key}
+          >
+            {el.icon}
+          </a>
+        );
+      })}
     </div>
   );
 }
