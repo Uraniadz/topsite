@@ -1,0 +1,248 @@
+/* Sekcja z „bąbelkami” w tle */
+.cf {
+  position: relative;
+  padding: 60px 16px 70px;
+  background-image: url('../../../assets/waves.svg');
+  overflow: hidden;
+}
+.cf::before,
+.cf::after {
+  content: '';
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.45;
+  pointer-events: none;
+}
+.cf::before {
+  left: -80px;
+  top: -60px;
+  background: radial-gradient(closest-side, #cfe4ff, transparent 70%);
+}
+.cf::after {
+  right: -120px;
+  bottom: -100px;
+  background: radial-gradient(closest-side, #d7f0ff, transparent 70%);
+}
+
+.cf__wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Nagłówek */
+.cf__title {
+  text-align: center;
+  color: #007bff;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.cf__subtitle {
+  text-align: center;
+  color: #5b6b7d;
+  max-width: 820px;
+  margin: 0 auto 18px;
+  line-height: 1.6;
+}
+
+/* „Czipи-бąbelki” */
+.cf__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+}
+.cf__chips li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eaf3ff;
+  color: #21507e;
+  font-size: 14px;
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.08);
+}
+
+/* Formularz-kartка */
+.cf__form {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+}
+.cf__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 720px) {
+  .cf__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cf__group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cf__group label {
+  font-weight: 600;
+  color: #2b3340;
+}
+.cf__group input,
+.cf__group textarea {
+  border: 1px solid #e6ecf2;
+  background: #fafcff;
+  border-radius: 10px;
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  font-size: 16px;
+}
+.cf__group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.cf__group input:focus,
+.cf__group textarea:focus {
+  border-color: #b7d2ff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.12);
+}
+
+/* Błędy / sukces */
+.cf__error {
+  color: #d33;
+  font-size: 14px;
+  margin-top: -2px;
+}
+.cf__success {
+  color: #1a7f3c;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Przycisk */
+.cf__btn {
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 0;
+  background: #007bff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(0, 123, 255, 0.25);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, opacity 0.16s ease;
+}
+.cf__btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.cf__btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(0, 123, 255, 0.28);
+}
+/* зміни */
+/* обгортка секції лишається як є */
+
+/* сама картка форми */
+.cf__form {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  /* було: 0 10px 26px rgba(0,0,0,.06) */
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  border: 1px solid #d9e4f2; /* НОВЕ: чітка рамка */
+}
+
+/* інпути/textarea — контрастніший бордер */
+.cf__group input,
+.cf__group textarea {
+  border: 1px solid #c9d7ee; /* було #e6ecf2 */
+  background: #fbfdff; /* трохи біліший */
+}
+
+/* фокус — чітка синя окантовка */
+.cf__group input:focus,
+.cf__group textarea:focus {
+  border-color: #7fb0ff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.18);
+}
+
+/* телефонний інпут з react-phone-input-2 теж вирівняємо */
+.cf__group .react-tel-input .form-control {
+  border: 1px solid #c9d7ee !important;
+  background: #fbfdff !important;
+  border-radius: 10px !important;
+}
+.cf__group .react-tel-input .form-control:focus {
+  border-color: #7fb0ff !important;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.18) !important;
+}
+/* кнопка трохи відділена від краю */
+.cf__btn {
+  margin-top: 10px;
+}
+.cf__group select {
+  border: 1px solid #c9d7ee;
+  background: #fbfdff;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23007bff' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+.cf__group select:focus {
+  border-color: #7fb0ff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.18);
+}
+/* react-select (scoped через classNamePrefix="rs") */
+.react-select-container {
+  font-size: 16px;
+}
+.rs__control {
+  cursor: text;
+}
+.rs__menu {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.rs__option {
+  cursor: pointer;
+}
+/* більша внутрішня відстань у картці */
+.cf__form {
+  padding: 24px 22px;
+}
+
+/* більше простору між рядками форми */
+.cf__row {
+  gap: 18px;
+}
+.cf__row + .cf__row {
+  margin-top: 12px;
+}
+/* червона зірочка для обов’язкових полів */
+.cf__label--required::after {
+  content: ' *';
+  color: #d33; /* червоний */
+  font-weight: 700;
+  margin-left: 4px;
+}

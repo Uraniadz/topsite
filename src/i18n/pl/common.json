@@ -1,1 +1,63 @@
-{ "menu": "" }
+{
+  "services": {
+    "web": {
+      "landing": "Strona landing page",
+      "business": "Strona firmowa (wielostronicowa)",
+      "shop": "Sklep internetowy",
+      "other": "Inny projekt"
+    }
+  },
+  "contactForm": {
+    "title": "Zamów stronę internetową",
+    "subtitle": "Tworzymy nowoczesne strony internetowe dla firm. Zostaw swoje dane — odezwiemy się z wyceną w ciągu 24 godzin.",
+
+    "chips": {
+      "1": "Wypełnij podstawowe dane",
+      "2": "Wybierz typ strony",
+      "3": "Opisz krótko projekt (opcjonalnie)"
+    },
+
+    "fields": {
+      "name": {
+        "label": "Imię",
+        "placeholder": "Twoje imię",
+        "required": "Imię jest wymagane",
+        "max": "Maksymalnie 50 znaków"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "Numer telefonu",
+        "required": "Telefon jest wymagany"
+      },
+      "email": {
+        "label": "Email (opcjonalnie)",
+        "placeholder": "Twój email",
+        "invalid": "Nieprawidłowy email"
+      },
+      "service": {
+        "label": "Jaki typ strony potrzebujesz?",
+        "placeholder": "Wybierz typ strony lub wpisz własny",
+        "required": "Wybierz lub wpisz typ strony",
+        "max": "Maksymalnie 100 znaków",
+        "custom": "Inny typ strony (wpisz ręcznie)…",
+        "add": "Dodaj: „{{input}}”",
+        "noOptions": "Brak wyników"
+      },
+      "message": {
+        "label": "Krótki opis projektu (opcjonalnie)",
+        "placeholder": "Opisz krótko swój projekt, funkcjonalność lub pomysł (maks. 500 znaków)",
+        "max": "Maksymalnie 500 znaków"
+      }
+    },
+
+    "submit": {
+      "sending": "Wysyłanie…",
+      "send": "Otrzymaj wycenę",
+      "success": "✔️ Formularz wysłany! Odezwiemy się wkrótce.",
+      "error": {
+        "network": "Błąd sieci.",
+        "server": "Błąd podczas wysyłania."
+      }
+    }
+  }
+}
