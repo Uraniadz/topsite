@@ -1,27 +1,19 @@
+/* ===== NAV WRAPPER ===== */
 .nav-bar {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 100;
 }
 
-.nav-container {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0;
-}
-
+/* ===== BURGER ===== */
 .burger {
   display: none;
   position: absolute;
-  right: 20px;
-  top: 55px;
-  width: 30px;
-  height: 22px;
-  background: transparent;
+  right: -10px;
+  top: 0px;
+  width: 28px;
+  height: 20px;
   border: none;
+  background: transparent;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
@@ -32,13 +24,14 @@
   display: block;
   height: 3px;
   width: 100%;
-  background-color: #000;
+  background-color: #333;
   border-radius: 2px;
   transition: 0.3s ease;
 }
 
+/* burger animation */
 .burger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 8px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 .burger.open span:nth-child(2) {
   opacity: 0;
@@ -47,84 +40,20 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* ===== MENU DESKTOP ===== */
 .menu {
   display: flex;
+}
+
+/* контейнер з лінками */
+.menu-container {
+  display: flex;
   gap: 40px;
-  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu .nav-link {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: color 0.3s;
-}
-
-.menu .nav-link:hover {
-  color: #007bff;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2000;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-@media (max-width: 900px) {
-  .switch-hidden900 {
-    display: none;
-  }
-  .burger {
-    display: flex;
-  }
-  .nav-container {
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .menu {
-    flex-direction: column;
-    align-items: flex-start;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 100vh;
-    width: 80vw;
-    background-color: #fff;
-    padding: 150px 20px;
-    transition: right 0.3s ease;
-    z-index: 2500;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(135deg, #ffffff 0%, #f0fbff 100%);
-  }
-
-  .menu.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 0;
-  }
-
-  .menu .nav-link {
-    font-size: 1.3rem;
-    color: #007bff;
-    padding: 10px 0 0 0;
-  }
-
-  .menu .nav-link:hover {
-    color: #000;
-  }
-}
-@media (max-width: 500px) {
-  .nav-container {
-    margin-top: 15px;
-  }
-}
+/* ===== LINKS ===== */
 .menu .nav-link {
   text-decoration: none;
   color: #333;
@@ -132,6 +61,7 @@
   font-size: 1rem;
   position: relative;
   transition: color 0.3s ease;
+  text-transform: uppercase;
 }
 
 /* hover */
@@ -142,7 +72,6 @@
 /* active */
 .menu .nav-link.active {
   color: #007bff;
-  font-weight: 500;
 }
 
 /* underline animation */
@@ -160,4 +89,78 @@
 .menu .nav-link:hover::after,
 .menu .nav-link.active::after {
   width: 100%;
+}
+
+/* ===== OVERLAY ===== */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* ===================================================== */
+/* ==================== MOBILE ========================== */
+/* ===================================================== */
+
+@media (max-width: 900px) {
+  /* показуємо бургер */
+  .burger {
+    display: flex;
+  }
+
+  /* меню як dropdown */
+  .menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(10px);
+
+    transition: top 0.35s ease;
+    z-index: 2500;
+  }
+
+  /* коли відкрито */
+  .menu.active {
+    top: 0;
+  }
+
+  /* контейнер */
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 120px 20px 40px;
+    gap: 25px;
+  }
+
+  /* лінки */
+  .menu .nav-link {
+    font-size: 1.4rem;
+    color: #007bff;
+  }
+
+  .menu .nav-link:hover {
+    color: #000;
+  }
+
+  /* underline трохи більший */
+  .menu .nav-link::after {
+    height: 3px;
+  }
+}
+
+/* маленькі телефони */
+@media (max-width: 500px) {
+  .menu-container {
+    padding: 100px 20px 30px;
+    gap: 20px;
+  }
 }

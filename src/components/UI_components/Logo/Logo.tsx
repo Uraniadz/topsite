@@ -7,7 +7,7 @@ const Logo = () => {
   return (
     <div className="logo">
       <Link to={routePath.home}>
-        <img src={logo} alt="Логотип" className="logo-img" />
+        <img src={logo} alt="Logo" className="logo-img" />
       </Link>
     </div>
   );

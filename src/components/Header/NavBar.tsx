@@ -1,14 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import routePath from '../../routes/routesPath';
 import './NavBar.css';
-import Logo from '@/components/UI_components/Logo/Logo';
 import { useEffect, useState } from 'react';
-// import LanguageSwitcher from '../UI_component/LanguageSwitcher/LanguageSwitcher';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
+
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : 'auto';
     return () => {
@@ -16,83 +15,99 @@ const NavBar = () => {
     };
   }, [isOpen]);
 
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
-  const toggleMenu = () => {
-    setIsOpen((v) => !v);
-  };
+  const toggleMenu = () => setIsOpen((v) => !v);
 
   const handleNavClick = () => {
-    if (window.innerWidth < 768) {
-      closeMenu();
+    if (window.innerWidth < 900) {
+      setIsOpen(false);
     }
   };
 
   return (
     <div className="nav-bar">
-      <div className="container nav-container">
-        <Logo />
+      {/* 🔥 BURGER */}
+      <button
+        className={`burger ${isOpen ? 'open' : ''}`}
+        onClick={toggleMenu}
+        aria-label="Menu"
+        aria-expanded={isOpen}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        <button
-          className={`burger ${isOpen ? 'open' : ''}`}
-          onClick={toggleMenu}
-          aria-label={'Meню'}
-          aria-expanded={isOpen}
-          aria-controls="primary-menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav className={`menu ${isOpen ? 'active' : ''}`}>
-          <div className="only-mobile" style={{ marginTop: '16px' }}>
-            {/* <LanguageSwitcher compact /> */}
-          </div>
+      {/* 🔥 MENU */}
+      <nav className={`menu ${isOpen ? 'active' : ''}`}>
+        <div className="container menu-container">
           <NavLink
             to={routePath.home}
+            end
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             onClick={handleNavClick}
           >
-            {/* {t('header.nav.home')} */}
-            Główna
+            {t('nav.home')}
           </NavLink>
+
           <NavLink
             to={routePath.about}
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             onClick={handleNavClick}
           >
-            {/* {t('header.nav.about')} */}O nas
+            {t('nav.about')}
           </NavLink>
+
           <NavLink
             to={routePath.services}
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             onClick={handleNavClick}
           >
-            Uslugi
-            {/* {t('header.nav.price')} */}
+            {t('nav.services')}
           </NavLink>
+
           <NavLink
             to={routePath.price}
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             onClick={handleNavClick}
           >
-            Cennik
-            {/* {t('header.nav.price')} */}
+            {t('nav.price')}
           </NavLink>
+
           <NavLink
             to={routePath.contact}
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             onClick={handleNavClick}
           >
-            Kontakt
-            {/* {t('header.nav.contact')} */}
+            {t('nav.contacts')}
           </NavLink>
-        </nav>
-        {/* <LanguageSwitcher className="only-desktop" /> */}
-      </div>
 
+          <NavLink
+            to={routePath.contact}
+            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            onClick={handleNavClick}
+          >
+            {t('nav.reviews')}
+          </NavLink>
+
+          <NavLink
+            to={routePath.contact}
+            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            onClick={handleNavClick}
+          >
+            {t('nav.promo')}
+          </NavLink>
+
+          <NavLink
+            to={routePath.contact}
+            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            onClick={handleNavClick}
+          >
+            {t('nav.blog')}
+          </NavLink>
+        </div>
+      </nav>
+
+      {/* overlay */}
       {isOpen && <div className="overlay" onClick={handleNavClick}></div>}
     </div>
   );
