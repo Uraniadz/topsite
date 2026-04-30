@@ -11,7 +11,7 @@ const TopBar = () => {
 
       <div className="contacts">
         <MessengerLinks />
-        <ContactModalButton />
+        <ContactModalButton variant="icon" />
       </div>
     </div>
   );

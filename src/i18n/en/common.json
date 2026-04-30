@@ -1,6 +1,17 @@
 {
+  "nav": {
+    "home": "Home",
+    "about": "About us",
+    "services": "Services",
+    "price": "Pricing",
+    "contacts": "Contacts",
+    "reviews": "Reviews",
+    "promo": "Promotions",
+    "blog": "Blog"
+  },
   "buttons": {
-    "orderSite": "Order a website"
+    "orderSite": "Order a website",
+    "contact": "Contact us"
   },
   "services": {
     "web": {

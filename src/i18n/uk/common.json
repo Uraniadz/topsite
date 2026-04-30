@@ -1,6 +1,17 @@
 {
+  "nav": {
+    "home": "Головна",
+    "about": "Про нас",
+    "services": "Послуги",
+    "price": "Прайс",
+    "contacts": "Контакти",
+    "reviews": "Відгуки",
+    "promo": "Акції",
+    "blog": "Блог"
+  },
   "buttons": {
-    "orderSite": "Замовити сайт"
+    "orderSite": "Замовити сайт",
+    "contact": "Написати"
   },
   "services": {
     "web": {

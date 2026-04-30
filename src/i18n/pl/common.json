@@ -1,6 +1,17 @@
 {
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "services": "Usługi",
+    "price": "Cennik",
+    "contacts": "Kontakt",
+    "reviews": "Opinie",
+    "promo": "Promocje",
+    "blog": "Blog"
+  },
   "buttons": {
-    "orderSite": "Zamów stronę"
+    "orderSite": "Zamów stronę",
+    "contact": "Napisz"
   },
   "services": {
     "web": {

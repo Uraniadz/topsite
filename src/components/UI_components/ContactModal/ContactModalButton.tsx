@@ -1,28 +1,30 @@
 import { useEffect, useState } from 'react';
-import ContactForm from '../ContactForm/ContactForm';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaRegCommentDots } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import './ContactModal.css';
+import ContactModal from './ContactModal';
 
 type Props = {
   label?: string;
-  variant?: 'primary' | 'ghost';
+  variant?: 'default' | 'icon';
 };
 
-const ContactModalButton = ({ label }: Props) => {
+const ContactModalButton = ({ label, variant = 'default' }: Props) => {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
   const openModal = () => setOpen(true);
   const { t } = useTranslation();
 
-  const buttonLabel = label || t('buttons.orderSite');
+  const buttonLabel = t('buttons.orderSite');
   // ESC закриття
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
+      console.log(e.key);
       if (e.key === 'Escape') close();
     };
 
     if (open) document.addEventListener('keydown', handler);
+
     return () => document.removeEventListener('keydown', handler);
   }, [open]);
 
@@ -34,23 +36,20 @@ const ContactModalButton = ({ label }: Props) => {
   return (
     <>
       {/* КНОПКА */}
-      <button className={`floating-cta`} onClick={openModal}>
-        {buttonLabel} <FaArrowRight size={12} />
+      <button
+        className={variant === 'icon' ? 'header-contact-btn' : 'floating-cta'}
+        data-tooltip={t('buttons.contact')}
+        onClick={openModal}
+      >
+        {variant === 'icon' ? (
+          <FaRegCommentDots size={18} />
+        ) : (
+          <>
+            {label ? label : buttonLabel} <FaArrowRight size={12} />
+          </>
+        )}
       </button>
-
-      {/* МОДАЛКА */}
-      {open && (
-        <div className="modal" onClick={close}>
-          <div className="modal__content" onClick={(e) => e.stopPropagation()}>
-            {/* ХРЕСТИК */}
-            <button className="modal__close" onClick={close}>
-              ✕
-            </button>
-
-            <ContactForm />
-          </div>
-        </div>
-      )}
+      <ContactModal open={open} onClose={close} />
     </>
   );
 };
