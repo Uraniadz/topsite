@@ -10,11 +10,18 @@ const TopBar = () => {
   return (
     <div className="top-bar">
       <Logo />
-      <NavBar />
-      <div className="contacts">
+
+      <div className="contacts desktop-only">
         <MessengerLinks />
         <ContactModalButton variant="icon" />
         <LanguageSwitcher />
+      </div>
+      <div className="right-block">
+        <div className="contacts mobile-only">
+          <MessengerLinks variant="mobile" />
+          <LanguageSwitcher />
+        </div>
+        <NavBar />
       </div>
     </div>
   );

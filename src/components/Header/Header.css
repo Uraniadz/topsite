@@ -26,20 +26,34 @@
   fill: #7360f2;
   font-size: 19px;
 }
-@media (max-width: 500px) {
-  .top-bar .contacts {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-end;
-  }
-  .top-bar {
-    justify-content: space-between;
-  }
-}
 @media (max-width: 380px) {
   .top-bar .contacts {
     flex-direction: row;
     gap: 20px;
     align-items: center;
   }
+}
+.desktop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}
+.right-block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }

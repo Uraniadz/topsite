@@ -14,8 +14,10 @@ type MessengerItem = {
   icon: React.ReactNode;
   className: string;
 };
-
-const MessengerLinks = () => {
+type Props = {
+  variant?: 'desktop' | 'mobile' | 'menu';
+};
+const MessengerLinks = ({ variant = 'desktop' }: Props) => {
   const items: MessengerItem[] = [
     {
       key: 'whatsapp',
@@ -49,7 +51,16 @@ const MessengerLinks = () => {
   return (
     <div className="messengers">
       {items
-        .filter((el) => el.url)
+        .filter((el) => {
+          if (!el) return false;
+          if (variant === 'mobile') {
+            return el.key === 'whatsapp';
+          }
+          if (variant === 'menu') {
+            return true;
+          }
+          return true;
+        })
         .map((el) => (
           <a
             key={el.key}
