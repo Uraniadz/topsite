@@ -1,150 +1,129 @@
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(15, 23, 42, 0.6); /* темний overlay */
-  backdrop-filter: blur(6px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  padding: 20px;
-}
+/* ================= MODAL ================= */
 
-.modal__content {
-  width: 100%;
-  max-width: 900px;
-  max-height: 90vh;
-  overflow-y: auto;
-  background: transparent;
-  position: relative;
-}
-
-/* кнопка закриття */
-.modal__close {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: none;
-  background: #fff;
-  cursor: pointer;
-  font-size: 18px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-.modal__close:hover {
-  background: #f1f5f9;
-}
-/* overlay */
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(15, 23, 42, 0.65);
-  backdrop-filter: blur(6px);
+
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
-  padding: 20px;
+
+  padding: 16px;
+
+  z-index: 9999;
+  background: rgba(15, 23, 42, 0.2);
+  backdrop-filter: blur(4px);
 }
 
-/* контент */
-.modal__content {
-  width: 100%;
-  max-width: 900px;
-  max-height: 90vh;
-  overflow-y: auto;
+/* новий контейнер (без modal__content) */
+.modal__inner {
   position: relative;
+
+  width: 100%;
+  max-width: 720px;
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  animation: modalIn 0.25s ease forwards;
 }
 
-/* кнопка закриття */
+/* анімація */
+@keyframes modalIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ================= CLOSE BUTTON ================= */
+
 .modal__close {
   position: absolute;
-  top: -14px;
-  right: -14px;
-  width: 38px;
-  height: 38px;
+  top: 20px;
+  right: 36px;
+
+  width: 36px;
+  height: 36px;
+
   border-radius: 50%;
   border: none;
-  background: white;
+
+  background: #f1f5f9;
+  color: #111;
+
+  font-size: 16px;
   cursor: pointer;
-  font-size: 18px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.25s ease;
 }
 
 .modal__close:hover {
   transform: rotate(90deg);
-  background: #f1f5f9;
+  background: #e2e8f0;
 }
-/* ===== BASE BUTTON ===== */
+
+/* ================= FORM FIX ================= */
+/* ВАЖЛИВО: тепер форма = card */
+
+.cf__form {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+
+  border: 1px solid #e6edf5;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= BUTTONS ================= */
+
 .modal-btn {
   border-radius: 999px;
   padding: 14px 30px;
   font-weight: 600;
   font-size: 15px;
+
   cursor: pointer;
   border: none;
+
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
 
   transition: all 0.25s ease;
 }
 
-/* ===== PRIMARY ===== */
+/* PRIMARY BUTTON */
 .modal-btn--primary {
   width: 100%;
-  justify-content: center;
-  position: relative;
-  overflow: hidden; /* 🔥 важливо */
-  padding: 12px 20px;
+  padding: 14px 20px;
 
-  background: transparent;
-  color: #2563eb;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
 
-  border: 2px solid #2563eb;
   border-radius: 12px;
+  border: none;
 
-  box-shadow: none;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+
   -webkit-tap-highlight-color: transparent;
 }
 
 .modal-btn--primary:hover {
-  background: #2563eb;
-  color: #fff;
-}
-.modal-btn--primary::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 12px;
-
-  background: rgba(37, 99, 235, 0.15);
-  z-index: -1;
-
-  animation: pulseBtn 3s infinite;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.45);
 }
 
-@keyframes pulseBtn {
-  0% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-  70% {
-    transform: scale(1.1);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-/* ===== ICON ANIMATION ===== */
+/* іконка */
 .modal-btn svg {
   transition: transform 0.3s ease;
 }
@@ -153,86 +132,8 @@
   transform: translateX(4px);
 }
 
-/* ===== GHOST (на майбутнє) ===== */
-.modal-btn--ghost {
-  background: transparent;
-  border: 1px solid #dbe3f0;
-  color: #334155;
-}
+/* ================= HEADER ICON BUTTON ================= */
 
-.modal-btn--ghost:hover {
-  background: #f8fafc;
-}
-/* new style  */
-/* ===== FLOATING BUTTON ===== */
-.floating-cta {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 1000;
-
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  background: #2563eb;
-  color: #fff;
-
-  padding: 14px 20px;
-  border-radius: 999px;
-  border: none;
-
-  font-weight: 600;
-  font-size: 14px;
-
-  cursor: pointer;
-
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
-
-  transition: all 0.25s ease;
-}
-
-/* hover */
-.floating-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.45);
-}
-
-/* іконка */
-.floating-cta svg {
-  transition: transform 0.3s ease;
-}
-
-.floating-cta:hover svg {
-  transform: translateX(4px);
-}
-/* puls */
-/* пульсація */
-.floating-cta::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 999px;
-  background: rgba(37, 99, 235, 0.4);
-  z-index: -1;
-
-  animation: pulse 2.5s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 0.6;
-  }
-  70% {
-    transform: scale(1.3);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-/* ===== HEADER CONTACT BUTTON ===== */
 .header-contact-btn {
   width: 36px;
   height: 36px;
@@ -251,22 +152,20 @@
 
   transition: all 0.25s ease;
 }
+
 .header-contact-btn:hover {
   background: #2563eb;
   color: #fff;
 
   transform: translateY(-2px) scale(1.05);
-
   box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
 }
+
 .header-contact-btn:active {
   transform: scale(0.95);
 }
-.header-contact-btn {
-  position: relative;
-}
 
-/* after adn before */
+/* tooltip тільки для десктопу */
 @media (hover: hover) and (pointer: fine) {
   .header-contact-btn::after {
     content: attr(data-tooltip);
@@ -285,10 +184,6 @@
     border-radius: 6px;
 
     white-space: nowrap;
-    line-height: 1;
-
-    backdrop-filter: blur(6px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
     opacity: 0;
     pointer-events: none;
@@ -296,26 +191,61 @@
     transition: all 0.2s ease;
   }
 
-  .header-contact-btn::before {
-    content: '';
-    position: absolute;
-
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    border-width: 6px;
-    border-style: solid;
-    border-color: transparent transparent rgba(15, 23, 42, 0.9) transparent;
-
-    opacity: 0;
-    transition: 0.2s;
-  }
-
-  .header-contact-btn:hover::after,
-  .header-contact-btn:hover::before {
+  .header-contact-btn:hover::after {
     opacity: 1;
     transform: translateX(-50%) translateY(0) scale(1);
-    transition-delay: 0.4s; /* можеш 0.5–0.7 */
+    transition-delay: 0.4s;
+  }
+}
+@media (max-width: 450px) {
+  .modal__close {
+    position: absolute;
+    top: 10px;
+    right: 26px;
+  }
+}
+
+.modal__inner.closing {
+  animation: modalOut 0.25s ease forwards;
+}
+
+/* закриття 🔥 */
+@keyframes modalOut {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
+}
+/* overlay відкриття */
+.modal {
+  animation: overlayIn 0.2s ease;
+}
+
+/* overlay закриття */
+.modal.closing {
+  animation: overlayOut 0.2s ease forwards;
+}
+
+/* fade in */
+@keyframes overlayIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* fade out */
+@keyframes overlayOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

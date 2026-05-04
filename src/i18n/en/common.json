@@ -51,7 +51,7 @@
       },
       "service": {
         "label": "What type of website do you need?",
-        "placeholder": "Select a type or enter your own",
+        "placeholder": "Select a type",
         "required": "Please select or enter a type",
         "max": "Maximum 100 characters",
         "custom": "Other type (enter manually)…",

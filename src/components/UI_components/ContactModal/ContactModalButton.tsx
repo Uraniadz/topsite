@@ -19,7 +19,6 @@ const ContactModalButton = ({ label, variant = 'default' }: Props) => {
   // ESC закриття
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      console.log(e.key);
       if (e.key === 'Escape') close();
     };
 

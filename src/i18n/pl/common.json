@@ -51,7 +51,7 @@
       },
       "service": {
         "label": "Jaki typ strony potrzebujesz?",
-        "placeholder": "Wybierz typ strony lub wpisz własny",
+        "placeholder": "Wybierz typ strony",
         "required": "Wybierz lub wpisz typ strony",
         "max": "Maksymalnie 100 znaków",
         "custom": "Inny typ strony (wpisz ręcznie)…",

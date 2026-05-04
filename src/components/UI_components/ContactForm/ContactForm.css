@@ -1,9 +1,13 @@
 /* ===== SECTION ===== */
 .cf {
   padding: 90px 20px;
-  background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+  background: transparent;
 }
 
+/* 🔥 коли в модалці */
+.cf--modal {
+  padding: 0;
+}
 /* ===== WRAP ===== */
 .cf__wrap {
   max-width: 900px;
@@ -69,6 +73,11 @@
 }
 
 @media (max-width: 720px) {
+  /* ===== CARD ===== */
+  .cf__form {
+    padding: 20px;
+    padding-top: 40px;
+  }
   .cf__row {
     grid-template-columns: 1fr;
   }
@@ -99,7 +108,7 @@
 }
 
 .cf__group textarea {
-  min-height: 120px;
+  min-height: 70px;
   resize: vertical;
 }
 

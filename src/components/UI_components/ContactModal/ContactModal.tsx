@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import ContactForm from '../ContactForm/ContactForm';
 import './ContactModal.css';
 
@@ -8,36 +9,49 @@ type Props = {
 };
 
 const ContactModal = ({ open, onClose }: Props) => {
-  // закриття по ESC
+  const [isClosing, setIsClosing] = useState(false);
+
+  const handleClose = () => {
+    setIsClosing(true);
+
+    setTimeout(() => {
+      setIsClosing(false);
+      onClose();
+    }, 250); // час анімації
+  };
+
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === 'Escape') handleClose();
     };
 
     if (open) document.addEventListener('keydown', handler);
     return () => document.removeEventListener('keydown', handler);
-  }, [open, onClose]);
-
-  // блок скролу
-  useEffect(() => {
-    if (open) document.body.style.overflow = 'hidden';
-    else document.body.style.overflow = '';
   }, [open]);
 
-  if (!open) return null;
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : '';
+  }, [open]);
 
-  return (
-    <div className="modal" onClick={onClose}>
-      <div className="modal__content" onClick={(e) => e.stopPropagation()}>
-        {/* КНОПКА ЗАКРИТТЯ */}
-        <button className="modal__close" onClick={onClose}>
+  if (!open && !isClosing) return null;
+
+  return createPortal(
+    <div
+      className={`modal ${isClosing ? 'closing' : ''}`}
+      onClick={handleClose}
+    >
+      <div
+        className={`modal__inner ${isClosing ? 'closing' : ''}`}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button className="modal__close" onClick={handleClose}>
           ✕
         </button>
 
         <ContactForm />
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 };
-
 export default ContactModal;
