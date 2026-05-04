@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../UI_components/LanguageSwitcher/LanguageSwitcher';
 import MessengerLinks from '../UI_components/MessengerLinks/MessengerLinks';
 import ContactModalButton from '../UI_components/ContactModal/ContactModalButton';
+import LinkSocial from '../UI_components/SocialLinks/LinkSocial';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,9 +49,6 @@ const NavBar = () => {
             {/* HEADER */}
             <div className="menu-header">
               <LanguageSwitcher />
-              <button className="menu-close" onClick={toggleMenu}>
-                ✕
-              </button>
             </div>
 
             <div className="menu-divider" />
@@ -78,21 +76,21 @@ const NavBar = () => {
 
             {/* CONTACT */}
             <div className="menu-contact">
-              <p className="menu-title">Contact</p>
+              <p className="menu-title">{t('buttons.contact')}</p>
 
               <div className="menu-messengers">
                 <MessengerLinks variant="menu" />
               </div>
 
-              <ContactModalButton variant="icon" />
+              <ContactModalButton variant="primary" />
             </div>
 
             <div className="menu-divider" />
 
             {/* SOCIAL */}
             <div className="menu-social">
-              <p className="menu-title">Follow us</p>
-              {/* тут додаси соцмережі */}
+              <p className="menu-title">{t('buttons.socials')}</p>
+              <LinkSocial />
             </div>
           </div>
 

@@ -11,7 +11,8 @@
   },
   "buttons": {
     "orderSite": "Order a website",
-    "contact": "Contact us"
+    "contact": "Contact us",
+    "socials": "Follow us"
   },
   "services": {
     "web": {

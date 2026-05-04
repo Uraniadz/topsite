@@ -6,7 +6,7 @@ import ContactModal from './ContactModal';
 
 type Props = {
   label?: string;
-  variant?: 'default' | 'icon';
+  variant?: 'default' | 'icon' | 'primary';
 };
 
 const ContactModalButton = ({ label, variant = 'default' }: Props) => {
@@ -37,13 +37,26 @@ const ContactModalButton = ({ label, variant = 'default' }: Props) => {
     <>
       {/* КНОПКА */}
       <button
-        className={variant === 'icon' ? 'header-contact-btn' : 'floating-cta'}
+        className={
+          variant === 'icon'
+            ? 'header-contact-btn'
+            : variant === 'primary'
+              ? 'modal-btn modal-btn--primary'
+              : 'floating-cta'
+        }
         data-tooltip={t('buttons.contact')}
         onClick={openModal}
       >
-        {variant === 'icon' ? (
-          <FaRegCommentDots size={18} />
-        ) : (
+        {variant === 'icon' && <FaRegCommentDots size={18} />}
+
+        {variant === 'primary' && (
+          <>
+            {label ? label : t('buttons.orderSite')}{' '}
+            <FaArrowRight size={12} />{' '}
+          </>
+        )}
+
+        {variant === 'default' && (
           <>
             {label ? label : buttonLabel} <FaArrowRight size={12} />
           </>
