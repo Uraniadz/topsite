@@ -15,7 +15,13 @@ type MessengerItem = {
   className: string;
 };
 type Props = {
-  variant?: 'desktop' | 'mobile' | 'menu';
+  variant: 'desktop' | 'mobile' | 'menu' | 'footer';
+};
+const visibleByVariant: Record<Props['variant'], string[]> = {
+  desktop: ['whatsapp', 'telegram', 'messenger', 'email'],
+  mobile: ['whatsapp'],
+  menu: ['whatsapp', 'telegram', 'messenger', 'email'],
+  footer: ['whatsapp', 'telegram', 'messenger'],
 };
 const MessengerLinks = ({ variant = 'desktop' }: Props) => {
   const items: MessengerItem[] = [
@@ -47,27 +53,18 @@ const MessengerLinks = ({ variant = 'desktop' }: Props) => {
       className: 'email',
     },
   ];
-
+  const visibleKeys = visibleByVariant[variant] || visibleByVariant.desktop;
   return (
-    <div className="messengers">
+    <div className={`messengers messengers--${variant}`}>
       {items
-        .filter((el) => {
-          if (!el) return false;
-          if (variant === 'mobile') {
-            return el.key === 'whatsapp';
-          }
-          if (variant === 'menu') {
-            return true;
-          }
-          return true;
-        })
+        .filter((el) => el.url && visibleKeys.includes(el.key))
         .map((el) => (
           <a
             key={el.key}
             href={el.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`messenger ${el.className}`}
+            className={`messenger messenger--${variant} ${el.className}`}
             aria-label={el.key}
             title={el.key}
           >

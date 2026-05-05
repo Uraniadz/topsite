@@ -9,6 +9,23 @@
     "promo": "Акції",
     "blog": "Блог"
   },
+  "footer": {
+    "nav": {
+      "home": "Головна",
+      "about": "Про нас",
+      "price": "Прайс",
+      "contact": "Контакти",
+      "privacy": "Політика конфіденційності",
+      "cookies": "Політика cookies"
+    },
+    "titles": {
+      "menu": "Меню",
+      "contact": "Контакти",
+      "follow": "Ми в соцмережах"
+    },
+    "description": "Сучасні сайти для вашого бізнесу",
+    "bottom": "Розроблено та створено {{companyName}} | © {{year}}"
+  },
   "buttons": {
     "orderSite": "Замовити сайт",
     "contact": "Написати",

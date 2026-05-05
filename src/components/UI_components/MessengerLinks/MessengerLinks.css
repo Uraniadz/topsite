@@ -1,10 +1,11 @@
+/* ===== BASE ===== */
+
 .messengers {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-/* база */
 .messenger {
   display: flex;
   align-items: center;
@@ -16,37 +17,82 @@
   border-radius: 50%;
   font-size: 16px;
 
-  color: white;
   text-decoration: none;
 
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease;
+  transition: all 0.25s ease;
 }
 
-/* hover */
-.messenger:hover {
-  transform: scale(1.15);
-  opacity: 0.85;
+/* ===== DEFAULT (HEADER / MENU) ===== */
+
+.messenger--desktop,
+.messenger--menu {
+  color: #fff;
 }
 
-/* брендові кольори */
-.messenger.whatsapp {
+/* брендові кольори тільки для header/menu */
+.messenger--desktop.whatsapp,
+.messenger--menu.whatsapp {
   background: #25d366;
 }
 
-.messenger.telegram {
+.messenger--desktop.telegram,
+.messenger--menu.telegram {
   background: #0088cc;
 }
 
-.messenger.facebook {
+.messenger--desktop.facebook,
+.messenger--menu.facebook {
   background: #0084ff;
 }
 
-.messenger.instagram {
-  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+.messenger--desktop.email,
+.messenger--menu.email {
+  background: #555;
 }
 
-.messenger.email {
-  background: #555;
+/* hover для header */
+.messenger--desktop:hover,
+.messenger--menu:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+
+/* ===== FOOTER ===== */
+
+.messengers--footer {
+  gap: 10px;
+}
+
+.messenger--footer {
+  width: 36px;
+  height: 36px;
+
+  background: rgba(255, 255, 255, 0.05);
+  color: #94a3b8;
+
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+/* hover */
+.messenger--footer:hover {
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+/* кольори тільки при hover */
+.messenger--footer.whatsapp:hover {
+  background: #25d366;
+}
+
+.messenger--footer.telegram:hover {
+  background: #229ed9;
+}
+
+.messenger--footer.facebook:hover {
+  background: #0084ff;
+}
+
+.messenger--footer.email:hover {
+  background: #64748b;
 }

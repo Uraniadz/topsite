@@ -9,6 +9,23 @@
     "promo": "Promocje",
     "blog": "Blog"
   },
+  "footer": {
+    "nav": {
+      "home": "Strona główna",
+      "about": "O nas",
+      "price": "Cennik",
+      "contact": "Kontakt",
+      "privacy": "Polityka prywatności",
+      "cookies": "Polityka cookies"
+    },
+    "titles": {
+      "menu": "Menu",
+      "contact": "Kontakt",
+      "follow": "Obserwuj nas"
+    },
+    "description": "Nowoczesne strony internetowe dla Twojego biznesu",
+    "bottom": "Zaprojektowane i wykonane przez {{companyName}} | © {{year}}"
+  },
   "buttons": {
     "orderSite": "Zamów stronę",
     "contact": "Napisz",

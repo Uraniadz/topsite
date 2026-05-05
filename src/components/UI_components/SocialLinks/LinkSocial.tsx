@@ -9,8 +9,10 @@ type SocialItem = {
   icon: React.ReactNode;
   style: string;
 };
-
-function LinkSocial() {
+type SocialsProps = {
+  variant?: 'footer' | 'primary' | 'menu-mobile';
+};
+function LinkSocial({ variant = 'menu-mobile' }: SocialsProps) {
   const socials: SocialItem[] = [
     {
       key: 'facebook',
@@ -37,19 +39,17 @@ function LinkSocial() {
       style: 'youtube',
     },
   ];
-
   return (
-    <div className="socials">
+    <div className={`socials socials--${variant}`}>
       {socials.map((el) => {
-        if (!el.url) {
-          return null;
-        }
+        if (!el.url) return null;
+
         return (
           <a
             href={el.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`social ${el.style}`}
+            className={`social social--${variant} ${el.style}`}
             title={el.key}
             aria-label={el.key}
             key={el.key}

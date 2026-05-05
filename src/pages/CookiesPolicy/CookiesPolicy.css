@@ -1,0 +1,129 @@
+/* ===== BASE ===== */
+
+.cookies {
+  background: #f8fafc; /* світлий фон */
+  color: #0f172a;
+  padding-bottom: 80px;
+}
+
+.cookies-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== HERO ===== */
+
+.cookies-hero {
+  padding: 80px 0 40px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #ffffff;
+  padding-top: 40px;
+}
+
+.cookies-container .eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.cookies-h1 {
+  font-size: clamp(32px, 4vw, 42px);
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.cookies-meta {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* ===== CONTENT ===== */
+
+.cookies-content {
+  margin-top: 30px;
+
+  background: #ffffff;
+  border-radius: 16px;
+
+  padding: 40px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* список */
+.cookies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: section;
+}
+
+.cookies-list li {
+  counter-increment: section;
+}
+
+/* заголовки */
+.cookies-list h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* нумерація */
+.cookies-list h2::before {
+  content: counter(section) '. ';
+  color: #2563eb;
+  font-weight: 700;
+}
+
+/* текст */
+.cookies-list p {
+  color: #334155;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* списки */
+.dash-list {
+  padding-left: 18px;
+  margin-top: 8px;
+}
+
+.dash-list li {
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+/* updated */
+.cookies-updated {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* ===== LINKS (якщо будуть) ===== */
+
+.cookies a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .cookies-hero {
+    padding: 60px 0 30px;
+  }
+
+  .cookies-content {
+    padding: 24px;
+  }
+}

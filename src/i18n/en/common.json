@@ -9,6 +9,24 @@
     "promo": "Promotions",
     "blog": "Blog"
   },
+  "footer": {
+    "nav": {
+      "home": "Home",
+      "about": "About us",
+      "price": "Price list",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "cookies": "Cookie Policy"
+    },
+    "titles": {
+      "menu": "Menu",
+      "contact": "Contact",
+      "follow": "Follow us"
+    },
+    "description": "Modern websites for your business",
+    "bottom": "Designed & Developed by {{companyName}} | © {{year}}"
+  },
+
   "buttons": {
     "orderSite": "Order a website",
     "contact": "Contact us",

@@ -8,6 +8,7 @@ import ServicesPage from '@/pages/ServicesPage/ServicesPage';
 import ContactPage from '@/pages/ContactPage/ContactPage';
 import PricePage from '@/pages/PricePage/PricePage';
 import RootRedirect from './RootRedirect';
+import CookiesPolicyPage from '@/pages/CookiesPolicy/CookiesPolicy';
 
 function AppRouter() {
   return (
@@ -20,6 +21,7 @@ function AppRouter() {
           <Route path={routesPath.services} element={<ServicesPage />} />
           <Route path={routesPath.contact} element={<ContactPage />} />
           <Route path={routesPath.price} element={<PricePage />} />
+          <Route path={routesPath.cookies} element={<CookiesPolicyPage />} />
         </Route>
         <Route path="*" element={<NotFoundPage404 />} />
       </Routes>

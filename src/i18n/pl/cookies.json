@@ -1,0 +1,52 @@
+{
+  "cookiesPage": {
+    "title": "Polityka Cookies",
+    "heroMeta": "obowiązuje od dnia publikacji na stronie internetowej",
+    "updated": "Ostatnia aktualizacja",
+
+    "sections": {
+      "intro": {
+        "title": "Informacje ogólne",
+        "text": "Strona internetowa {{domain}}, należąca do {{company}}, wykorzystuje pliki cookies oraz podobne technologie w celu zapewnienia prawidłowego działania serwisu, analizy ruchu oraz prowadzenia działań marketingowych."
+      },
+      "whatAreCookies": {
+        "title": "Czym są pliki cookies?",
+        "text": "Pliki cookies to niewielkie pliki tekstowe zapisywane na urządzeniu użytkownika (komputerze, smartfonie, tablecie) podczas korzystania ze strony internetowej."
+      },
+
+      "types": {
+        "title": "Rodzaje wykorzystywanych plików cookies",
+        "items": [
+          "Cookies niezbędne – umożliwiają prawidłowe funkcjonowanie strony.",
+          "Cookies analityczne – służą do analizy ruchu na stronie (Google Analytics 4).",
+          "Cookies marketingowe – wykorzystywane w celach reklamowych (Google Ads, remarketing)."
+        ]
+      },
+
+      "ga4": {
+        "title": "Google Analytics 4",
+        "text": "Strona korzysta z narzędzia Google Analytics 4 dostarczanego przez Google Ireland Limited w celu analizy ruchu oraz statystyk odwiedzin. Dane są przetwarzane w sposób zanonimizowany i mogą być przekazywane poza Europejski Obszar Gospodarczy zgodnie z obowiązującymi przepisami prawa."
+      },
+
+      "ads": {
+        "title": "Google Ads",
+        "text": "Strona wykorzystuje narzędzia reklamowe Google Ads, w tym funkcję remarketingu. Dzięki temu użytkownik może otrzymywać dopasowane reklamy w sieci reklamowej Google."
+      },
+
+      "consent": {
+        "title": "Google Consent Mode v2",
+        "text": "Strona stosuje mechanizm Google Consent Mode v2, który umożliwia zarządzanie zgodami użytkownika w zakresie plików cookies analitycznych i marketingowych zgodnie z przepisami RODO oraz wymaganiami Google obowiązującymi na terenie Unii Europejskiej."
+      },
+
+      "management": {
+        "title": "Zarządzanie plikami cookies",
+        "text": "Użytkownik może w dowolnym momencie zmienić ustawienia dotyczące plików cookies za pomocą ustawień przeglądarki internetowej lub poprzez panel zarządzania zgodami dostępny na stronie."
+      },
+
+      "changes": {
+        "title": "Zmiany w Polityce Cookies",
+        "text": "Aktualna wersja Polityki Cookies jest zawsze dostępna na stronie {{domain}}."
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "cookiesPage": {
+    "title": "Cookie Policy",
+    "heroMeta": "effective from the date of publication on the website",
+    "updated": "Last updated",
+    "sections": {
+      "intro": {
+        "title": "General information",
+        "text": "The website {{domain}}, owned by {{company}}, uses cookies and similar technologies to ensure proper operation, analyze traffic and conduct marketing activities."
+      },
+      "whatAreCookies": {
+        "title": "What are cookies?",
+        "text": "Cookies are small text files stored on the user's device (computer, smartphone, tablet) while browsing the website."
+      },
+      "types": {
+        "title": "Types of cookies used",
+        "items": [
+          "Necessary cookies – enable proper website functionality.",
+          "Analytics cookies – used to analyze website traffic (Google Analytics 4).",
+          "Marketing cookies – used for advertising purposes (Google Ads, remarketing)."
+        ]
+      },
+      "ga4": {
+        "title": "Google Analytics 4",
+        "text": "The website uses Google Analytics 4 provided by Google Ireland Limited to analyze traffic and visitor statistics. Data is processed anonymously and may be transferred outside the European Economic Area in accordance with applicable law."
+      },
+      "ads": {
+        "title": "Google Ads",
+        "text": "The website uses Google Ads advertising tools, including remarketing. This allows users to receive tailored advertisements within the Google advertising network."
+      },
+      "consent": {
+        "title": "Google Consent Mode v2",
+        "text": "The website uses Google Consent Mode v2 to manage user consent for analytics and marketing cookies in accordance with GDPR and Google requirements in the European Union."
+      },
+      "management": {
+        "title": "Managing cookies",
+        "text": "Users can change cookie settings at any time via browser settings or the consent management panel available on the website."
+      },
+      "changes": {
+        "title": "Changes to the Cookie Policy",
+        "text": "The current version of the Cookie Policy is always available on {{domain}}."
+      }
+    }
+  }
+}
