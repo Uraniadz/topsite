@@ -1,5 +1,9 @@
 {
   "cookiesPage": {
+    "seo": {
+      "title": "Cookie Policy | {{company}}",
+      "description": "Learn how {{company}} uses cookies on {{domain}}."
+    },
     "title": "Cookie Policy",
     "heroMeta": "effective from the date of publication on the website",
     "updated": "Last updated",

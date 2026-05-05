@@ -1,5 +1,9 @@
 {
   "cookiesPage": {
+    "seo": {
+      "title": "Polityka cookies | {{company}}",
+      "description": "Dowiedz się, w jaki sposób {{company}} wykorzystuje pliki cookies na stronie {{domain}}."
+    },
     "title": "Polityka Cookies",
     "heroMeta": "obowiązuje od dnia publikacji na stronie internetowej",
     "updated": "Ostatnia aktualizacja",

@@ -84,12 +84,69 @@
 }
 
 @media (max-width: 576px) {
+  .footer {
+    padding: 40px 16px 20px;
+  }
+
   .footer__container {
     grid-template-columns: 1fr;
+    gap: 30px;
     text-align: center;
   }
 
+  /* BRAND */
+  .footer__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__logo {
+    margin-bottom: 10px;
+  }
+
+  .footer__desc {
+    max-width: 260px;
+  }
+
+  /* TITLES */
+  .footer__title {
+    margin-bottom: 12px;
+  }
+
+  /* NAV */
+  .footer__nav {
+    align-items: center;
+  }
+
+  .footer__nav a {
+    font-size: 15px;
+  }
+
+  /* CONTACT */
+  .footer__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__email {
+    margin-top: 12px;
+  }
+
+  /* MESSENGERS */
+  .messengers--footer {
+    justify-content: center;
+  }
+
+  /* SOCIALS */
   .footer__socials {
     justify-content: center;
+  }
+
+  /* BOTTOM */
+  .footer__bottom {
+    margin-top: 30px;
+    font-size: 12px;
   }
 }

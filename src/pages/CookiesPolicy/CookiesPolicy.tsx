@@ -13,11 +13,10 @@ export default function CookiesPolicyPage() {
   return (
     <>
       <Seo
-        title={t('seo.cookies.title', {
+        title={t('cookiesPage.seo.title', {
           company: CONTACTS.companyName,
-          city: t('contacts.city'),
         })}
-        description={t('seo.cookies.description', {
+        description={t('cookiesPage.seo.description', {
           company: CONTACTS.companyName,
           domain: CONTACTS.domain,
         })}
@@ -27,9 +26,7 @@ export default function CookiesPolicyPage() {
         {/* HERO */}
         <header className="cookies-hero">
           <div className="cookies-container">
-            <p className="eyebrow">
-              {CONTACTS.companyName} — {t('contacts.city')}
-            </p>
+            <p className="eyebrow">{CONTACTS.companyName}</p>
 
             <h1 id="cookies-title" className="cookies-h1">
               {t('cookiesPage.title')}
@@ -107,7 +104,9 @@ export default function CookiesPolicyPage() {
 
           <p className="cookies-updated">
             {t('cookiesPage.updated')}:{' '}
-            <time>{new Date().toLocaleDateString()}</time>
+            <time dateTime={new Date().toISOString()}>
+              {new Date().toLocaleDateString()}
+            </time>
           </p>
         </section>
       </main>
