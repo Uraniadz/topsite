@@ -12,7 +12,7 @@ const TopBar = () => {
       <Logo />
 
       <div className="contacts desktop-only">
-        <MessengerLinks />
+        <MessengerLinks variant="desktop" />
         <ContactModalButton variant="icon" />
         <LanguageSwitcher />
       </div>

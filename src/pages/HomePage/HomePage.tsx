@@ -4,7 +4,8 @@ import Services from '@/components/Home/Services/Services';
 const HomePage = () => {
   return (
     <>
-      <Hero /> <Services />
+      <Hero />
+      <Services />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import styles from './Hero.module.css';
-
+import heroImage from '@/assets/images/hero/hero2.png';
 const Hero = () => {
   return (
     <section className={styles.hero}>
@@ -27,17 +27,29 @@ const Hero = () => {
 
             <div className={styles.hero__stats}>
               <div className={styles.hero__stat}>
-                <strong>React</strong>
+                <strong>
+                  <span className={styles.hero__statDot} />
+                  React
+                </strong>
+
                 <span>Frontend</span>
               </div>
 
               <div className={styles.hero__stat}>
-                <strong>Node.js</strong>
+                <strong>
+                  <span className={styles.hero__statDot} />
+                  Node.js
+                </strong>
+
                 <span>Backend</span>
               </div>
 
               <div className={styles.hero__stat}>
-                <strong>SEO</strong>
+                <strong>
+                  <span className={styles.hero__statDot} />
+                  SEO
+                </strong>
+
                 <span>Optimization</span>
               </div>
             </div>
@@ -53,7 +65,13 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className={styles.hero__preview}>WEBSITE PREVIEW</div>
+              <div className={styles.hero__preview}>
+                <img
+                  src={heroImage}
+                  alt="Modern website preview"
+                  className={styles.hero__img}
+                />
+              </div>
             </div>
 
             <div className={styles.hero__floating}>Fast & Modern UI</div>
