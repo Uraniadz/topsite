@@ -1,0 +1,93 @@
+{
+  "privacyPage": {
+    "seo": {
+      "title": "Polityka prywatności | {{company}}",
+      "description": "Sprawdź, w jaki sposób {{company}} przetwarza i chroni dane osobowe na stronie {{domain}} zgodnie z RODO."
+    },
+
+    "title": "Polityka prywatności",
+    "heroMeta": "obowiązuje od dnia publikacji na stronie internetowej",
+    "updated": "Ostatnia aktualizacja",
+
+    "sections": {
+      "admin": {
+        "title": "Administrator danych",
+        "text": "{{company}} jest administratorem danych osobowych i przetwarza je zgodnie z obowiązującymi przepisami prawa."
+      },
+
+      "data": {
+        "title": "Jakie dane osobowe zbieramy?",
+        "list": [
+          "dane osobowe przekazane w formularzu kontaktowym (imię, numer telefonu, adres e-mail)",
+          "dane dobrowolnie przekazane w wiadomościach (np. zdjęcia do wyceny)",
+          "dane techniczne związane z korzystaniem ze strony (adres IP, pliki cookies)"
+        ]
+      },
+
+      "purposes": {
+        "title": "Cel przetwarzania danych",
+        "list": [
+          "udzielanie odpowiedzi na zapytania użytkowników",
+          "przygotowanie ofert i świadczenie usług",
+          "obsługa płatności (jeśli dotyczy)",
+          "prowadzenie działań marketingowych (wyłącznie za zgodą użytkownika)",
+          "zapewnienie bezpieczeństwa i prawidłowego działania strony"
+        ]
+      },
+
+      "legal": {
+        "title": "Podstawy prawne przetwarzania",
+        "intro": "Dane osobowe przetwarzane są zgodnie z Rozporządzeniem (UE) 2016/679 Parlamentu Europejskiego i Rady (RODO).",
+        "list": [
+          "art. 6 ust. 1 lit. b RODO — wykonanie umowy",
+          "art. 6 ust. 1 lit. c RODO — obowiązek prawny",
+          "art. 6 ust. 1 lit. f RODO — uzasadniony interes administratora",
+          "art. 6 ust. 1 lit. a RODO — zgoda użytkownika"
+        ]
+      },
+
+      "sharing": {
+        "title": "Udostępnianie danych",
+        "text": "Dane osobowe mogą być przekazywane podmiotom współpracującym wyłącznie w zakresie niezbędnym do świadczenia usług (np. hosting, księgowość). Dane nie są sprzedawane osobom trzecim."
+      },
+
+      "retention": {
+        "title": "Okres przechowywania danych",
+        "list": [
+          "przez czas niezbędny do realizacji celu przetwarzania",
+          "zgodnie z obowiązującymi przepisami prawa",
+          "do momentu cofnięcia zgody (w przypadku działań marketingowych)"
+        ]
+      },
+
+      "rights": {
+        "title": "Prawa użytkownika",
+        "list": [
+          "prawo dostępu do danych",
+          "prawo do sprostowania danych",
+          "prawo do usunięcia danych",
+          "prawo do ograniczenia przetwarzania",
+          "prawo do przenoszenia danych",
+          "prawo do sprzeciwu wobec przetwarzania",
+          "prawo wniesienia skargi do organu nadzorczego"
+        ]
+      },
+
+      "cookies": {
+        "title": "Pliki cookies",
+        "intro": "Strona {{domain}} wykorzystuje pliki cookies w celu:",
+        "list": [
+          "zapewnienia prawidłowego działania strony",
+          "analizy ruchu (np. Google Analytics)",
+          "działań marketingowych (np. Google Ads / Meta Ads)"
+        ],
+        "footer": "Użytkownik może zarządzać ustawieniami cookies w swojej przeglądarce."
+      },
+
+      "changes": {
+        "title": "Zmiany w Polityce prywatności",
+        "text": "Aktualna wersja Polityki prywatności jest zawsze dostępna na stronie {{domain}}."
+      }
+    }
+  }
+}

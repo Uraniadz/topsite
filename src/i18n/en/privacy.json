@@ -1,0 +1,93 @@
+{
+  "privacyPage": {
+    "seo": {
+      "title": "Privacy Policy | {{company}}",
+      "description": "Learn how {{company}} processes and protects personal data on {{domain}} in accordance with GDPR."
+    },
+
+    "title": "Privacy Policy",
+    "heroMeta": "effective from the date of publication on the website",
+    "updated": "Last updated",
+
+    "sections": {
+      "admin": {
+        "title": "Data Controller",
+        "text": "{{company}} is the controller of personal data and processes it in accordance with applicable laws."
+      },
+
+      "data": {
+        "title": "What personal data do we collect?",
+        "list": [
+          "personal data provided via the contact form (name, phone number, email address)",
+          "data voluntarily submitted in messages (e.g. photos for quotation purposes)",
+          "technical data related to the use of the website (IP address, cookies)"
+        ]
+      },
+
+      "purposes": {
+        "title": "Purpose of data processing",
+        "list": [
+          "responding to user inquiries",
+          "preparing offers and providing services",
+          "processing payments (if applicable)",
+          "conducting marketing activities (only with user consent)",
+          "ensuring website security and proper functionality"
+        ]
+      },
+
+      "legal": {
+        "title": "Legal basis for processing",
+        "intro": "Personal data is processed in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council (GDPR).",
+        "list": [
+          "Art. 6(1)(b) GDPR – performance of a contract",
+          "Art. 6(1)(c) GDPR – compliance with a legal obligation",
+          "Art. 6(1)(f) GDPR – legitimate interest of the controller",
+          "Art. 6(1)(a) GDPR – consent of the user"
+        ]
+      },
+
+      "sharing": {
+        "title": "Data sharing",
+        "text": "Personal data may be shared with entities cooperating with the controller only to the extent necessary to provide services (e.g. hosting providers, accounting services). Personal data is not sold to third parties."
+      },
+
+      "retention": {
+        "title": "Data retention period",
+        "list": [
+          "for the period necessary to fulfill the purpose of processing",
+          "in accordance with applicable legal requirements",
+          "until consent is withdrawn (in the case of marketing activities)"
+        ]
+      },
+
+      "rights": {
+        "title": "User rights",
+        "list": [
+          "the right to access personal data",
+          "the right to rectify personal data",
+          "the right to erase personal data",
+          "the right to restrict processing",
+          "the right to data portability",
+          "the right to object to processing",
+          "the right to lodge a complaint with a supervisory authority"
+        ]
+      },
+
+      "cookies": {
+        "title": "Cookies",
+        "intro": "The website {{domain}} uses cookies for:",
+        "list": [
+          "ensuring proper website functionality",
+          "traffic analysis (e.g. Google Analytics)",
+          "marketing purposes (e.g. Google Ads / Meta Ads)"
+        ],
+        "footer": "Users can manage cookie settings in their browser."
+      },
+
+      "changes": {
+        "title": "Changes to the Privacy Policy",
+        "text": "The current version of the Privacy Policy is always available on {{domain}}."
+      }
+    }
+  }
+}

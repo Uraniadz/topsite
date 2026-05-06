@@ -65,7 +65,7 @@
   counter-reset: section;
 }
 
-.cookies-list li {
+.cookies-list > li {
   counter-increment: section;
 }
 

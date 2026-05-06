@@ -31,6 +31,7 @@ const Footer = () => {
             <Link to={routesPath.price}>{t('footer.nav.price')}</Link>
             <Link to={routesPath.contact}>{t('footer.nav.contact')}</Link>
             <Link to={routesPath.cookies}>{t('footer.nav.cookies')}</Link>
+            <Link to={routesPath.privacy}>{t('footer.nav.privacy')}</Link>
           </nav>
         </div>
 

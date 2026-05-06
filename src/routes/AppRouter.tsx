@@ -9,6 +9,7 @@ import ContactPage from '@/pages/ContactPage/ContactPage';
 import PricePage from '@/pages/PricePage/PricePage';
 import RootRedirect from './RootRedirect';
 import CookiesPolicyPage from '@/pages/CookiesPolicy/CookiesPolicy';
+import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage/PrivacyPolicyPage';
 
 function AppRouter() {
   return (
@@ -22,6 +23,7 @@ function AppRouter() {
           <Route path={routesPath.contact} element={<ContactPage />} />
           <Route path={routesPath.price} element={<PricePage />} />
           <Route path={routesPath.cookies} element={<CookiesPolicyPage />} />
+          <Route path={routesPath.privacy} element={<PrivacyPolicyPage />} />
         </Route>
         <Route path="*" element={<NotFoundPage404 />} />
       </Routes>
