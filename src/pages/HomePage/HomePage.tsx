@@ -1,5 +1,5 @@
 import Hero from '@/components/Home/Hero/Hero';
-import Services from '@/components/Home/Serivices/Services';
+import Services from '@/components/Home/Services/Services';
 
 const HomePage = () => {
   return (
