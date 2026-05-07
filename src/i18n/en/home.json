@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "badge": "Full Stack Web Development",
+
+    "title": "Modern websites for growing businesses",
+
+    "text": "Landing pages, business websites and scalable e-commerce platforms built with React, TypeScript and Node.js.",
+
+    "buttons": {
+      "primary": "Start Project",
+      "secondary": "View Services"
+    },
+
+    "stats": {
+      "react": {
+        "title": "React",
+        "subtitle": "Frontend"
+      },
+
+      "node": {
+        "title": "Node.js",
+        "subtitle": "Backend"
+      },
+
+      "seo": {
+        "title": "SEO",
+        "subtitle": "Optimization"
+      }
+    },
+
+    "floating": {
+      "top": "Fast & Modern UI",
+      "bottom": "Responsive Design"
+    },
+
+    "imageAlt": "Modern website preview"
+  }
+}

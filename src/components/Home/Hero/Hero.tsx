@@ -1,56 +1,56 @@
+import { useTranslation } from 'react-i18next';
 import styles from './Hero.module.css';
 import heroImage from '@/assets/images/hero/hero2.png';
 const Hero = () => {
+  const { t } = useTranslation('home');
+
   return (
     <section className={styles.hero}>
       <div className="container">
         <div className={styles.hero__content}>
           <div className={styles.hero__left}>
-            <span className={styles.hero__badge}>
-              Full Stack Web Development
-            </span>
+            <span className={styles.hero__badge}>{t('hero.badge')}</span>
 
-            <h1 className={styles.hero__title}>
-              Modern websites for growing businesses
-            </h1>
+            <h1 className={styles.hero__title}>{t('hero.title')}</h1>
 
-            <p className={styles.hero__text}>
-              Landing pages, business websites and scalable e-commerce platforms
-              built with React, TypeScript and Node.js.
-            </p>
+            <p className={styles.hero__text}>{t('hero.text')}</p>
 
             <div className={styles.hero__actions}>
-              <button className={styles.hero__primary}>Start Project</button>
+              <button className={styles.hero__primary}>
+                {t('hero.buttons.primary')}
+              </button>
 
-              <button className={styles.hero__secondary}>View Services</button>
+              <button className={styles.hero__secondary}>
+                {t('hero.buttons.secondary')}
+              </button>
             </div>
 
             <div className={styles.hero__stats}>
               <div className={styles.hero__stat}>
                 <strong>
                   <span className={styles.hero__statDot} />
-                  React
+                  {t('hero.stats.react.title')}
                 </strong>
 
-                <span>Frontend</span>
+                <span> {t('hero.stats.react.subtitle')}</span>
               </div>
 
               <div className={styles.hero__stat}>
                 <strong>
                   <span className={styles.hero__statDot} />
-                  Node.js
+                  {t('hero.stats.node.title')}
                 </strong>
 
-                <span>Backend</span>
+                <span> {t('hero.stats.node.subtitle')}</span>
               </div>
 
               <div className={styles.hero__stat}>
                 <strong>
                   <span className={styles.hero__statDot} />
-                  SEO
+                  {t('hero.stats.seo.title')}
                 </strong>
 
-                <span>Optimization</span>
+                <span> {t('hero.stats.seo.subtitle')}</span>
               </div>
             </div>
           </div>
@@ -74,9 +74,14 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className={styles.hero__floating}>Fast & Modern UI</div>
+            <div className={styles.hero__floating}>
+              {t('hero.floating.top')}
+            </div>
 
-            <div className={styles.hero__floatingBottom}>Responsive Design</div>
+            <div className={styles.hero__floatingBottom}>
+              {' '}
+              {t('hero.floating.bottom')}
+            </div>
           </div>
         </div>
       </div>

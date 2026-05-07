@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "badge": "Full Stack Web Development",
+
+    "title": "Nowoczesne strony internetowe dla rozwijających się firm",
+
+    "text": "Landing page, strony firmowe oraz skalowalne sklepy internetowe tworzone w React, TypeScript i Node.js.",
+
+    "buttons": {
+      "primary": "Rozpocznij projekt",
+      "secondary": "Zobacz usługi"
+    },
+
+    "stats": {
+      "react": {
+        "title": "React",
+        "subtitle": "Frontend"
+      },
+
+      "node": {
+        "title": "Node.js",
+        "subtitle": "Backend"
+      },
+
+      "seo": {
+        "title": "SEO",
+        "subtitle": "Optymalizacja"
+      }
+    },
+
+    "floating": {
+      "top": "Szybki i nowoczesny UI",
+      "bottom": "Responsywny design"
+    },
+
+    "imageAlt": "Podgląd nowoczesnej strony internetowej"
+  }
+}

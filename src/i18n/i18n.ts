@@ -2,6 +2,7 @@ import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { resources } from './resources';
+import { supportedLngs } from '@/config/i18nConfig';
 
 void i18next
   .use(LanguageDetector)
@@ -10,7 +11,7 @@ void i18next
     resources,
     defaultNS: 'common',
     // мови
-    supportedLngs: ['en', 'pl', 'uk'],
+    supportedLngs,
     // Використовуємо тільки базову мову (en-US → en)
     load: 'languageOnly',
     // Детектор мови (параметри за замовчуванням можна міняти тут)
