@@ -100,5 +100,34 @@
       "responsive": "Responsywny design",
       "seo": "Struktura SEO"
     }
+  },
+  "process": {
+    "badge": "PROCES",
+
+    "title": "Jak Zamieniamy Pomysły W Produkty Cyfrowe",
+
+    "description": "Przejrzysty proces pracy skoncentrowany na komunikacji, szybkości i wysokiej jakości realizacji.",
+
+    "steps": {
+      "discovery": {
+        "title": "Analiza",
+        "description": "Poznajemy Twój biznes, cele i wymagania projektu, aby stworzyć odpowiednią strategię."
+      },
+
+      "strategy": {
+        "title": "Strategia i Design",
+        "description": "Projektujemy strukturę, doświadczenie użytkownika i kierunek wizualny dopasowany do Twojej marki."
+      },
+
+      "development": {
+        "title": "Development",
+        "description": "Nowoczesny i skalowalny development skupiony na wydajności oraz jakości kodu."
+      },
+
+      "launch": {
+        "title": "Wdrożenie i Wsparcie",
+        "description": "Testowanie, wdrożenie, optymalizacja oraz dalsze wsparcie po uruchomieniu projektu."
+      }
+    }
   }
 }

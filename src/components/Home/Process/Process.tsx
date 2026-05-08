@@ -1,57 +1,71 @@
 import { MessageCircle, PencilRuler, Code2, Rocket } from 'lucide-react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 import styles from './Process.module.css';
-
-const processSteps = [
-  {
-    id: '01',
-    icon: <MessageCircle size={28} strokeWidth={2} />,
-    title: 'Discovery',
-    description:
-      'We learn about your business, goals, and project requirements to create the right strategy.',
-  },
-
-  {
-    id: '02',
-    icon: <PencilRuler size={28} strokeWidth={2} />,
-    title: 'Strategy & Design',
-    description:
-      'We plan the structure, user experience, and visual direction tailored to your brand.',
-  },
-
-  {
-    id: '03',
-    icon: <Code2 size={28} strokeWidth={2} />,
-    title: 'Development',
-    description:
-      'Clean, scalable, and modern development focused on performance and maintainability.',
-  },
-
-  {
-    id: '04',
-    icon: <Rocket size={28} strokeWidth={2} />,
-    title: 'Launch & Support',
-    description:
-      'Testing, deployment, optimization, and ongoing support after the project goes live.',
-  },
-];
+import { useRef } from 'react';
 
 const Process = () => {
+  const { t } = useTranslation('home');
+
+  const processSteps = [
+    {
+      id: '01',
+      icon: <MessageCircle size={28} strokeWidth={2} />,
+      title: t('process.steps.discovery.title'),
+      description: t('process.steps.discovery.description'),
+    },
+
+    {
+      id: '02',
+      icon: <PencilRuler size={28} strokeWidth={2} />,
+      title: t('process.steps.strategy.title'),
+      description: t('process.steps.strategy.description'),
+    },
+
+    {
+      id: '03',
+      icon: <Code2 size={28} strokeWidth={2} />,
+      title: t('process.steps.development.title'),
+      description: t('process.steps.development.description'),
+    },
+
+    {
+      id: '04',
+      icon: <Rocket size={28} strokeWidth={2} />,
+      title: t('process.steps.launch.title'),
+      description: t('process.steps.launch.description'),
+    },
+  ];
+
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start center', 'end center'],
+  });
+
+  const lineScale = useTransform(scrollYProgress, [0, 1], [0, 1]);
+
   return (
     <section className={styles.process}>
       <div className="container">
         <div className={styles.process__top}>
-          <span>PROCESS</span>
+          <span>{t('process.badge')}</span>
 
-          <h2>How We Turn Ideas Into Digital Products</h2>
+          <h2>{t('process.title')}</h2>
 
-          <p>
-            Clear workflow focused on communication, speed, and high-quality
-            development.
-          </p>
+          <p>{t('process.description')}</p>
         </div>
 
-        <div className={styles.process__timeline}>
+        <div ref={ref} className={styles.process__timeline}>
+          <motion.div
+            className={styles.process__line}
+            style={{
+              scaleY: lineScale,
+            }}
+          />
+
           {processSteps.map((step, index) => (
             <div
               key={step.id}

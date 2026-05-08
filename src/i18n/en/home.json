@@ -100,5 +100,34 @@
       "responsive": "Responsive Design",
       "seo": "Ready Structure"
     }
+  },
+  "process": {
+    "badge": "PROCESS",
+
+    "title": "How We Turn Ideas Into Digital Products",
+
+    "description": "Clear workflow focused on communication, speed, and high-quality development.",
+
+    "steps": {
+      "discovery": {
+        "title": "Discovery",
+        "description": "We learn about your business, goals, and project requirements to create the right strategy."
+      },
+
+      "strategy": {
+        "title": "Strategy & Design",
+        "description": "We plan the structure, user experience, and visual direction tailored to your brand."
+      },
+
+      "development": {
+        "title": "Development",
+        "description": "Clean, scalable, and modern development focused on performance and maintainability."
+      },
+
+      "launch": {
+        "title": "Launch & Support",
+        "description": "Testing, deployment, optimization, and ongoing support after the project goes live."
+      }
+    }
   }
 }
