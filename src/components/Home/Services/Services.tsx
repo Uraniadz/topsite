@@ -1,16 +1,18 @@
+import { useTranslation } from 'react-i18next';
 import ServiceCard from './ServiceCard';
 import { servicesData } from '@/data/serviceData';
 
 import styles from './Services.module.css';
 
 const Services = () => {
+  const { t } = useTranslation('home');
   return (
     <section className={styles.services}>
       <div className="container">
         <div className={styles.services__top}>
-          <span>Services</span>
+          <span>{t('services.badge')}</span>
 
-          <h2>Solutions for modern businesses</h2>
+          <h2>{t('services.title')}</h2>
         </div>
 
         <div className={styles.services__list}>

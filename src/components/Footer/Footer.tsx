@@ -1,7 +1,7 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import routesPath from '../../routes/routesPath';
-import Logo from '@/assets/images/logo/logo.jpg';
+import Logo from '@/assets/images/logo/logo-no-fon.png';
 import { useTranslation } from 'react-i18next';
 import { CONTACTS } from '../../config/contact';
 import MyEmail from '../UI_components/MyEmail/MyEmail';

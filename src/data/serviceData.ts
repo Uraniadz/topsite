@@ -5,8 +5,8 @@ import ecommerce from '@/assets/images/services/ecommerce.png';
 
 export interface Service {
   id: string;
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
   image: string;
   link: string;
 }
@@ -14,25 +14,37 @@ export interface Service {
 export const servicesData: Service[] = [
   {
     id: 'landing-page',
-    title: 'Landing Page',
-    description: 'Modern high-converting landing pages for businesses.',
+
+    titleKey: 'services.items.landing.title',
+
+    descriptionKey: 'services.items.landing.description',
+
     image: landing,
+
     link: '/services/landing-page',
   },
 
   {
     id: 'business-website',
-    title: 'Business Website',
-    description: 'Scalable multi-page websites with future expansion.',
+
+    titleKey: 'services.items.business.title',
+
+    descriptionKey: 'services.items.business.description',
+
     image: business,
+
     link: '/services/business-website',
   },
 
   {
     id: 'ecommerce',
-    title: 'E-commerce',
-    description: 'Online stores with backend integrations and payments.',
+
+    titleKey: 'services.items.ecommerce.title',
+
+    descriptionKey: 'services.items.ecommerce.description',
+
     image: ecommerce,
+
     link: '/services/ecommerce',
   },
 ];

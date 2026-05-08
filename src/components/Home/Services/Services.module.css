@@ -117,23 +117,6 @@
   max-width: 520px;
 }
 
-.card__label {
-  display: inline-flex;
-
-  margin-bottom: 24px;
-
-  padding: 10px 16px;
-
-  border-radius: 999px;
-
-  background: #eff6ff;
-
-  color: #2563eb;
-
-  font-size: 14px;
-  font-weight: 600;
-}
-
 .card__title {
   font-size: clamp(32px, 4vw, 52px);
 

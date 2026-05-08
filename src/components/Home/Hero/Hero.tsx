@@ -68,7 +68,7 @@ const Hero = () => {
               <div className={styles.hero__preview}>
                 <img
                   src={heroImage}
-                  alt="Modern website preview"
+                  alt={t('hero.imageAlt')}
                   className={styles.hero__img}
                 />
               </div>

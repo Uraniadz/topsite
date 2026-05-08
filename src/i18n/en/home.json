@@ -34,5 +34,31 @@
     },
 
     "imageAlt": "Modern website preview"
+  },
+  "services": {
+    "badge": "Services",
+
+    "title": "Solutions for modern businesses",
+
+    "cardLabel": "Service",
+
+    "button": "Learn More",
+
+    "items": {
+      "landing": {
+        "title": "Landing Page",
+        "description": "Modern high-converting landing pages for businesses."
+      },
+
+      "business": {
+        "title": "Business Website",
+        "description": "Scalable multi-page websites with future expansion."
+      },
+
+      "ecommerce": {
+        "title": "E-commerce",
+        "description": "Online stores with backend integrations and payments."
+      }
+    }
   }
 }

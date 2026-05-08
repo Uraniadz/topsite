@@ -1,7 +1,7 @@
 // src/config/contact.ts
 export const CONTACTS = {
-  companyName: 'TopSite',
-  domain: 'topsite.com.ua',
+  companyName: 'Codevix Studio',
+  domain: 'codevixstudio.com',
   phone: '+380950835934',
   display: '+38 095 083 59 34',
   whatsapp: '380950835934',

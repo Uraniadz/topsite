@@ -34,5 +34,31 @@
     },
 
     "imageAlt": "Podgląd nowoczesnej strony internetowej"
+  },
+  "services": {
+    "badge": "Usługi",
+
+    "title": "Rozwiązania dla nowoczesnych firm",
+
+    "cardLabel": "Usługa",
+
+    "button": "Dowiedz się więcej",
+
+    "items": {
+      "landing": {
+        "title": "Landing Page",
+        "description": "Nowoczesne landing page o wysokiej konwersji dla firm."
+      },
+
+      "business": {
+        "title": "Strona firmowa",
+        "description": "Skalowalne strony wielostronicowe z możliwością rozbudowy."
+      },
+
+      "ecommerce": {
+        "title": "E-commerce",
+        "description": "Sklepy internetowe z integracjami backendowymi i płatnościami."
+      }
+    }
   }
 }
