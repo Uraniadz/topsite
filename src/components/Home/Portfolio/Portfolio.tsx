@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
-import type { Variants } from 'framer-motion';
-import { ExternalLink, ArrowUpRight } from 'lucide-react';
+import { useState } from 'react';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
+
+import { ArrowLeft, ArrowRight, ArrowUpRight } from 'lucide-react';
 
 import styles from './Portfolio.module.css';
 
@@ -10,11 +11,12 @@ const projects = [
     category: 'E-commerce',
     title: 'Pet Food Online Store',
     description:
-      'Modern ecommerce platform with product management, authentication, online payments and delivery integration.',
+      'Modern ecommerce platform with authentication, online payments, delivery integrations and custom admin dashboard.',
+
     image:
-      'https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1400&auto=format&fit=crop',
-    stack: ['React', 'Node.js', 'MongoDB'],
-    featured: true,
+      'https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=1600&auto=format&fit=crop',
+
+    stack: ['React', 'Node.js', 'MongoDB', 'BLIK'],
   },
 
   {
@@ -22,32 +24,38 @@ const projects = [
     category: 'Business Website',
     title: 'Cleaning Company Website',
     description:
-      'Multi-page website optimized for local SEO and lead generation.',
+      'SEO-focused multi-page company website designed for lead generation and local visibility.',
+
     image:
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop',
-    stack: ['React', 'TypeScript'],
+      'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop',
+
+    stack: ['React', 'TypeScript', 'i18next'],
   },
 
   {
     id: 3,
-    category: 'Landing Page',
-    title: 'Interior Cleaning Service',
+    category: 'Corporate Website',
+    title: 'Lawyer Services Platform',
     description:
-      'Responsive landing page focused on conversions and modern UX.',
+      'Professional multilingual website for legal services with modern responsive layout.',
+
     image:
-      'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop',
-    stack: ['React', 'CSS Modules'],
+      'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop',
+
+    stack: ['React', 'Framer Motion'],
   },
 
   {
     id: 4,
-    category: 'Corporate',
-    title: 'Lawyer Website',
+    category: 'Landing Page',
+    title: 'Interior Cleaning Service',
     description:
-      'Professional website for legal services with multilingual support.',
+      'Modern landing page with smooth animations and conversion-focused sections.',
+
     image:
-      'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1400&auto=format&fit=crop',
-    stack: ['React', 'i18next'],
+      'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop',
+
+    stack: ['React', 'CSS Modules'],
   },
 ];
 
@@ -57,29 +65,66 @@ const fadeUp: Variants = {
     y: 40,
   },
 
-  visible: (i: number) => ({
+  visible: {
     opacity: 1,
     y: 0,
 
     transition: {
       duration: 0.6,
-      delay: i * 0.12,
       ease: 'easeOut',
     },
-  }),
+  },
+};
+
+const slideVariants: Variants = {
+  initial: {
+    opacity: 0,
+    x: 120,
+  },
+
+  animate: {
+    opacity: 1,
+    x: 0,
+
+    transition: {
+      duration: 0.6,
+      ease: 'easeInOut',
+    },
+  },
+
+  exit: {
+    opacity: 0,
+    x: -120,
+
+    transition: {
+      duration: 0.5,
+      ease: 'easeInOut',
+    },
+  },
 };
 
 const Portfolio = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const activeProject = projects[activeIndex];
+
+  const nextProject = () => {
+    setActiveIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
+  };
+
+  const prevProject = () => {
+    setActiveIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+  };
+
   return (
     <section className={styles.portfolio}>
       <div className="container">
         <motion.div
           className={styles.portfolio__top}
+          variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={fadeUp}
-          custom={0}
+          viewport={{ once: true }}
         >
           <span className={styles.portfolio__badge}>Portfolio</span>
 
@@ -88,65 +133,71 @@ const Portfolio = () => {
           </h2>
 
           <p className={styles.portfolio__description}>
-            A selection of websites and web applications crafted with focus on
-            performance, scalability, and modern user experience.
+            A showcase of modern websites and web applications focused on
+            performance, user experience, and scalable architecture.
           </p>
         </motion.div>
 
-        <div className={styles.portfolio__grid}>
-          {projects.map((project, index) => (
+        <div className={styles.showcase}>
+          <AnimatePresence mode="wait">
             <motion.article
-              key={project.id}
-              className={`${styles.card} ${
-                project.featured ? styles.card__featured : ''
-              }`}
-              variants={fadeUp}
-              custom={index + 1}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.2 }}
-              whileHover={{ y: -8 }}
+              key={activeProject.id}
+              className={styles.showcase__card}
+              variants={slideVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
             >
-              <div className={styles.card__imageWrapper}>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className={styles.card__image}
-                />
-
-                <div className={styles.card__overlay}>
-                  <button className={styles.card__button}>
-                    View Project
-                    <ArrowUpRight size={18} />
-                  </button>
-                </div>
-              </div>
-
-              <div className={styles.card__content}>
-                <span className={styles.card__category}>
-                  {project.category}
+              <div className={styles.showcase__content}>
+                <span className={styles.showcase__category}>
+                  {activeProject.category}
                 </span>
 
-                <h3 className={styles.card__title}>{project.title}</h3>
+                <h3 className={styles.showcase__title}>
+                  {activeProject.title}
+                </h3>
 
-                <p className={styles.card__description}>
-                  {project.description}
+                <p className={styles.showcase__text}>
+                  {activeProject.description}
                 </p>
 
-                <div className={styles.card__footer}>
-                  <div className={styles.card__stack}>
-                    {project.stack.map((item) => (
-                      <span key={item}>{item}</span>
-                    ))}
-                  </div>
+                <div className={styles.showcase__stack}>
+                  {activeProject.stack.map((item) => (
+                    <span key={item}>{item}</span>
+                  ))}
+                </div>
 
-                  <button className={styles.card__link}>
-                    <ExternalLink size={18} />
+                <div className={styles.showcase__actions}>
+                  <button className={styles.primaryBtn}>
+                    View Case Study
+                    <ArrowUpRight size={18} />
                   </button>
+
+                  <div className={styles.navigation}>
+                    <button onClick={prevProject} className={styles.navBtn}>
+                      <ArrowLeft size={20} />
+                    </button>
+
+                    <span className={styles.navigation__count}>
+                      0{activeIndex + 1} / 0{projects.length}
+                    </span>
+
+                    <button onClick={nextProject} className={styles.navBtn}>
+                      <ArrowRight size={20} />
+                    </button>
+                  </div>
                 </div>
               </div>
+
+              <div className={styles.showcase__imageWrapper}>
+                <img
+                  src={activeProject.image}
+                  alt={activeProject.title}
+                  className={styles.showcase__image}
+                />
+              </div>
             </motion.article>
-          ))}
+          </AnimatePresence>
         </div>
       </div>
     </section>
