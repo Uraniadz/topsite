@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence, type Variants } from 'framer-motion';
+import PortfolioModal from './PortfolioModal';
 
 import { ArrowLeft, ArrowRight, ArrowUpRight } from 'lucide-react';
 
@@ -70,7 +71,7 @@ const fadeUp: Variants = {
     y: 0,
 
     transition: {
-      duration: 0.6,
+      duration: 0.4,
       ease: 'easeOut',
     },
   },
@@ -87,7 +88,7 @@ const slideVariants: Variants = {
     x: 0,
 
     transition: {
-      duration: 0.6,
+      duration: 0.4,
       ease: 'easeInOut',
     },
   },
@@ -97,7 +98,7 @@ const slideVariants: Variants = {
     x: -120,
 
     transition: {
-      duration: 0.5,
+      duration: 0.3,
       ease: 'easeInOut',
     },
   },
@@ -105,7 +106,7 @@ const slideVariants: Variants = {
 
 const Portfolio = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const activeProject = projects[activeIndex];
 
   const nextProject = () => {
@@ -168,7 +169,10 @@ const Portfolio = () => {
                 </div>
 
                 <div className={styles.showcase__actions}>
-                  <button className={styles.primaryBtn}>
+                  <button
+                    className={styles.primaryBtn}
+                    onClick={() => setIsModalOpen(true)}
+                  >
                     View Case Study
                     <ArrowUpRight size={18} />
                   </button>
@@ -200,6 +204,15 @@ const Portfolio = () => {
           </AnimatePresence>
         </div>
       </div>
+      <PortfolioModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        project={activeProject}
+        projects={projects}
+        activeIndex={activeIndex}
+        nextProject={nextProject}
+        prevProject={prevProject}
+      />
     </section>
   );
 };
