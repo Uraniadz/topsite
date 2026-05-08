@@ -1,45 +1,46 @@
 import styles from './WhyChooseUs.module.css';
 
-import { Rocket, Layers3, Search, Smartphone, ShieldCheck } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
-const features = [
-  {
-    icon: <Rocket size={28} />,
-    title: 'Fast Delivery',
-    description:
-      'Efficient workflow and clean development process focused on launching projects quickly without compromising quality.',
-    large: true,
-  },
-
-  {
-    icon: <Layers3 size={28} />,
-    title: 'Modern Technologies',
-    description:
-      'Built with React, TypeScript, scalable architecture, and modern frontend standards for long-term growth.',
-    large: true,
-  },
-
-  {
-    icon: <Search size={24} />,
-    title: 'SEO Optimized',
-    description: 'Structured with performance and search visibility in mind.',
-  },
-
-  {
-    icon: <Smartphone size={24} />,
-    title: 'Mobile First',
-    description:
-      'Perfect experience across desktop, tablet, and mobile devices.',
-  },
-
-  {
-    icon: <ShieldCheck size={24} />,
-    title: 'Long-Term Support',
-    description: 'Ongoing updates, maintenance, and improvements after launch.',
-  },
-];
+import { Rocket, Gauge, Layers3, Search, ShieldCheck } from 'lucide-react';
 
 const WhyChooseUs = () => {
+  const { t } = useTranslation('home');
+
+  const features = [
+    {
+      icon: <Rocket size={30} strokeWidth={2} />,
+      title: t('whyChooseUs.features.custom.title'),
+      description: t('whyChooseUs.features.custom.description'),
+      large: true,
+    },
+
+    {
+      icon: <Gauge size={30} strokeWidth={2} />,
+      title: t('whyChooseUs.features.performance.title'),
+      description: t('whyChooseUs.features.performance.description'),
+      large: true,
+    },
+
+    {
+      icon: <Layers3 size={24} strokeWidth={2} />,
+      title: t('whyChooseUs.features.scalable.title'),
+      description: t('whyChooseUs.features.scalable.description'),
+    },
+
+    {
+      icon: <Search size={24} strokeWidth={2} />,
+      title: t('whyChooseUs.features.seo.title'),
+      description: t('whyChooseUs.features.seo.description'),
+    },
+
+    {
+      icon: <ShieldCheck size={24} strokeWidth={2} />,
+      title: t('whyChooseUs.features.support.title'),
+      description: t('whyChooseUs.features.support.description'),
+    },
+  ];
+
   return (
     <section className={styles.section}>
       <div className={styles.blurTop} />
@@ -47,16 +48,11 @@ const WhyChooseUs = () => {
 
       <div className={styles.container}>
         <div className={styles.header}>
-          <span className={styles.label}>WHY CHOOSE US</span>
+          <span className={styles.label}>{t('whyChooseUs.label')}</span>
 
-          <h2 className={styles.title}>
-            Modern websites focused on performance, design, and business growth.
-          </h2>
+          <h2 className={styles.title}>{t('whyChooseUs.title')}</h2>
 
-          <p className={styles.subtitle}>
-            We create scalable digital experiences with clean code, responsive
-            design, and strong attention to usability and details.
-          </p>
+          <p className={styles.subtitle}>{t('whyChooseUs.subtitle')}</p>
         </div>
 
         <div className={styles.grid}>
@@ -80,19 +76,25 @@ const WhyChooseUs = () => {
           <div className={styles.stat}>
             <span className={styles.statNumber}>&lt; 2s</span>
 
-            <span className={styles.statText}>Optimized Load Time</span>
+            <span className={styles.statText}>
+              {t('whyChooseUs.stats.speed')}
+            </span>
           </div>
 
           <div className={styles.stat}>
             <span className={styles.statNumber}>100%</span>
 
-            <span className={styles.statText}>Responsive Design</span>
+            <span className={styles.statText}>
+              {t('whyChooseUs.stats.responsive')}
+            </span>
           </div>
 
           <div className={styles.stat}>
             <span className={styles.statNumber}>SEO</span>
 
-            <span className={styles.statText}>Ready Structure</span>
+            <span className={styles.statText}>
+              {t('whyChooseUs.stats.seo')}
+            </span>
           </div>
         </div>
       </div>

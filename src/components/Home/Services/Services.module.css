@@ -245,7 +245,7 @@
   }
 
   .card__image {
-    min-height: 320px;
+    min-height: 290px;
   }
 }
 
@@ -271,8 +271,8 @@
   }
 
   .card__image {
-    min-height: 240px;
-
+    min-height: 200px;
     border-radius: 20px;
+    aspect-ratio: 16 / 11;
   }
 }

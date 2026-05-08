@@ -60,5 +60,45 @@
         "description": "Online stores with backend integrations and payments."
       }
     }
+  },
+  "whyChooseUs": {
+    "label": "WHY CHOOSE US",
+
+    "title": "Modern custom websites built for speed, scalability, and business growth.",
+
+    "subtitle": "We create fast, scalable, and user-focused digital experiences with clean architecture, modern technologies, and long-term reliability.",
+
+    "features": {
+      "custom": {
+        "title": "Custom-Built Solutions",
+        "description": "Every project is tailored specifically for your business goals and requirements instead of relying on heavy generic templates."
+      },
+
+      "performance": {
+        "title": "Fast & Lightweight",
+        "description": "Optimized architecture focused on speed, smooth performance, and better user experience across all devices."
+      },
+
+      "scalable": {
+        "title": "Scalable Structure",
+        "description": "Flexible foundation that allows your website to grow together with your business and future needs."
+      },
+
+      "seo": {
+        "title": "SEO Ready",
+        "description": "Clean structure and modern standards designed for better search visibility and performance."
+      },
+
+      "support": {
+        "title": "Full Launch Support",
+        "description": "Hosting, deployment, SSL setup, and post-launch assistance included for a smooth start."
+      }
+    },
+
+    "stats": {
+      "speed": "Optimized Load Time",
+      "responsive": "Responsive Design",
+      "seo": "Ready Structure"
+    }
   }
 }

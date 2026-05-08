@@ -60,5 +60,45 @@
         "description": "Sklepy internetowe z integracjami backendowymi i płatnościami."
       }
     }
+  },
+  "whyChooseUs": {
+    "label": "DLACZEGO WARTO NAS WYBRAĆ",
+
+    "title": "Nowoczesne strony internetowe stworzone z myślą o szybkości, skalowalności i rozwoju biznesu.",
+
+    "subtitle": "Tworzymy szybkie, skalowalne i przyjazne użytkownikowi rozwiązania cyfrowe z czystą architekturą, nowoczesnymi technologiami i długoterminową niezawodnością.",
+
+    "features": {
+      "custom": {
+        "title": "Indywidualne rozwiązania",
+        "description": "Każdy projekt jest tworzony specjalnie pod potrzeby i cele Twojego biznesu zamiast korzystania z ciężkich, uniwersalnych szablonów."
+      },
+
+      "performance": {
+        "title": "Szybkość i lekkość",
+        "description": "Zoptymalizowana architektura zapewniająca szybkie ładowanie, płynne działanie i lepsze doświadczenie użytkownika."
+      },
+
+      "scalable": {
+        "title": "Skalowalna struktura",
+        "description": "Elastyczna podstawa, która pozwala rozwijać stronę razem z Twoim biznesem i przyszłymi potrzebami."
+      },
+
+      "seo": {
+        "title": "SEO Ready",
+        "description": "Czysta struktura i nowoczesne standardy przygotowane pod lepszą widoczność w wyszukiwarkach."
+      },
+
+      "support": {
+        "title": "Pełne wsparcie wdrożenia",
+        "description": "Pomoc z hostingiem, wdrożeniem, konfiguracją SSL oraz wsparciem po uruchomieniu strony."
+      }
+    },
+
+    "stats": {
+      "speed": "Zoptymalizowany czas ładowania",
+      "responsive": "Responsywny design",
+      "seo": "Struktura SEO"
+    }
   }
 }
