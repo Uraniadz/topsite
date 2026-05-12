@@ -129,5 +129,43 @@
         "description": "Testowanie, wdrożenie, optymalizacja oraz dalsze wsparcie po uruchomieniu projektu."
       }
     }
+  },
+  "reviews": {
+    "badge": "OPINIE KLIENTÓW",
+
+    "title": "Zaufanie rozwijających się firm w całej Europie",
+
+    "description": "Prawdziwe opinie klientów, którzy zaufali nam w tworzeniu nowoczesnych, skalowalnych i skutecznych stron internetowych.",
+
+    "verifiedDesktop": "Zweryfikowana opinia na Facebooku",
+
+    "verifiedMobile": "Odwiedź nasz Facebook",
+
+    "items": [
+      {
+        "id": 1,
+        "name": "Witek Katw",
+        "role": "Właściciel firmy • Polska",
+        "text": "Yurii stworzył dla mnie stronę internetową, a w ciągu trzech miesięcy moja witryna znalazła się w pierwszej dziesiątce wyników Google. Zdecydowanie polecam tego specjalistę.",
+        "featured": true,
+        "link": "https://www.facebook.com/topsiteukraine/reviews"
+      },
+
+      {
+        "id": 2,
+        "name": "Oleksandr Kuzmin",
+        "role": "Właściciel firmy • Polska",
+        "text": "Bardzo piękna strona internetowa stworzona dla mojego biznesu. Polecam!",
+        "link": "https://www.facebook.com/topsiteukraine/reviews"
+      },
+
+      {
+        "id": 3,
+        "name": "Anna Zhytska",
+        "role": "Klient • Ukraina",
+        "text": "Bardzo profesjonalny, uczciwy i pracowity specjalista. Gorąco polecam!",
+        "link": "https://www.facebook.com/topsiteukraine/reviews"
+      }
+    ]
   }
 }

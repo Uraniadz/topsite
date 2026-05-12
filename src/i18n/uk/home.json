@@ -129,5 +129,43 @@
         "description": "Тестування, запуск, оптимізація та подальша підтримка після старту проєкту."
       }
     }
+  },
+  "reviews": {
+    "badge": "ВІДГУКИ КЛІЄНТІВ",
+
+    "title": "Нам довіряють бізнеси по всій Європі",
+
+    "description": "Реальні відгуки від клієнтів, які довірили нам створення сучасних, масштабованих та ефективних вебсайтів.",
+
+    "verifiedDesktop": "Перевірений відгук Facebook",
+
+    "verifiedMobile": "Перейти на Facebook",
+
+    "items": [
+      {
+        "id": 1,
+        "name": "Witek Katw",
+        "role": "Власник бізнесу • Польща",
+        "text": "Юрій створив для мене сайт, і вже протягом трьох місяців мій сайт вийшов у першу десятку результатів Google. Дуже рекомендую цього спеціаліста.",
+        "featured": true,
+        "link": "https://www.facebook.com/topsiteukraine/reviews"
+      },
+
+      {
+        "id": 2,
+        "name": "Oleksandr Kuzmin",
+        "role": "Власник бізнесу • Польща",
+        "text": "Дуже гарний сайт створили для мого бізнесу. Рекомендую!",
+        "link": "https://www.facebook.com/topsiteukraine/reviews"
+      },
+
+      {
+        "id": 3,
+        "name": "Anna Zhytska",
+        "role": "Клієнт • Україна",
+        "text": "Дуже професійний, чесний та працьовитий спеціаліст. Щиро рекомендую!",
+        "link": "https://www.facebook.com/topsiteukraine/reviews"
+      }
+    ]
   }
 }

@@ -129,5 +129,43 @@
         "description": "Testing, deployment, optimization, and ongoing support after the project goes live."
       }
     }
+  },
+  "reviews": {
+    "badge": "CLIENT FEEDBACK",
+
+    "title": "Trusted by growing businesses across Europe",
+
+    "description": "Real feedback from clients who trusted us to build modern, scalable and results-driven websites.",
+
+    "verifiedDesktop": "Verified Facebook Review",
+
+    "verifiedMobile": "Visit Facebook Page",
+
+    "items": [
+      {
+        "id": 1,
+        "name": "Witek Katw",
+        "role": "Business Owner • Poland",
+        "text": "Yurii created a website for my business and within three months it reached the top 10 results in Google search. I highly recommend this specialist.",
+        "featured": true,
+        "link": "https://www.facebook.com/topsiteukraine/reviews"
+      },
+
+      {
+        "id": 2,
+        "name": "Oleksandr Kuzmin",
+        "role": "Business Owner • Poland",
+        "text": "Very beautiful website created for my business. Highly recommend!",
+        "link": "https://www.facebook.com/topsiteukraine/reviews"
+      },
+
+      {
+        "id": 3,
+        "name": "Anna Zhytska",
+        "role": "Client • Ukraine",
+        "text": "A very professional, honest and hardworking specialist. Highly recommended!",
+        "link": "https://www.facebook.com/topsiteukraine/reviews"
+      }
+    ]
   }
 }
