@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 import styles from './Reviews.module.css';
+
 type Review = {
   id: number;
   name: string;

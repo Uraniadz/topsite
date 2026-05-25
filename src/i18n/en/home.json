@@ -167,5 +167,52 @@
         "link": "https://www.facebook.com/topsiteukraine/reviews"
       }
     ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "description": "Answers to the most common questions about website development, SEO, and Google Ads services.",
+
+    "items": {
+      "price": {
+        "question": "How much does a website cost?",
+        "answer": "The cost depends on the type of project, required functionality, and overall complexity. After a short consultation, we provide a clear estimate with no hidden costs."
+      },
+
+      "timeline": {
+        "question": "How long does it take to build a website?",
+        "answer": "Landing pages are usually completed within 1–2 weeks, while larger business websites or e-commerce projects may take longer depending on the scope and integrations."
+      },
+
+      "seo": {
+        "question": "Do you provide SEO optimization?",
+        "answer": "Yes. Every website is built with modern SEO fundamentals including clean structure, responsive design, performance optimization, and technical best practices."
+      },
+
+      "ads": {
+        "question": "Do you help with Google Ads campaigns?",
+        "answer": "Yes. Besides website development, we also help businesses grow through Google Ads campaigns, keyword strategy, optimization, and conversion-focused improvements."
+      },
+
+      "editing": {
+        "question": "Can I edit the website myself after launch?",
+        "answer": "Yes. Depending on the project, we can integrate a simple content management solution so you can update texts, images, or blog posts yourself."
+      },
+
+      "technologies": {
+        "question": "What technologies do you use?",
+        "answer": "We primarily use React, TypeScript, Node.js, and modern scalable technologies focused on performance, maintainability, and long-term growth."
+      },
+
+      "responsive": {
+        "question": "Will my website work well on mobile devices?",
+        "answer": "Absolutely. Every website is fully responsive and optimized for smartphones, tablets, and desktop devices."
+      },
+
+      "support": {
+        "question": "Do you provide support after launch?",
+        "answer": "Yes. We continue supporting projects after launch and can help with updates, maintenance, SEO improvements, analytics, and future scaling."
+      }
+    }
   }
 }

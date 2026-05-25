@@ -83,7 +83,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="cf cf--modal">
+    <section className="cf cf--modal" id="contact-form">
       <div className="cf__wrap">
         <div className="cf__form">
           {/* HEADER ВНУТРІ */}

@@ -167,5 +167,52 @@
         "link": "https://www.facebook.com/topsiteukraine/reviews"
       }
     ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Najczęściej Zadawane Pytania",
+    "description": "Odpowiedzi na najczęstsze pytania dotyczące tworzenia stron internetowych, SEO oraz kampanii Google Ads.",
+
+    "items": {
+      "price": {
+        "question": "Ile kosztuje stworzenie strony internetowej?",
+        "answer": "Koszt zależy od rodzaju projektu, wymaganej funkcjonalności oraz stopnia złożoności. Po krótkiej konsultacji przygotowujemy jasną wycenę bez ukrytych kosztów."
+      },
+
+      "timeline": {
+        "question": "Ile czasu trwa stworzenie strony internetowej?",
+        "answer": "Proste landing page zwykle realizujemy w ciągu 1–2 tygodni, natomiast większe strony firmowe lub sklepy internetowe mogą wymagać więcej czasu w zależności od zakresu projektu i integracji."
+      },
+
+      "seo": {
+        "question": "Czy oferujecie optymalizację SEO?",
+        "answer": "Tak. Każda strona tworzona jest zgodnie z nowoczesnymi zasadami SEO, obejmującymi odpowiednią strukturę, responsywność, wydajność oraz techniczne standardy optymalizacji."
+      },
+
+      "ads": {
+        "question": "Czy pomagacie w prowadzeniu kampanii Google Ads?",
+        "answer": "Tak. Oprócz tworzenia stron internetowych pomagamy również rozwijać biznes poprzez kampanie Google Ads, strategię słów kluczowych, optymalizację i poprawę konwersji."
+      },
+
+      "editing": {
+        "question": "Czy mogę samodzielnie edytować stronę po uruchomieniu?",
+        "answer": "Tak. W zależności od projektu możemy wdrożyć prosty system zarządzania treścią, dzięki któremu samodzielnie zaktualizujesz teksty, zdjęcia lub wpisy blogowe."
+      },
+
+      "technologies": {
+        "question": "Jakich technologii używacie?",
+        "answer": "Głównie korzystamy z React, TypeScript, Node.js oraz nowoczesnych technologii frontendowych i backendowych nastawionych na wydajność i skalowalność."
+      },
+
+      "responsive": {
+        "question": "Czy strona będzie dobrze działać na urządzeniach mobilnych?",
+        "answer": "Oczywiście. Każda strona jest w pełni responsywna i zoptymalizowana pod smartfony, tablety oraz komputery."
+      },
+
+      "support": {
+        "question": "Czy zapewniacie wsparcie po uruchomieniu strony?",
+        "answer": "Tak. Po uruchomieniu projektu nadal pomagamy w aktualizacjach, utrzymaniu strony, SEO, analityce oraz dalszym rozwoju biznesu online."
+      }
+    }
   }
 }
