@@ -5,70 +5,92 @@
   },
 
   "hero": {
-    "badge": "O Codevix Studio",
-    "title": "Tworzymy strony internetowe nastawione na realny rozwój biznesu",
-    "description": "Codevix Studio pomaga firmom rozwijać się online dzięki nowoczesnym stronom internetowym, architekturze przygotowanej pod SEO oraz strategiom Google Ads przyciągającym realnych klientów."
-  },
+    "brand": "TWORZYMY. PROMUJEMY. ROZWIJAMY.",
 
-  "story": {
-    "badge": "Nasza misja",
-    "title": "Pomagamy firmom rozwijać się online",
-    "text1": "Wierzymy, że każda firma zasługuje na profesjonalną obecność w internecie — nie tylko duże marki. Naszym celem jest pomoc firmom w uruchamianiu nowoczesnych stron internetowych oraz pozyskiwaniu klientów dzięki skutecznym rozwiązaniom digitalowym.",
-    "text2": "Łączymy development, podstawy SEO oraz strategię Google Ads w jedno kompletne rozwiązanie skoncentrowane na długoterminowym rozwoju biznesu i realnych efektach."
-  },
+    "leftCard": {
+      "title": "Full Stack Developer & SEO",
 
-  "stats": {
-    "stack": "Nowoczesne technologie i skalowalna architektura",
-    "seo": "Struktura przygotowana pod SEO i wydajność",
-    "ads": "Kampanie Google Ads i optymalizacja",
-    "support": "Długoterminowa współpraca i wsparcie"
+      "items": {
+        "react": "React / TypeScript",
+        "node": "Node.js / Express",
+        "mongo": "MongoDB",
+        "seo": "SEO i wydajność"
+      }
+    },
+
+    "rightCard": {
+      "title": "Specjalista Google Ads",
+
+      "items": {
+        "campaigns": "Kampanie Google Ads",
+        "keywords": "Research słów kluczowych",
+        "optimization": "Optymalizacja konwersji",
+        "analytics": "Analityka i strategia"
+      }
+    }
   },
 
   "features": {
-    "badge": "Co robimy",
-    "title": "Kompleksowe rozwiązania digitalowe dla nowoczesnych firm",
+    "badge": "CZYM SIĘ ZAJMUJEMY",
 
-    "development": {
-      "title": "Nowoczesny development",
-      "description": "Tworzymy szybkie, skalowalne i responsywne strony internetowe z wykorzystaniem nowoczesnych technologii oraz naciskiem na wydajność i user experience."
-    },
+    "title": "Kompleksowe rozwiązania digital dla nowoczesnego biznesu",
 
-    "marketing": {
-      "title": "Google Ads i marketing",
-      "description": "Pomagamy firmom pozyskiwać klientów dzięki kampaniom Google Ads, analizie słów kluczowych oraz strategiom nastawionym na konwersję."
-    },
+    "items": {
+      "development": {
+        "title": "Nowoczesny development",
+        "description": "Szybkie nowoczesne strony internetowe budowane w oparciu o skalowalne technologie i wydajną architekturę."
+      },
 
-    "growth": {
-      "title": "Nastawienie na rozwój",
-      "description": "Budujemy strony internetowe, które nie tylko wyglądają nowocześnie, ale także wspierają rozwój biznesu i długoterminową widoczność online."
-    },
+      "ads": {
+        "title": "Google Ads",
+        "description": "Kampanie nastawione na widoczność, jakościowy ruch i realny rozwój biznesu."
+      },
 
-    "support": {
-      "title": "Długoterminowe wsparcie",
-      "description": "Klienci współpracujący z nami przy reklamach otrzymują stałe wsparcie strony internetowej, aktualizacje i ciągły rozwój."
+      "ai": {
+        "title": "Workflow wspierany przez AI",
+        "description": "Nowoczesne narzędzia AI pomagają nam przyspieszać pracę i zwiększać efektywność projektów."
+      },
+
+      "support": {
+        "title": "Długoterminowe wsparcie",
+        "description": "Stały rozwój i aktualizacje stron dla klientów współpracujących z nami."
+      }
     }
   },
 
   "team": {
-    "badge": "Poznaj nasz zespół",
-    "title": "Osoby stojące za Codevix Studio",
+    "badge": "POZNAJ NASZ ZESPÓŁ",
+
+    "title": "Ludzie stojący za Codevix Studio",
 
     "yurii": {
+      "name": "Jurij",
       "role": "Full Stack Developer & SEO",
-      "description": "Skupia się na tworzeniu nowoczesnych, wydajnych stron internetowych ze skalowalną architekturą, czystym kodem i mocnymi podstawami SEO."
+
+      "description": "Tworzenie nowoczesnych skalowalnych stron internetowych z czystą architekturą, optymalizacją wydajności i mocnym SEO."
     },
 
-    "oksana": {
-      "role": "Google Ads Specialist",
-      "description": "Pomaga firmom rozwijać się dzięki kampaniom Google Ads, optymalizacji reklam, analityce i strategiom marketingu digitalowego."
+    "yuliia": {
+      "name": "Julia",
+      "role": "Specjalista Google Ads",
+
+      "description": "Pomaganie firmom rozwijać się dzięki Google Ads, analityce, optymalizacji i strategiom marketingu digital."
+    },
+
+    "ai": {
+      "title": "Rozwiązania AI",
+
+      "subtitle": "Inteligentne workflow i wsparcie projektowe",
+
+      "description": "Wykorzystujemy nowoczesne narzędzia AI do szybkiego prototypowania, tworzenia koncepcji UI/UX, wsparcia contentowego, automatyzacji oraz optymalizacji workflow."
     }
   },
 
   "cta": {
-    "title": "Gotowi rozwijać swój biznes online?",
+    "title": "Gotowy rozwijać swój biznes online?",
+
     "description": "Łączymy development, reklamę i nowoczesne technologie, aby pomagać firmom szybciej startować i skuteczniej rozwijać się online.",
-    "item1": "Nowoczesne strony",
-    "item2": "Wsparcie Google Ads",
-    "item3": "Długoterminowa współpraca"
+
+    "button": "Rozpocznij projekt"
   }
 }

@@ -5,70 +5,92 @@
   },
 
   "hero": {
-    "badge": "About Codevix Studio",
-    "title": "We build websites focused on real business growth",
-    "description": "Codevix Studio helps businesses launch online through modern website development, SEO-ready architecture, and Google Ads strategies designed to attract real customers."
-  },
+    "brand": "WE BUILD. WE PROMOTE. WE GROW.",
 
-  "story": {
-    "badge": "Our Mission",
-    "title": "Helping businesses grow online",
-    "text1": "We believe every business deserves a professional online presence — not only large companies. Our goal is to help businesses launch modern websites and attract customers through effective digital solutions.",
-    "text2": "We combine development, SEO foundations, and Google Ads strategy into one complete solution focused on long-term business growth and real results."
-  },
+    "leftCard": {
+      "title": "Full Stack Developer & SEO",
 
-  "stats": {
-    "stack": "Modern technologies & scalable architecture",
-    "seo": "SEO-ready structure & performance",
-    "ads": "Google Ads campaigns & optimization",
-    "support": "Long-term collaboration & support"
+      "items": {
+        "react": "React / TypeScript",
+        "node": "Node.js / Express",
+        "mongo": "MongoDB",
+        "seo": "SEO & Performance"
+      }
+    },
+
+    "rightCard": {
+      "title": "Google Ads Specialist",
+
+      "items": {
+        "campaigns": "Google Ads Campaigns",
+        "keywords": "Keyword Research",
+        "optimization": "Conversion Optimization",
+        "analytics": "Analytics & Strategy"
+      }
+    }
   },
 
   "features": {
-    "badge": "What We Do",
+    "badge": "WHAT WE DO",
+
     "title": "Complete digital solutions for modern businesses",
 
-    "development": {
-      "title": "Modern Development",
-      "description": "We create fast, scalable, and responsive websites using modern technologies focused on performance and user experience."
-    },
+    "items": {
+      "development": {
+        "title": "Modern Development",
+        "description": "Fast modern websites built with scalable technologies and performance-focused architecture."
+      },
 
-    "marketing": {
-      "title": "Google Ads & Marketing",
-      "description": "We help businesses attract customers through Google Ads campaigns, keyword research, and conversion-focused strategies."
-    },
+      "ads": {
+        "title": "Google Ads",
+        "description": "Campaigns focused on visibility, qualified traffic, and real business growth."
+      },
 
-    "growth": {
-      "title": "Growth Focused",
-      "description": "We build websites designed not only to look modern, but also to support business growth and long-term online visibility."
-    },
+      "ai": {
+        "title": "AI-Assisted Workflows",
+        "description": "Modern AI tools helping us speed up workflows and improve project efficiency."
+      },
 
-    "support": {
-      "title": "Long-Term Support",
-      "description": "Clients working with us on advertising receive ongoing website support, updates, and continuous improvements."
+      "support": {
+        "title": "Long-Term Support",
+        "description": "Continuous website updates and improvements for clients working with us."
+      }
     }
   },
 
   "team": {
-    "badge": "Meet the Team",
+    "badge": "MEET THE TEAM",
+
     "title": "People behind Codevix Studio",
 
     "yurii": {
+      "name": "Yurii",
       "role": "Full Stack Developer & SEO",
-      "description": "Focused on building modern high-performance websites with scalable architecture, clean code, and strong SEO foundations."
+
+      "description": "Building modern scalable websites with clean architecture, performance optimization, and strong SEO foundations."
     },
 
-    "oksana": {
+    "yuliia": {
+      "name": "Yuliia",
       "role": "Google Ads Specialist",
-      "description": "Helping businesses grow through Google Ads campaigns, performance optimization, analytics, and digital marketing strategies."
+
+      "description": "Helping businesses grow through Google Ads campaigns, analytics, optimization, and digital marketing strategies."
+    },
+
+    "ai": {
+      "title": "AI-Powered Solutions",
+
+      "subtitle": "Smart workflows & design assistance",
+
+      "description": "We use modern AI tools for faster prototyping, UI/UX concept generation, content assistance, automation, and workflow optimization."
     }
   },
 
   "cta": {
     "title": "Ready to grow your business online?",
+
     "description": "We combine development, advertising, and modern technologies to help businesses launch faster and grow more effectively online.",
-    "item1": "Modern Websites",
-    "item2": "Google Ads Support",
-    "item3": "Long-Term Partnership"
+
+    "button": "Start Your Project"
   }
 }

@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+
 import {
   ArrowRight,
   Bot,
@@ -7,44 +9,44 @@ import {
   Rocket,
   ShieldCheck,
 } from 'lucide-react';
+
 import googleads from '@/assets/icons/adwords.png';
+
 import teamHero from '@/assets/images/about/team-hero.png';
 import myFoto from '@/assets/images/about/myFoto.png';
 import myWife from '@/assets/images/about/myWife2.png';
 
 import styles from './AboutPage.module.css';
 
-const features = [
-  {
-    icon: <Code2 size={26} strokeWidth={2} />,
-    title: 'Modern Development',
-    description:
-      'Fast modern websites built with scalable technologies and performance-focused architecture.',
-  },
-
-  {
-    icon: <Megaphone size={26} strokeWidth={2} />,
-    title: 'Google Ads',
-    description:
-      'Campaigns focused on visibility, qualified traffic, and real business growth.',
-  },
-
-  {
-    icon: <Bot size={26} strokeWidth={2} />,
-    title: 'AI-Assisted Workflows',
-    description:
-      'Modern AI tools helping us speed up workflows and improve project efficiency.',
-  },
-
-  {
-    icon: <ShieldCheck size={26} strokeWidth={2} />,
-    title: 'Long-Term Support',
-    description:
-      'Continuous website updates and improvements for clients working with us.',
-  },
-];
-
 const AboutPage = () => {
+  const { t } = useTranslation('about');
+
+  const features = [
+    {
+      icon: <Code2 size={26} strokeWidth={2} />,
+      title: t('features.items.development.title'),
+      description: t('features.items.development.description'),
+    },
+
+    {
+      icon: <Megaphone size={26} strokeWidth={2} />,
+      title: t('features.items.ads.title'),
+      description: t('features.items.ads.description'),
+    },
+
+    {
+      icon: <Bot size={26} strokeWidth={2} />,
+      title: t('features.items.ai.title'),
+      description: t('features.items.ai.description'),
+    },
+
+    {
+      icon: <ShieldCheck size={26} strokeWidth={2} />,
+      title: t('features.items.support.title'),
+      description: t('features.items.support.description'),
+    },
+  ];
+
   return (
     <main className={styles.about}>
       <section className={styles.hero}>
@@ -71,15 +73,15 @@ const AboutPage = () => {
             >
               <div className={styles.cardIcon}>{'</>'}</div>
 
-              <h3>Full Stack Developer & SEO</h3>
+              <h3>{t('hero.leftCard.title')}</h3>
 
               <div className={styles.cardLine}></div>
 
               <ul>
-                <li>React / TypeScript</li>
-                <li>Node.js / Express</li>
-                <li>MongoDB</li>
-                <li>SEO & Performance</li>
+                <li>{t('hero.leftCard.items.react')}</li>
+                <li>{t('hero.leftCard.items.node')}</li>
+                <li>{t('hero.leftCard.items.mongo')}</li>
+                <li>{t('hero.leftCard.items.seo')}</li>
               </ul>
             </motion.div>
 
@@ -100,15 +102,15 @@ const AboutPage = () => {
                 <img src={googleads} alt="Google Ads" />
               </div>
 
-              <h3>Google Ads Specialist</h3>
+              <h3>{t('hero.rightCard.title')}</h3>
 
               <div className={styles.cardLine}></div>
 
               <ul>
-                <li>Google Ads Campaigns</li>
-                <li>Keyword Research</li>
-                <li>Conversion Optimization</li>
-                <li>Analytics & Strategy</li>
+                <li>{t('hero.rightCard.items.campaigns')}</li>
+                <li>{t('hero.rightCard.items.keywords')}</li>
+                <li>{t('hero.rightCard.items.optimization')}</li>
+                <li>{t('hero.rightCard.items.analytics')}</li>
               </ul>
             </motion.div>
 
@@ -124,7 +126,7 @@ const AboutPage = () => {
 
               <h2>Codevix Studio</h2>
 
-              <p>WE BUILD. WE PROMOTE. WE GROW.</p>
+              <p>{t('hero.brand')}</p>
             </motion.div>
           </div>
         </div>
@@ -136,9 +138,9 @@ const AboutPage = () => {
       <section className={styles.features}>
         <div className="container">
           <div className={styles.sectionTop}>
-            <span className={styles.sectionBadge}>WHAT WE DO</span>
+            <span className={styles.sectionBadge}>{t('features.badge')}</span>
 
-            <h2>Complete digital solutions for modern businesses</h2>
+            <h2>{t('features.title')}</h2>
           </div>
 
           <div className={styles.featuresGrid}>
@@ -168,12 +170,14 @@ const AboutPage = () => {
       <section className={styles.team}>
         <div className="container">
           <div className={styles.sectionTop}>
-            <span className={styles.sectionBadge}>MEET THE TEAM</span>
+            <span className={styles.sectionBadge}>{t('team.badge')}</span>
 
-            <h2>People behind Codevix Studio</h2>
+            <h2>{t('team.title')}</h2>
           </div>
 
           <div className={styles.teamGrid}>
+            {/* YURII */}
+
             <motion.article
               initial={{ opacity: 0, y: 35 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -186,14 +190,11 @@ const AboutPage = () => {
               </div>
 
               <div className={styles.memberContent}>
-                <h3>Yurii</h3>
+                <h3>{t('team.yurii.name')}</h3>
 
-                <span>Full Stack Developer & SEO</span>
+                <span>{t('team.yurii.role')}</span>
 
-                <p>
-                  Building modern scalable websites with clean architecture,
-                  performance optimization, and strong SEO foundations.
-                </p>
+                <p>{t('team.yurii.description')}</p>
 
                 <div className={styles.memberTags}>
                   <span>React</span>
@@ -203,6 +204,9 @@ const AboutPage = () => {
                 </div>
               </div>
             </motion.article>
+
+            {/* AI */}
+
             <motion.article
               initial={{ opacity: 0, y: 35 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -219,24 +223,22 @@ const AboutPage = () => {
               </div>
 
               <div className={styles.aiContent}>
-                <h3>AI-Powered Solutions</h3>
+                <h3>{t('team.ai.title')}</h3>
 
-                <span>Smart workflows & design assistance</span>
+                <span>{t('team.ai.subtitle')}</span>
 
-                <p>
-                  We use modern AI tools for faster prototyping, UI/UX concept
-                  generation, content assistance, SEO support, automation, and
-                  workflow optimization.
-                </p>
+                <p>{t('team.ai.description')}</p>
 
                 <div className={styles.memberTags}>
                   <span>AI Design</span>
                   <span>Automation</span>
-                  <span>SEO</span>
                   <span>UX/UI</span>
                 </div>
               </div>
             </motion.article>
+
+            {/* YULIIA */}
+
             <motion.article
               initial={{ opacity: 0, y: 35 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -245,18 +247,15 @@ const AboutPage = () => {
               className={styles.member}
             >
               <div className={styles.memberImageWrapper}>
-                <img src={myWife} alt="Oksana" className={styles.memberImage} />
+                <img src={myWife} alt="Yuliia" className={styles.memberImage} />
               </div>
 
               <div className={styles.memberContent}>
-                <h3>Oksana</h3>
+                <h3>{t('team.yuliia.name')}</h3>
 
-                <span>Google Ads Specialist</span>
+                <span>{t('team.yuliia.role')}</span>
 
-                <p>
-                  Helping businesses grow through Google Ads campaigns,
-                  analytics, optimization, and digital marketing strategies.
-                </p>
+                <p>{t('team.yuliia.description')}</p>
 
                 <div className={styles.memberTags}>
                   <span>Google Ads</span>
@@ -275,15 +274,12 @@ const AboutPage = () => {
           <div className={styles.ctaBox}>
             <Rocket size={38} />
 
-            <h2>Ready to grow your business online?</h2>
+            <h2>{t('cta.title')}</h2>
 
-            <p>
-              We combine development, advertising, and modern technologies to
-              help businesses launch faster and grow more effectively online.
-            </p>
+            <p>{t('cta.description')}</p>
 
             <button className={styles.primaryBtn}>
-              Start Your Project
+              {t('cta.button')}
               <ArrowRight size={18} />
             </button>
           </div>
