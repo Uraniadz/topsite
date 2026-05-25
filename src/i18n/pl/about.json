@@ -1,0 +1,74 @@
+{
+  "seo": {
+    "title": "O nas | {{company}}",
+    "description": "Dowiedz się więcej o {{company}} — nowoczesnym studio webowym pomagającym firmom rozwijać się poprzez tworzenie stron internetowych, SEO i Google Ads."
+  },
+
+  "hero": {
+    "badge": "O Codevix Studio",
+    "title": "Tworzymy strony internetowe nastawione na realny rozwój biznesu",
+    "description": "Codevix Studio pomaga firmom rozwijać się online dzięki nowoczesnym stronom internetowym, architekturze przygotowanej pod SEO oraz strategiom Google Ads przyciągającym realnych klientów."
+  },
+
+  "story": {
+    "badge": "Nasza misja",
+    "title": "Pomagamy firmom rozwijać się online",
+    "text1": "Wierzymy, że każda firma zasługuje na profesjonalną obecność w internecie — nie tylko duże marki. Naszym celem jest pomoc firmom w uruchamianiu nowoczesnych stron internetowych oraz pozyskiwaniu klientów dzięki skutecznym rozwiązaniom digitalowym.",
+    "text2": "Łączymy development, podstawy SEO oraz strategię Google Ads w jedno kompletne rozwiązanie skoncentrowane na długoterminowym rozwoju biznesu i realnych efektach."
+  },
+
+  "stats": {
+    "stack": "Nowoczesne technologie i skalowalna architektura",
+    "seo": "Struktura przygotowana pod SEO i wydajność",
+    "ads": "Kampanie Google Ads i optymalizacja",
+    "support": "Długoterminowa współpraca i wsparcie"
+  },
+
+  "features": {
+    "badge": "Co robimy",
+    "title": "Kompleksowe rozwiązania digitalowe dla nowoczesnych firm",
+
+    "development": {
+      "title": "Nowoczesny development",
+      "description": "Tworzymy szybkie, skalowalne i responsywne strony internetowe z wykorzystaniem nowoczesnych technologii oraz naciskiem na wydajność i user experience."
+    },
+
+    "marketing": {
+      "title": "Google Ads i marketing",
+      "description": "Pomagamy firmom pozyskiwać klientów dzięki kampaniom Google Ads, analizie słów kluczowych oraz strategiom nastawionym na konwersję."
+    },
+
+    "growth": {
+      "title": "Nastawienie na rozwój",
+      "description": "Budujemy strony internetowe, które nie tylko wyglądają nowocześnie, ale także wspierają rozwój biznesu i długoterminową widoczność online."
+    },
+
+    "support": {
+      "title": "Długoterminowe wsparcie",
+      "description": "Klienci współpracujący z nami przy reklamach otrzymują stałe wsparcie strony internetowej, aktualizacje i ciągły rozwój."
+    }
+  },
+
+  "team": {
+    "badge": "Poznaj nasz zespół",
+    "title": "Osoby stojące za Codevix Studio",
+
+    "yurii": {
+      "role": "Full Stack Developer & SEO",
+      "description": "Skupia się na tworzeniu nowoczesnych, wydajnych stron internetowych ze skalowalną architekturą, czystym kodem i mocnymi podstawami SEO."
+    },
+
+    "oksana": {
+      "role": "Google Ads Specialist",
+      "description": "Pomaga firmom rozwijać się dzięki kampaniom Google Ads, optymalizacji reklam, analityce i strategiom marketingu digitalowego."
+    }
+  },
+
+  "cta": {
+    "title": "Gotowi rozwijać swój biznes online?",
+    "description": "Łączymy development, reklamę i nowoczesne technologie, aby pomagać firmom szybciej startować i skuteczniej rozwijać się online.",
+    "item1": "Nowoczesne strony",
+    "item2": "Wsparcie Google Ads",
+    "item3": "Długoterminowa współpraca"
+  }
+}

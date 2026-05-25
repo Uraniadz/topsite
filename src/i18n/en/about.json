@@ -1,0 +1,74 @@
+{
+  "seo": {
+    "title": "About Us | {{company}}",
+    "description": "Learn more about {{company}} — a modern web studio helping businesses grow through website development, SEO foundations, and Google Ads."
+  },
+
+  "hero": {
+    "badge": "About Codevix Studio",
+    "title": "We build websites focused on real business growth",
+    "description": "Codevix Studio helps businesses launch online through modern website development, SEO-ready architecture, and Google Ads strategies designed to attract real customers."
+  },
+
+  "story": {
+    "badge": "Our Mission",
+    "title": "Helping businesses grow online",
+    "text1": "We believe every business deserves a professional online presence — not only large companies. Our goal is to help businesses launch modern websites and attract customers through effective digital solutions.",
+    "text2": "We combine development, SEO foundations, and Google Ads strategy into one complete solution focused on long-term business growth and real results."
+  },
+
+  "stats": {
+    "stack": "Modern technologies & scalable architecture",
+    "seo": "SEO-ready structure & performance",
+    "ads": "Google Ads campaigns & optimization",
+    "support": "Long-term collaboration & support"
+  },
+
+  "features": {
+    "badge": "What We Do",
+    "title": "Complete digital solutions for modern businesses",
+
+    "development": {
+      "title": "Modern Development",
+      "description": "We create fast, scalable, and responsive websites using modern technologies focused on performance and user experience."
+    },
+
+    "marketing": {
+      "title": "Google Ads & Marketing",
+      "description": "We help businesses attract customers through Google Ads campaigns, keyword research, and conversion-focused strategies."
+    },
+
+    "growth": {
+      "title": "Growth Focused",
+      "description": "We build websites designed not only to look modern, but also to support business growth and long-term online visibility."
+    },
+
+    "support": {
+      "title": "Long-Term Support",
+      "description": "Clients working with us on advertising receive ongoing website support, updates, and continuous improvements."
+    }
+  },
+
+  "team": {
+    "badge": "Meet the Team",
+    "title": "People behind Codevix Studio",
+
+    "yurii": {
+      "role": "Full Stack Developer & SEO",
+      "description": "Focused on building modern high-performance websites with scalable architecture, clean code, and strong SEO foundations."
+    },
+
+    "oksana": {
+      "role": "Google Ads Specialist",
+      "description": "Helping businesses grow through Google Ads campaigns, performance optimization, analytics, and digital marketing strategies."
+    }
+  },
+
+  "cta": {
+    "title": "Ready to grow your business online?",
+    "description": "We combine development, advertising, and modern technologies to help businesses launch faster and grow more effectively online.",
+    "item1": "Modern Websites",
+    "item2": "Google Ads Support",
+    "item3": "Long-Term Partnership"
+  }
+}
