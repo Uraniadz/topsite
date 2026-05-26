@@ -92,5 +92,22 @@
         "server": "Error while sending."
       }
     }
+  },
+  "notFound": {
+    "badge": "404",
+    "title": "Page Not Found",
+    "text": "The page may have been moved or the address may be incorrect.",
+    "button": "Back to Home Page",
+    "buttonAria": "Go to home page",
+    "groupAria": "404 Not Found",
+    "hint": "Error code:",
+    "code": "404 Not Found"
+  },
+  "contactCta": {
+    "badge": "Contact Us",
+    "title": "Have questions or want to work together?",
+    "description": "Contact us and we’ll help you choose the best solution for your business.",
+    "phone": "Phone",
+    "email": "Email"
   }
 }

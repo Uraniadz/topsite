@@ -3,6 +3,7 @@ import cookies from './en/cookies.json';
 import privacy from './en/privacy.json';
 import home from './en/home.json';
 import about from './en/about.json';
+import service from './en/service.json';
 
 export type Resources = {
   common: typeof сommon;
@@ -10,6 +11,5 @@ export type Resources = {
   privacy: typeof privacy;
   home: typeof home;
   about: typeof about;
-  // price: typeof price;
-  // services: typeof services;
+  service: typeof service;
 };

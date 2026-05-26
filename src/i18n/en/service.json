@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "badge": "Complete Digital Partnership",
+    "title": "We help businesses grow through modern digital solutions",
+    "description": "While you focus on your clients and business operations, we take care of your website, advertising, SEO, analytics, performance, and long-term digital growth.",
+    "primaryButton": "Free Consultation",
+    "secondaryButton": "Contact Us"
+  },
+
+  "strategy": {
+    "badge": "What We Do",
+    "title": "More than websites",
+    "description": "We create complete digital systems that help businesses attract clients, automate workflows, and scale efficiently.",
+
+    "websiteDevelopment": {
+      "title": "Website Development",
+      "description": "Modern landing pages, business websites, and ecommerce solutions built for performance, scalability, and long-term growth."
+    },
+
+    "marketing": {
+      "title": "Marketing & Growth",
+      "description": "Google Ads, SEO optimization, analytics, and conversion-focused improvements that help attract more clients."
+    },
+
+    "support": {
+      "title": "Support & Maintenance",
+      "description": "We continuously maintain, improve, and optimize your website so you can focus entirely on your business."
+    },
+
+    "automation": {
+      "title": "Automation & Scaling",
+      "description": "CRM integrations, booking systems, forms, email automation, and scalable infrastructure for growing businesses."
+    }
+  },
+
+  "solutions": {
+    "badge": "Solutions",
+    "title": "Explore our services",
+    "description": "Discover tailored solutions designed for modern businesses, startups, local services, and ecommerce brands.",
+
+    "landing": {
+      "title": "Landing Pages",
+      "description": "High-converting landing pages designed specifically for advertising campaigns and lead generation.",
+      "button": "Learn More"
+    },
+
+    "business": {
+      "title": "Business Websites",
+      "description": "Professional multi-page websites that help businesses build trust and present their services clearly.",
+      "button": "Learn More"
+    },
+
+    "ecommerce": {
+      "title": "Ecommerce Stores",
+      "description": "Modern online stores with payments, product management, responsive design, and scalable architecture.",
+      "button": "Learn More"
+    },
+
+    "ads": {
+      "title": "Google Ads",
+      "description": "Campaign setup, optimization, analytics, and performance-focused advertising strategies.",
+      "button": "Learn More"
+    }
+  },
+
+  "partnership": {
+    "badge": "Long-Term Partnership",
+    "title": "You focus on business. We handle the digital side.",
+
+    "leftTitle": "You focus on",
+
+    "leftItems": {
+      "clients": "Clients & services",
+      "operations": "Business operations",
+      "sales": "Sales & communication",
+      "growth": "Growing your company"
+    },
+
+    "rightTitle": "We handle",
+
+    "rightItems": {
+      "website": "Website management",
+      "seo": "SEO & Google Ads",
+      "analytics": "Analytics & optimization",
+      "support": "Technical support & scaling"
+    }
+  }
+}

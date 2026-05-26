@@ -91,5 +91,22 @@
         "server": "Błąd podczas wysyłania."
       }
     }
+  },
+  "notFound": {
+    "badge": "404",
+    "title": "Nie znaleziono strony",
+    "text": "Strona mogła zostać przeniesiona lub adres został wpisany niepoprawnie.",
+    "button": "Wróć na stronę główną",
+    "buttonAria": "Przejdź do strony głównej",
+    "groupAria": "404 Nie znaleziono",
+    "hint": "Kod błędu:",
+    "code": "404 Nie znaleziono"
+  },
+  "contactCta": {
+    "badge": "Kontakt",
+    "title": "Masz pytania lub chcesz rozpocząć współpracę?",
+    "description": "Skontaktuj się z nami, a pomożemy wybrać najlepsze rozwiązanie dla Twojego biznesu.",
+    "phone": "Telefon",
+    "email": "Email"
   }
 }

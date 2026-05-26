@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "badge": "Kompleksowe Partnerstwo Cyfrowe",
+    "title": "Pomagamy firmom rozwijać się dzięki nowoczesnym rozwiązaniom cyfrowym",
+    "description": "Gdy Ty skupiasz się na klientach i prowadzeniu biznesu, my zajmujemy się Twoją stroną internetową, reklamą, SEO, analityką, wydajnością i długoterminowym rozwojem online.",
+    "primaryButton": "Darmowa konsultacja",
+    "secondaryButton": "Skontaktuj się z nami"
+  },
+
+  "strategy": {
+    "badge": "Czym się zajmujemy",
+    "title": "Więcej niż strony internetowe",
+    "description": "Tworzymy kompletne systemy cyfrowe, które pomagają firmom pozyskiwać klientów, automatyzować procesy i skutecznie się rozwijać.",
+
+    "websiteDevelopment": {
+      "title": "Tworzenie stron internetowych",
+      "description": "Nowoczesne landing page, strony firmowe i sklepy internetowe stworzone z myślą o wydajności, skalowalności i długoterminowym rozwoju."
+    },
+
+    "marketing": {
+      "title": "Marketing i rozwój",
+      "description": "Google Ads, optymalizacja SEO, analityka i działania zwiększające konwersję oraz pozyskiwanie klientów."
+    },
+
+    "support": {
+      "title": "Wsparcie i utrzymanie",
+      "description": "Stale rozwijamy, optymalizujemy i utrzymujemy Twoją stronę, abyś mógł skupić się wyłącznie na swoim biznesie."
+    },
+
+    "automation": {
+      "title": "Automatyzacja i skalowanie",
+      "description": "Integracje CRM, systemy rezerwacji, formularze, automatyzacje e-mail oraz skalowalna infrastruktura dla rozwijających się firm."
+    }
+  },
+
+  "solutions": {
+    "badge": "Rozwiązania",
+    "title": "Poznaj nasze usługi",
+    "description": "Odkryj rozwiązania dopasowane do nowoczesnych firm, startupów, usług lokalnych i sklepów internetowych.",
+
+    "landing": {
+      "title": "Landing Page",
+      "description": "Skuteczne strony sprzedażowe zaprojektowane specjalnie pod kampanie reklamowe i pozyskiwanie leadów.",
+      "button": "Dowiedz się więcej"
+    },
+
+    "business": {
+      "title": "Strony firmowe",
+      "description": "Profesjonalne strony wielostronicowe, które budują zaufanie i skutecznie prezentują usługi firmy.",
+      "button": "Dowiedz się więcej"
+    },
+
+    "ecommerce": {
+      "title": "Sklepy internetowe",
+      "description": "Nowoczesne sklepy online z płatnościami, zarządzaniem produktami, responsywnym designem i skalowalną architekturą.",
+      "button": "Dowiedz się więcej"
+    },
+
+    "ads": {
+      "title": "Google Ads",
+      "description": "Konfiguracja kampanii, optymalizacja, analityka i strategie reklamowe nastawione na wyniki.",
+      "button": "Dowiedz się więcej"
+    }
+  },
+
+  "partnership": {
+    "badge": "Długoterminowa współpraca",
+    "title": "Ty skupiasz się na biznesie. My zajmujemy się stroną cyfrową.",
+
+    "leftTitle": "Ty skupiasz się na",
+
+    "leftItems": {
+      "clients": "Klientach i usługach",
+      "operations": "Prowadzeniu firmy",
+      "sales": "Sprzedaży i komunikacji",
+      "growth": "Rozwoju firmy"
+    },
+
+    "rightTitle": "My zajmujemy się",
+
+    "rightItems": {
+      "website": "Zarządzaniem stroną",
+      "seo": "SEO i Google Ads",
+      "analytics": "Analityką i optymalizacją",
+      "support": "Wsparciem technicznym i skalowaniem"
+    }
+  }
+}

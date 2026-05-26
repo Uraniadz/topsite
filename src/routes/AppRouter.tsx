@@ -24,8 +24,8 @@ function AppRouter() {
           <Route path={routesPath.price} element={<PricePage />} />
           <Route path={routesPath.cookies} element={<CookiesPolicyPage />} />
           <Route path={routesPath.privacy} element={<PrivacyPolicyPage />} />
+          <Route path="*" element={<NotFoundPage404 />} />
         </Route>
-        <Route path="*" element={<NotFoundPage404 />} />
       </Routes>
     </>
   );

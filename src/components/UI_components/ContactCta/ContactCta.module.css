@@ -1,0 +1,253 @@
+/* src/components/UI_components/ContactCta/ContactCta.module.css */
+
+.contactCta {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  padding: 40px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  isolation: isolate;
+}
+
+.contactCta::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(84, 104, 255, 0.08),
+      transparent 36%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(0, 212, 170, 0.05),
+      transparent 34%
+    );
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+.default {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(255, 255, 255, 0.025)
+  );
+
+  backdrop-filter: blur(12px);
+}
+.default .title {
+  color: #0f172a;
+}
+
+.default .description {
+  color: rgba(15, 23, 42, 0.72);
+}
+
+.default .badge {
+  color: #0f172a;
+
+  background: rgba(15, 23, 42, 0.04);
+
+  border-color: rgba(15, 23, 42, 0.08);
+}
+.default .action {
+  color: #0f172a;
+
+  background: rgba(15, 23, 42, 0.03);
+
+  border-color: rgba(15, 23, 42, 0.06);
+}
+.default .action:hover {
+  background: rgba(15, 23, 42, 0.06);
+
+  border-color: rgba(15, 23, 42, 0.12);
+}
+.gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(17, 25, 48, 0.98),
+    rgba(10, 16, 32, 0.98)
+  );
+}
+
+.minimal {
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  backdrop-filter: blur(8px);
+}
+
+.centered {
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  position: relative;
+
+  max-width: 720px;
+
+  z-index: 1;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+
+  margin-bottom: 16px;
+  padding: 8px 14px;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.title {
+  margin-bottom: 14px;
+
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.08;
+  font-weight: 700;
+
+  color: white;
+}
+
+.description {
+  max-width: 640px;
+
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.actions {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  z-index: 1;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 18px;
+
+  color: white;
+  text-decoration: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.action:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(255, 255, 255, 0.16);
+
+  background: rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.action svg {
+  flex-shrink: 0;
+
+  opacity: 0.9;
+}
+
+.action span {
+  font-size: 15px;
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .contactCta {
+    padding: 34px 28px;
+  }
+
+  .title {
+    font-size: clamp(28px, 6vw, 38px);
+  }
+}
+
+@media (max-width: 640px) {
+  .contactCta {
+    gap: 24px;
+
+    padding: 28px 20px;
+
+    border-radius: 24px;
+  }
+
+  .minimal {
+    padding: 24px 18px;
+  }
+
+  .badge {
+    margin-bottom: 14px;
+
+    font-size: 11px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .action {
+    width: 100%;
+    justify-content: center;
+
+    padding: 14px 16px;
+  }
+
+  .action span {
+    font-size: 14px;
+  }
+}

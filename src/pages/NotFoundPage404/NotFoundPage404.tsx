@@ -1,34 +1,41 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 import './NotFoundPage404.css';
 
 export default function NotFoundPage404() {
+  const { t } = useTranslation('common');
+
   return (
     <main className="nf" aria-labelledby="nf-title">
-      <section className="nf__card" role="group" aria-label="404 Не знайдено">
+      <section
+        className="nf__card"
+        role="group"
+        aria-label={t('notFound.groupAria')}
+      >
         <p className="nf__badge" aria-hidden="true">
-          404
+          {t('notFound.badge')}
         </p>
 
         <h1 id="nf-title" className="nf__title">
-          Сторінку не знайдено
+          {t('notFound.title')}
         </h1>
 
-        <p className="nf__text">
-          Можливо, введено неправильну адресу або сторінку було переміщено.
-        </p>
+        <p className="nf__text">{t('notFound.text')}</p>
 
         <div className="nf__actions">
           <Link
             to="/"
             className="nf__btn"
-            aria-label="Перейти на головну сторінку"
+            aria-label={t('notFound.buttonAria')}
           >
-            Повернутися на головну сторінку
+            {t('notFound.button')}
           </Link>
         </div>
 
         <p className="nf__hint">
-          Код помилки: <span className="nf__code">404 Не знайдено</span>
+          {t('notFound.hint')}{' '}
+          <span className="nf__code">{t('notFound.code')}</span>
         </p>
       </section>
     </main>
