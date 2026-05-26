@@ -1,0 +1,104 @@
+{
+  "seo": {
+    "title": "Cennik | {{company}}",
+    "description": "Nowoczesne strony internetowe, Google Ads i skalowalne rozwiązania dla rozwijających się firm."
+  },
+
+  "hero": {
+    "badge": "Cennik",
+    "title": "Pakiety Stron Internetowych Dla Rozwoju Biznesu",
+    "description": "Nowoczesne strony internetowe, Google Ads, wsparcie techniczne i długoterminowa współpraca — wszystko w jednym miejscu."
+  },
+
+  "labels": {
+    "websiteDevelopment": "Tworzenie strony",
+    "googleAdsManagement": "Prowadzenie Google Ads",
+    "startProject": "Rozpocznij projekt",
+    "additionalServices": "Dodatkowe usługi",
+    "flexibleSolutions": "Elastyczne rozwiązania dla Twojej firmy"
+  },
+
+  "packages": {
+    "landing": {
+      "title": "Landing Page",
+      "subtitle": "Idealne rozwiązanie dla lokalnych firm, marek osobistych i kampanii reklamowych.",
+      "price": "od $300",
+      "ads": "od $250 / miesiąc",
+      "imageAlt": "Projekt landing page",
+      "tag": "Dla startupów",
+
+      "features": {
+        "feature1": "Nowoczesny design",
+        "feature2": "Responsywne wykonanie",
+        "feature3": "Struktura SEO",
+        "feature4": "Szybkie ładowanie",
+        "feature5": "Konfiguracja Google Ads",
+        "feature6": "Sekcje zwiększające konwersję"
+      },
+
+      "support": "Potrzebujesz zmian lub aktualizacji? Zajmiemy się wszystkim za Ciebie."
+    },
+
+    "business": {
+      "title": "Strona firmowa",
+      "subtitle": "Najlepsze rozwiązanie dla firm planujących rozwój i widoczność SEO.",
+      "price": "od $500",
+      "ads": "od $300 / miesiąc",
+      "imageAlt": "Projekt strony firmowej",
+      "tag": "SEO i rozwój",
+
+      "features": {
+        "feature1": "Wielostronicowa struktura",
+        "feature2": "Strony przyjazne SEO",
+        "feature3": "Skalowalna architektura",
+        "feature4": "Obsługa bloga",
+        "feature5": "Optymalizacja wydajności",
+        "feature6": "Optymalizacja Google Ads"
+      },
+
+      "support": "Pomagamy rozwijać, utrzymywać i rozbudowywać Twoją stronę."
+    },
+
+    "ecommerce": {
+      "title": "Sklep internetowy",
+      "subtitle": "Stworzony z myślą o sprzedaży online, skalowalności i bezpieczeństwie klientów.",
+      "price": "od $1000",
+      "ads": "od $500 / miesiąc",
+      "imageAlt": "Projekt sklepu internetowego",
+      "tag": "Sprzedaż online",
+
+      "features": {
+        "feature1": "Katalog produktów",
+        "feature2": "Koszyk zakupowy",
+        "feature3": "Płatności online",
+        "feature4": "Panel administracyjny",
+        "feature5": "Autoryzacja i bezpieczeństwo",
+        "feature6": "Deploy na Render / Vercel"
+      },
+
+      "support": "Wsparcie, bezpieczeństwo i rozwój projektu w cenie."
+    }
+  },
+
+  "extraServices": {
+    "service1": {
+      "title": "Tworzenie strony",
+      "price": "od $300"
+    },
+
+    "service2": {
+      "title": "Prowadzenie Google Ads",
+      "price": "od $300 / miesiąc"
+    },
+
+    "service3": {
+      "title": "Redesign strony",
+      "price": "Indywidualna wycena"
+    },
+
+    "service4": {
+      "title": "Techniczne SEO",
+      "price": "Indywidualna wycena"
+    }
+  }
+}

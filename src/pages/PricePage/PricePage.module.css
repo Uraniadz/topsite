@@ -1,0 +1,728 @@
+/* src/pages/PricePage/PricePage.module.css */
+
+.page {
+  overflow: hidden;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  position: relative;
+
+  padding: 120px 0 90px;
+}
+
+.hero::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(110, 168, 254, 0.08),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(139, 92, 246, 0.08),
+      transparent 35%
+    );
+
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+
+  z-index: 1;
+
+  max-width: 860px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.heroContent::before {
+  content: '';
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 500px;
+  height: 500px;
+
+  transform: translate(-50%, -50%);
+
+  background: radial-gradient(
+    circle,
+    rgba(110, 168, 254, 0.12),
+    transparent 70%
+  );
+
+  filter: blur(60px);
+
+  z-index: -1;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(110, 168, 254, 0.08);
+
+  color: #4f7cff;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-top: 28px;
+
+  color: #0f172a;
+
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  font-weight: 800;
+}
+
+.description {
+  max-width: 620px;
+
+  margin: 28px auto 0;
+
+  color: rgba(15, 23, 42, 0.68);
+
+  font-size: 1.04rem;
+  line-height: 1.8;
+}
+
+.heroDivider {
+  width: 80px;
+  height: 2px;
+
+  margin: 34px auto 0;
+
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, #6ea8fe, #8b5cf6);
+}
+
+/* =========================
+   PACKAGES
+========================= */
+
+.packages {
+  padding-bottom: 140px;
+}
+
+.packagesWrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 90px;
+}
+
+.cardWrapper {
+  position: relative;
+}
+
+.cardLine {
+  position: absolute;
+
+  left: 50%;
+  bottom: -45px;
+
+  transform: translateX(-50%);
+
+  width: min(100%, 900px);
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(15, 23, 42, 0.08),
+    transparent
+  );
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+
+  gap: 80px;
+}
+
+.reverse {
+  grid-template-columns: 1fr 1.05fr;
+}
+
+.reverse .imageWrapper {
+  order: 2;
+}
+
+.reverse .content {
+  order: 1;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.imageWrapper {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 38px;
+
+  background: #f8fafc;
+
+  aspect-ratio: 4 / 3;
+
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.08);
+
+  isolation: isolate;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.7s ease;
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.card:hover .image {
+  transform: scale(1.04);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(15, 23, 42, 0.42),
+    rgba(15, 23, 42, 0.04)
+  );
+
+  pointer-events: none;
+}
+
+.floatingTag {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+
+  z-index: 3;
+
+  padding: 10px 16px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.14);
+
+  backdrop-filter: blur(12px);
+
+  color: white;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 42px;
+
+  border-radius: 34px;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(15, 23, 42, 0.05);
+
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.06);
+}
+
+.content::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: inherit;
+
+  background: linear-gradient(
+    135deg,
+    rgba(110, 168, 254, 0.03),
+    rgba(139, 92, 246, 0.02)
+  );
+
+  pointer-events: none;
+}
+
+.top {
+  position: relative;
+  z-index: 2;
+
+  max-width: 560px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 68px;
+  height: 68px;
+
+  border-radius: 22px;
+
+  background: linear-gradient(135deg, #6ea8fe, #8b5cf6);
+
+  color: white;
+
+  box-shadow: 0 20px 40px rgba(110, 168, 254, 0.22);
+}
+
+.cardTitle {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 24px;
+
+  color: #0f172a;
+
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+.cardSubtitle {
+  margin-top: 18px;
+
+  color: rgba(15, 23, 42, 0.68);
+
+  font-size: 1.02rem;
+  line-height: 1.85;
+}
+
+/* =========================
+   PRICE
+========================= */
+
+.priceBox {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 40px;
+
+  margin-top: 36px;
+  padding: 26px 28px;
+
+  border-radius: 26px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(110, 168, 254, 0.06),
+    rgba(139, 92, 246, 0.05)
+  );
+
+  border: 1px solid rgba(110, 168, 254, 0.08);
+}
+
+.priceLabel {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: rgba(15, 23, 42, 0.48);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.price {
+  color: #0f172a;
+
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.adsPrice p {
+  color: #0f172a;
+
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-top: 10px;
+
+  list-style: none;
+}
+
+.features li {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  padding: 14px 16px;
+
+  border-radius: 18px;
+
+  background: white;
+
+  border: 1px solid rgba(15, 23, 42, 0.05);
+
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+
+  color: rgba(15, 23, 42, 0.84);
+
+  line-height: 1.5;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.features li:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(110, 168, 254, 0.14);
+}
+
+.features svg {
+  flex-shrink: 0;
+
+  margin-top: 2px;
+
+  color: #6ea8fe;
+}
+
+/* =========================
+   SUPPORT
+========================= */
+
+.supportBox {
+  position: relative;
+  z-index: 2;
+
+  overflow: hidden;
+
+  margin-top: 30px;
+  padding: 24px;
+
+  border-radius: 24px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(110, 168, 254, 0.08),
+    rgba(139, 92, 246, 0.08)
+  );
+
+  border: 1px solid rgba(110, 168, 254, 0.1);
+}
+
+.supportBox::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), transparent);
+
+  pointer-events: none;
+}
+
+.supportBox p {
+  position: relative;
+  z-index: 2;
+
+  color: rgba(15, 23, 42, 0.72);
+
+  line-height: 1.8;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  width: fit-content;
+
+  margin-top: 34px;
+  padding: 18px 30px;
+
+  border: none;
+  border-radius: 18px;
+
+  background: linear-gradient(135deg, #6ea8fe, #8b5cf6);
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 20px 50px rgba(110, 168, 254, 0.28);
+}
+
+/* =========================
+   EXTRA
+========================= */
+
+.extra {
+  padding-bottom: 140px;
+}
+
+.extraContent {
+  padding: 70px;
+
+  border-radius: 40px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(110, 168, 254, 0.04),
+    rgba(139, 92, 246, 0.04)
+  );
+
+  border: 1px solid rgba(110, 168, 254, 0.08);
+
+  text-align: center;
+}
+
+.extraTitle {
+  margin-top: 24px;
+
+  color: #0f172a;
+
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.extraGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+
+  margin-top: 54px;
+}
+
+.extraCard {
+  padding: 30px;
+
+  border-radius: 24px;
+
+  background: white;
+
+  border: 1px solid rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.extraCard:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+.extraCard h3 {
+  color: #0f172a;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.extraCard p {
+  margin-top: 14px;
+
+  color: rgba(15, 23, 42, 0.66);
+
+  font-weight: 600;
+}
+
+.cta {
+  padding-bottom: 120px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+  .card,
+  .reverse {
+    grid-template-columns: 1fr;
+
+    gap: 44px;
+  }
+
+  .reverse .imageWrapper,
+  .reverse .content {
+    order: unset;
+  }
+
+  .imageWrapper {
+    min-height: 520px;
+  }
+
+  .content {
+    padding: 34px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 70px;
+  }
+
+  .packagesWrapper {
+    gap: 80px;
+  }
+
+  .imageWrapper {
+    min-height: 420px;
+
+    border-radius: 28px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .extraContent {
+    padding: 42px 24px;
+  }
+
+  .extraGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .cardTitle {
+    font-size: 2.2rem;
+  }
+
+  .price {
+    font-size: 2.4rem;
+  }
+
+  .content {
+    padding: 30px 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    padding: 90px 0 60px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .imageWrapper {
+    min-height: 320px;
+  }
+
+  .priceBox {
+    gap: 24px;
+  }
+
+  .content {
+    padding: 26px 20px;
+  }
+
+  .cardTitle {
+    font-size: 2rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .extra {
+    padding-bottom: 100px;
+  }
+}

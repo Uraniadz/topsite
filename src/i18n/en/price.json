@@ -1,0 +1,104 @@
+{
+  "seo": {
+    "title": "Pricing | {{company}}",
+    "description": "Modern websites, Google Ads management, and scalable business solutions for growing companies."
+  },
+
+  "hero": {
+    "badge": "Pricing",
+    "title": "Website Packages Built For Business Growth",
+    "description": "Modern websites, Google Ads management, technical support, and long-term partnership — all in one place."
+  },
+
+  "labels": {
+    "websiteDevelopment": "Website Development",
+    "googleAdsManagement": "Google Ads Management",
+    "startProject": "Start Project",
+    "additionalServices": "Additional Services",
+    "flexibleSolutions": "Flexible Solutions For Your Business"
+  },
+
+  "packages": {
+    "landing": {
+      "title": "Landing Website",
+      "subtitle": "Perfect for local businesses, personal brands, and advertising campaigns.",
+      "price": "from $300",
+      "ads": "from $250 / month",
+      "imageAlt": "Landing website project",
+      "tag": "Best For Startups",
+
+      "features": {
+        "feature1": "Custom modern design",
+        "feature2": "Responsive development",
+        "feature3": "SEO-ready structure",
+        "feature4": "Fast loading speed",
+        "feature5": "Google Ads setup",
+        "feature6": "Conversion-focused sections"
+      },
+
+      "support": "Need updates or small changes? We handle everything for you."
+    },
+
+    "business": {
+      "title": "Business Website",
+      "subtitle": "Best solution for companies planning long-term growth and SEO visibility.",
+      "price": "from $500",
+      "ads": "from $300 / month",
+      "imageAlt": "Business website project",
+      "tag": "SEO & Growth",
+
+      "features": {
+        "feature1": "Multi-page architecture",
+        "feature2": "SEO-friendly pages",
+        "feature3": "Scalable structure",
+        "feature4": "Blog support",
+        "feature5": "Performance optimization",
+        "feature6": "Google Ads optimization"
+      },
+
+      "support": "We help maintain, improve, and expand your website over time."
+    },
+
+    "ecommerce": {
+      "title": "E-Commerce Store",
+      "subtitle": "Built for online sales, scalability, and secure customer experience.",
+      "price": "from $1000",
+      "ads": "from $500 / month",
+      "imageAlt": "E-commerce website project",
+      "tag": "Online Sales",
+
+      "features": {
+        "feature1": "Product catalog",
+        "feature2": "Shopping cart",
+        "feature3": "Online payments",
+        "feature4": "Admin dashboard",
+        "feature5": "Authentication & security",
+        "feature6": "Render / Vercel deploy"
+      },
+
+      "support": "Ongoing support, maintenance, and future expansion included."
+    }
+  },
+
+  "extraServices": {
+    "service1": {
+      "title": "Website Development",
+      "price": "from $300"
+    },
+
+    "service2": {
+      "title": "Google Ads Management",
+      "price": "from $300 / month"
+    },
+
+    "service3": {
+      "title": "Website Redesign",
+      "price": "Custom pricing"
+    },
+
+    "service4": {
+      "title": "Technical SEO",
+      "price": "Custom pricing"
+    }
+  }
+}
