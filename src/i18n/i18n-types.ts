@@ -5,6 +5,7 @@ import home from './en/home.json';
 import about from './en/about.json';
 import service from './en/service.json';
 import price from './en/price.json';
+import contact from './en/contact.json';
 
 export type Resources = {
   common: typeof сommon;
@@ -14,4 +15,5 @@ export type Resources = {
   about: typeof about;
   service: typeof service;
   price: typeof price;
+  contact: typeof contact;
 };

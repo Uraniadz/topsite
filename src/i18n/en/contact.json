@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "badge": "LET'S TALK",
+    "title": "Growing Businesses Online",
+    "description": "From modern websites to Google Ads campaigns — we help businesses build a strong online presence, attract customers, and grow faster.",
+    "contactsButton": "View Contacts"
+  },
+
+  "quick": {
+    "project": {
+      "title": "Start a Project",
+      "description": "Tell us about your idea, business, or project and we’ll help you choose the best solution."
+    },
+
+    "contacts": {
+      "title": "Contact Us",
+      "description": "Reach out through messengers, email, or social media — we usually reply within a few hours.",
+      "button": "Open Contacts"
+    }
+  },
+
+  "contacts": {
+    "badge": "CONTACT CHANNELS",
+    "title": "Choose The Most Convenient Way To Contact Us",
+    "whatsapp": "Fast communication for quick questions, consultations, and project discussions.",
+    "telegram": "Convenient communication for ongoing collaboration, updates, and quick discussions.",
+    "messenger": "Reach us directly through Messenger for fast communication and project inquiries.",
+    "email": "Perfect for detailed project requests, business inquiries, and long-term cooperation.",
+    "buttons": {
+      "whatsapp": "Chat on WhatsApp",
+      "telegram": "Message on Telegram",
+      "messenger": "Open Messenger",
+      "email": "Send Email"
+    }
+  },
+
+  "social": {
+    "badge": "SOCIAL MEDIA",
+    "title": "Follow Codevix Studio"
+  },
+
+  "form": {
+    "badge": "CONTACT FORM",
+    "title": "Let’s Discuss Your Project",
+    "description": "Send us a message and we’ll help you find the right solution for your business.",
+
+    "list": {
+      "one": "Free consultation and project estimation",
+      "two": "Modern websites and Google Ads support",
+      "three": "Long-term cooperation and business growth"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "badge": "SKONTAKTUJ SIĘ Z NAMI",
+    "title": "Rozwijamy Biznes Online",
+    "description": "Od nowoczesnych stron internetowych po kampanie Google Ads — pomagamy firmom budować silną obecność online, zdobywać klientów i szybciej się rozwijać.",
+    "contactsButton": "Zobacz Kontakt"
+  },
+
+  "quick": {
+    "project": {
+      "title": "Rozpocznij Projekt",
+      "description": "Opowiedz nam o swoim pomyśle, firmie lub projekcie — pomożemy dobrać najlepsze rozwiązanie."
+    },
+
+    "contacts": {
+      "title": "Skontaktuj Się Z Nami",
+      "description": "Napisz do nas przez komunikatory, email lub media społecznościowe — zazwyczaj odpowiadamy w ciągu kilku godzin.",
+      "button": "Otwórz Kontakt"
+    }
+  },
+
+  "contacts": {
+    "badge": "KANAŁY KONTAKTU",
+    "title": "Wybierz Najwygodniejszy Sposób Kontaktu",
+    "whatsapp": "Szybki kontakt w sprawie konsultacji, pytań i omówienia projektu.",
+    "telegram": "Wygodna komunikacja do stałej współpracy, aktualizacji i szybkiego omawiania projektów.",
+    "messenger": "Napisz do nas przez Messenger w sprawie szybkiego kontaktu i omówienia projektu.",
+    "email": "Idealne rozwiązanie dla szczegółowych zapytań biznesowych i długoterminowej współpracy.",
+    "buttons": {
+      "whatsapp": "Napisz na WhatsApp",
+      "telegram": "Napisz na Telegram",
+      "messenger": "Otwórz Messenger",
+      "email": "Wyślij Email"
+    }
+  },
+
+  "social": {
+    "badge": "MEDIA SPOŁECZNOŚCIOWE",
+    "title": "Obserwuj Codevix Studio"
+  },
+
+  "form": {
+    "badge": "FORMULARZ KONTAKTOWY",
+    "title": "Porozmawiajmy O Twoim Projekcie",
+    "description": "Wyślij nam wiadomość — pomożemy znaleźć odpowiednie rozwiązanie dla Twojej firmy.",
+
+    "list": {
+      "one": "Darmowa konsultacja i wycena projektu",
+      "two": "Nowoczesne strony internetowe i wsparcie Google Ads",
+      "three": "Długoterminowa współpraca i rozwój biznesu"
+    }
+  }
+}
