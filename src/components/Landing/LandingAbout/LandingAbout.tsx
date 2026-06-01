@@ -7,35 +7,39 @@ import {
   Rocket,
 } from 'lucide-react';
 
+import { useTranslation } from 'react-i18next';
+
 import styles from './LandingAbout.module.css';
 
-const features = [
-  {
-    icon: <Megaphone size={24} />,
-    title: 'Google Ads',
-    description: 'Perfect destination for advertising campaigns.',
-  },
-
-  {
-    icon: <TrendingUp size={24} />,
-    title: 'Lead Generation',
-    description: 'Designed to turn visitors into potential clients.',
-  },
-
-  {
-    icon: <Smartphone size={24} />,
-    title: 'Mobile First',
-    description: 'Optimized for smartphones and tablets.',
-  },
-
-  {
-    icon: <Zap size={24} />,
-    title: 'Fast Loading',
-    description: 'Lightweight structure with excellent performance.',
-  },
-];
-
 const LandingAbout = () => {
+  const { t } = useTranslation('landing');
+
+  const features = [
+    {
+      icon: <Megaphone size={24} />,
+      title: t('about.features.googleAds.title'),
+      description: t('about.features.googleAds.description'),
+    },
+
+    {
+      icon: <TrendingUp size={24} />,
+      title: t('about.features.leadGeneration.title'),
+      description: t('about.features.leadGeneration.description'),
+    },
+
+    {
+      icon: <Smartphone size={24} />,
+      title: t('about.features.mobileFirst.title'),
+      description: t('about.features.mobileFirst.description'),
+    },
+
+    {
+      icon: <Zap size={24} />,
+      title: t('about.features.fastLoading.title'),
+      description: t('about.features.fastLoading.description'),
+    },
+  ];
+
   return (
     <section className={styles.about}>
       <div className="container">
@@ -43,38 +47,36 @@ const LandingAbout = () => {
           <div className={styles.about__content}>
             <span className={styles.about__badge}>
               <BadgeCheck size={16} />
-              About Landing Pages
+              {t('about.badge')}
             </span>
 
-            <h2 className={styles.about__title}>What Is a Landing Page?</h2>
+            <h2 className={styles.about__title}>{t('about.title')}</h2>
 
             <p className={styles.about__description}>
-              A landing page is a single-page website designed to guide visitors
-              toward one specific goal. Whether you want more inquiries,
-              bookings, leads, or sales, every section is strategically built to
-              encourage action.
+              {t('about.description1')}
             </p>
 
             <p className={styles.about__description}>
-              Unlike traditional multi-page websites, landing pages remove
-              distractions and focus attention on what matters most — converting
-              visitors into customers.
+              {t('about.description2')}
             </p>
 
             <div className={styles.about__stats}>
               <div className={styles.stat}>
                 <strong>5–8</strong>
-                <span>Strategic Sections</span>
+
+                <span>{t('about.stats.sections')}</span>
               </div>
 
               <div className={styles.stat}>
                 <strong>1</strong>
-                <span>Focused Goal</span>
+
+                <span>{t('about.stats.goal')}</span>
               </div>
 
               <div className={styles.stat}>
                 <strong>100%</strong>
-                <span>Mobile Responsive</span>
+
+                <span>{t('about.stats.responsive')}</span>
               </div>
             </div>
           </div>
@@ -83,12 +85,9 @@ const LandingAbout = () => {
             <div className={styles.visualCardLarge}>
               <Rocket size={28} />
 
-              <h3>Built for Conversions</h3>
+              <h3>{t('about.mainCard.title')}</h3>
 
-              <p>
-                Every section has a purpose and helps visitors move toward
-                contacting your business.
-              </p>
+              <p>{t('about.mainCard.description')}</p>
             </div>
 
             <div className={styles.visualGrid}>

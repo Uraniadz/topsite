@@ -23,5 +23,113 @@
     },
 
     "imageAlt": "Business owner working on a laptop"
+  },
+  "about": {
+    "badge": "About Landing Pages",
+
+    "title": "What Is a Landing Page?",
+
+    "description1": "A landing page is a single-page website designed to guide visitors toward one specific goal. Whether you want more inquiries, bookings, leads, or sales, every section is strategically built to encourage action.",
+
+    "description2": "Unlike traditional multi-page websites, landing pages remove distractions and focus attention on what matters most — converting visitors into customers.",
+
+    "stats": {
+      "sections": "Strategic Sections",
+      "goal": "Focused Goal",
+      "responsive": "Mobile Responsive"
+    },
+
+    "mainCard": {
+      "title": "Built for Conversions",
+      "description": "Every section has a purpose and helps visitors move toward contacting your business."
+    },
+
+    "features": {
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Perfect destination for advertising campaigns."
+      },
+
+      "leadGeneration": {
+        "title": "Lead Generation",
+        "description": "Designed to turn visitors into potential clients."
+      },
+
+      "mobileFirst": {
+        "title": "Mobile First",
+        "description": "Optimized for smartphones and tablets."
+      },
+
+      "fastLoading": {
+        "title": "Fast Loading",
+        "description": "Lightweight structure with excellent performance."
+      }
+    }
+  },
+  "benefits": {
+    "badge": "Why Choose a Landing Page",
+
+    "title": {
+      "line1": "Built to Generate More Leads,",
+      "line2": "Not Just Look Good"
+    },
+
+    "description": "A landing page is focused on one goal. Unlike traditional websites, it eliminates distractions and helps visitors take action faster.",
+
+    "items": {
+      "conversion": {
+        "title": "Focused Conversion",
+        "description": "Every section guides visitors toward a single action."
+      },
+
+      "mobile": {
+        "title": "Mobile First",
+        "description": "Designed primarily for mobile users and modern devices."
+      },
+
+      "speed": {
+        "title": "Fast Loading",
+        "description": "Lightweight architecture that improves user experience."
+      },
+
+      "seo": {
+        "title": "SEO Friendly",
+        "description": "Clean structure optimized for search engine visibility."
+      },
+
+      "multilang": {
+        "title": "Multi-language",
+        "description": "Support for multiple languages and international audiences."
+      },
+
+      "ads": {
+        "title": "Google Ads Ready",
+        "description": "Perfect landing destination for advertising campaigns."
+      }
+    }
+  },
+  "preview": {
+    "badge": "Interactive Preview",
+
+    "title": "Experience a Real Landing Page",
+
+    "description": "Explore how visitors navigate through a landing page and discover how each section guides them toward taking action.",
+
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
+    },
+
+    "sections": {
+      "about": "About Us",
+      "services": "Our Services",
+      "contact": "Ready to Start?"
+    },
+
+    "button": "Contact Us",
+
+    "domain": "yourbusiness.com"
   }
 }

@@ -58,6 +58,10 @@
       "ecommerce": {
         "title": "E-commerce",
         "description": "Sklepy internetowe z integracjami backendowymi i płatnościami."
+      },
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Skuteczne kampanie reklamowe nastawione na pozyskiwanie klientów, sprzedaż i rozwój firmy."
       }
     }
   },

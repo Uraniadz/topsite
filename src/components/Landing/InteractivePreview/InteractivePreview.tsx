@@ -1,7 +1,11 @@
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import styles from './InteractivePreview.module.css';
 
 const InteractivePreview = () => {
+  const { t } = useTranslation('landing');
+
   const homeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const servicesRef = useRef<HTMLDivElement>(null);
@@ -18,14 +22,11 @@ const InteractivePreview = () => {
     <section className={styles.preview}>
       <div className="container">
         <div className={styles.preview__top}>
-          <span>Interactive Preview</span>
+          <span>{t('preview.badge')}</span>
 
-          <h2>Experience a Real Landing Page</h2>
+          <h2>{t('preview.title')}</h2>
 
-          <p>
-            Explore how visitors navigate through a landing page and discover
-            how each section guides them toward taking action.
-          </p>
+          <p>{t('preview.description')}</p>
         </div>
 
         <div className={styles.browser}>
@@ -36,7 +37,7 @@ const InteractivePreview = () => {
               <span />
             </div>
 
-            <div className={styles.browser__url}>yourbusiness.com</div>
+            <div className={styles.browser__url}>{t('preview.domain')}</div>
           </div>
 
           <div className={styles.browser__content}>
@@ -44,16 +45,20 @@ const InteractivePreview = () => {
               <div className={styles.demoLogo}>LOGO</div>
 
               <nav>
-                <button onClick={() => scrollToSection(homeRef)}>Home</button>
+                <button onClick={() => scrollToSection(homeRef)}>
+                  {t('preview.navigation.home')}
+                </button>
 
-                <button onClick={() => scrollToSection(aboutRef)}>About</button>
+                <button onClick={() => scrollToSection(aboutRef)}>
+                  {t('preview.navigation.about')}
+                </button>
 
                 <button onClick={() => scrollToSection(servicesRef)}>
-                  Services
+                  {t('preview.navigation.services')}
                 </button>
 
                 <button onClick={() => scrollToSection(contactRef)}>
-                  Contact
+                  {t('preview.navigation.contact')}
                 </button>
               </nav>
             </div>
@@ -75,7 +80,7 @@ const InteractivePreview = () => {
 
               {/* ABOUT */}
               <section ref={aboutRef} className={styles.demoSection}>
-                <h3>About Us</h3>
+                <h3>{t('preview.sections.about')}</h3>
 
                 <div className={styles.aboutGrid}>
                   <div></div>
@@ -85,7 +90,7 @@ const InteractivePreview = () => {
 
               {/* SERVICES */}
               <section ref={servicesRef} className={styles.demoSection}>
-                <h3>Our Services</h3>
+                <h3>{t('preview.sections.services')}</h3>
 
                 <div className={styles.serviceGrid}>
                   <div></div>
@@ -97,14 +102,14 @@ const InteractivePreview = () => {
               {/* CONTACT */}
               <section ref={contactRef} className={styles.demoSection}>
                 <div className={styles.contactBlock}>
-                  <h3>Ready to Start?</h3>
+                  <h3>{t('preview.sections.contact')}</h3>
 
                   <div className={styles.contactForm}>
                     <div></div>
                     <div></div>
                     <div></div>
 
-                    <button>Contact Us</button>
+                    <button>{t('preview.button')}</button>
                   </div>
                 </div>
               </section>

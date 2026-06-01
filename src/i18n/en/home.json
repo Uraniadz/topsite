@@ -58,6 +58,10 @@
       "ecommerce": {
         "title": "E-commerce",
         "description": "Online stores with backend integrations and payments."
+      },
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Targeted advertising campaigns focused on leads, sales and business growth."
       }
     }
   },

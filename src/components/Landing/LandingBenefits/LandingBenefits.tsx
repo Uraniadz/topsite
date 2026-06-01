@@ -7,66 +7,68 @@ import {
   TrendingUp,
 } from 'lucide-react';
 
+import { useTranslation } from 'react-i18next';
+
 import styles from './LandingBenefits.module.css';
 
-const benefits = [
-  {
-    icon: <Target size={26} />,
-    title: 'Focused Conversion',
-    description: 'Every section guides visitors toward a single action.',
-  },
-
-  {
-    icon: <Smartphone size={26} />,
-    title: 'Mobile First',
-    description: 'Designed primarily for mobile users and modern devices.',
-  },
-
-  {
-    icon: <Gauge size={26} />,
-    title: 'Fast Loading',
-    description: 'Lightweight architecture that improves user experience.',
-  },
-
-  {
-    icon: <Search size={26} />,
-    title: 'SEO Friendly',
-    description: 'Clean structure optimized for search engine visibility.',
-  },
-
-  {
-    icon: <Languages size={26} />,
-    title: 'Multi-language',
-    description: 'Support for multiple languages and international audiences.',
-  },
-
-  {
-    icon: <TrendingUp size={26} />,
-    title: 'Google Ads Ready',
-    description: 'Perfect landing destination for advertising campaigns.',
-  },
-];
-
 const LandingBenefits = () => {
+  const { t } = useTranslation('landing');
+
+  const benefits = [
+    {
+      icon: <Target size={26} />,
+      title: t('benefits.items.conversion.title'),
+      description: t('benefits.items.conversion.description'),
+    },
+
+    {
+      icon: <Smartphone size={26} />,
+      title: t('benefits.items.mobile.title'),
+      description: t('benefits.items.mobile.description'),
+    },
+
+    {
+      icon: <Gauge size={26} />,
+      title: t('benefits.items.speed.title'),
+      description: t('benefits.items.speed.description'),
+    },
+
+    {
+      icon: <Search size={26} />,
+      title: t('benefits.items.seo.title'),
+      description: t('benefits.items.seo.description'),
+    },
+
+    {
+      icon: <Languages size={26} />,
+      title: t('benefits.items.multilang.title'),
+      description: t('benefits.items.multilang.description'),
+    },
+
+    {
+      icon: <TrendingUp size={26} />,
+      title: t('benefits.items.ads.title'),
+      description: t('benefits.items.ads.description'),
+    },
+  ];
+
   return (
     <section className={styles.benefits}>
       <div className="container">
         <div className={styles.benefits__wrapper}>
           <div className={styles.benefits__content}>
             <span className={styles.benefits__badge}>
-              Why Choose a Landing Page
+              {t('benefits.badge')}
             </span>
 
             <h2 className={styles.benefits__title}>
-              Built to Generate More Leads,
+              {t('benefits.title.line1')}
               <br />
-              Not Just Look Good
+              {t('benefits.title.line2')}
             </h2>
 
             <p className={styles.benefits__description}>
-              A landing page is focused on one goal. Unlike traditional
-              websites, it eliminates distractions and helps visitors take
-              action faster.
+              {t('benefits.description')}
             </p>
           </div>
 

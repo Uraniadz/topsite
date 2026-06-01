@@ -2,6 +2,7 @@
 import landing from '@/assets/images/services/landing.png';
 import business from '@/assets/images/services/business.png';
 import ecommerce from '@/assets/images/services/ecommerce.png';
+import googleAds from '@/assets/images/services/google-ads.png';
 import routesPath from '@/routes/routesPath';
 
 export interface Service {
@@ -48,8 +49,18 @@ export const servicesData: Service[] = [
 
     link: routesPath.ecommerce,
   },
-];
+  {
+    id: 'google-ads',
 
+    titleKey: 'services.items.googleAds.title',
+
+    descriptionKey: 'services.items.googleAds.description',
+
+    image: googleAds,
+
+    link: routesPath.ads,
+  },
+];
 export interface WebServiceItem {
   id: string;
   i18nKey: string;

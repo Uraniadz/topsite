@@ -23,5 +23,113 @@
     },
 
     "imageAlt": "Właściciel firmy pracujący przy laptopie"
+  },
+  "about": {
+    "badge": "O Landing Page",
+
+    "title": "Czym Jest Landing Page?",
+
+    "description1": "Landing page to jednostronicowa witryna zaprojektowana tak, aby prowadzić odwiedzających do jednego konkretnego celu. Niezależnie od tego, czy zależy Ci na zapytaniach, rezerwacjach, leadach czy sprzedaży, każda sekcja jest tworzona z myślą o zwiększeniu konwersji.",
+
+    "description2": "W przeciwieństwie do tradycyjnych stron wielostronicowych, landing page eliminuje rozpraszacze i skupia uwagę użytkownika na tym, co najważniejsze — pozyskiwaniu klientów.",
+
+    "stats": {
+      "sections": "Strategicznych Sekcji",
+      "goal": "Główny Cel",
+      "responsive": "Responsywność"
+    },
+
+    "mainCard": {
+      "title": "Stworzone dla Konwersji",
+      "description": "Każda sekcja ma określony cel i pomaga użytkownikowi przejść do kontaktu z Twoją firmą."
+    },
+
+    "features": {
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Idealne rozwiązanie dla kampanii reklamowych."
+      },
+
+      "leadGeneration": {
+        "title": "Pozyskiwanie Leadów",
+        "description": "Zaprojektowane, aby zamieniać odwiedzających w potencjalnych klientów."
+      },
+
+      "mobileFirst": {
+        "title": "Mobile First",
+        "description": "Zoptymalizowane pod smartfony i tablety."
+      },
+
+      "fastLoading": {
+        "title": "Szybkie Ładowanie",
+        "description": "Lekka struktura i wysoka wydajność działania."
+      }
+    }
+  },
+  "benefits": {
+    "badge": "Dlaczego Landing Page",
+
+    "title": {
+      "line1": "Stworzony do Pozyskiwania Leadów,",
+      "line2": "A Nie Tylko Dobrego Wyglądu"
+    },
+
+    "description": "Landing page skupia się na jednym celu. W przeciwieństwie do tradycyjnych stron internetowych eliminuje rozpraszacze i pomaga użytkownikom szybciej podjąć działanie.",
+
+    "items": {
+      "conversion": {
+        "title": "Konwersja na Pierwszym Miejscu",
+        "description": "Każda sekcja prowadzi użytkownika do konkretnego działania."
+      },
+
+      "mobile": {
+        "title": "Mobile First",
+        "description": "Projektowany przede wszystkim z myślą o smartfonach i nowoczesnych urządzeniach."
+      },
+
+      "speed": {
+        "title": "Szybkie Ładowanie",
+        "description": "Lekka architektura poprawiająca doświadczenie użytkownika."
+      },
+
+      "seo": {
+        "title": "Przyjazny SEO",
+        "description": "Czysta struktura zoptymalizowana pod wyszukiwarki internetowe."
+      },
+
+      "multilang": {
+        "title": "Wielojęzyczność",
+        "description": "Obsługa wielu języków dla międzynarodowych odbiorców."
+      },
+
+      "ads": {
+        "title": "Gotowy pod Google Ads",
+        "description": "Idealne miejsce docelowe dla kampanii reklamowych."
+      }
+    }
+  },
+  "preview": {
+    "badge": "Interaktywny Podgląd",
+
+    "title": "Poznaj Prawdziwy Landing Page",
+
+    "description": "Zobacz, jak użytkownicy poruszają się po landing page i jak każda sekcja prowadzi ich do wykonania określonego działania.",
+
+    "navigation": {
+      "home": "Start",
+      "about": "O Nas",
+      "services": "Usługi",
+      "contact": "Kontakt"
+    },
+
+    "sections": {
+      "about": "O Nas",
+      "services": "Nasze Usługi",
+      "contact": "Gotowy, Aby Zacząć?"
+    },
+
+    "button": "Skontaktuj Się",
+
+    "domain": "yourbusiness.com"
   }
 }
