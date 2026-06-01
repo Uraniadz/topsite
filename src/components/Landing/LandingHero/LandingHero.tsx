@@ -1,110 +1,76 @@
-import { ArrowRight, MousePointer2, Sparkles } from 'lucide-react';
+import {
+  ArrowRight,
+  CheckCircle2,
+  MousePointer2,
+  Sparkles,
+} from 'lucide-react';
+
 import styles from './LandingHero.module.css';
+import landingFoto from '@/assets/images/landingPage/landing-foto.png';
 
 const LandingHero = () => {
   return (
     <section className={styles.hero}>
+      <div className={styles.hero__image}>
+        <img src={landingFoto} alt="Business owner working on a laptop" />
+      </div>
+
+      <div className={styles.hero__overlay}></div>
+
       <div className="container">
-        <div className={styles.hero__wrapper}>
-          {/* LEFT */}
-          <div className={styles.hero__content}>
-            <div className={styles.hero__badge}>
-              <Sparkles size={16} />
-              Modern Landing Pages
+        <div className={styles.hero__content}>
+          <div className={styles.hero__mobileImage}>
+            <img src={landingFoto} alt="Business owner working on a laptop" />
+          </div>
+          <div className={styles.hero__badge}>
+            <Sparkles size={16} />
+            Modern Landing Pages
+          </div>
+
+          <h1 className={styles.hero__title}>
+            Landing Pages <br />
+            <span>That Convert</span>
+            <br />
+            Visitors Into Clients
+          </h1>
+
+          <p className={styles.hero__description}>
+            Modern, fast and conversion-focused landing pages designed for
+            businesses, services and Google Ads campaigns.
+          </p>
+
+          <div className={styles.hero__features}>
+            <div className={styles.hero__feature}>
+              <CheckCircle2 size={18} />
+              <span>Single indexed page</span>
             </div>
 
-            <h1 className={styles.hero__title}>
-              Landing Pages
-              <span> That Convert</span>
-              <br />
-              Visitors Into Clients
-            </h1>
-
-            <p className={styles.hero__description}>
-              Modern, fast and conversion-focused landing pages designed for
-              businesses, services and Google Ads campaigns.
-            </p>
-
-            <div className={styles.hero__features}>
-              <div>• Single indexed page</div>
-              <div>• 5–8 strategic sections</div>
-              <div>• Mobile-first design</div>
-              <div>• Google Ads ready</div>
+            <div className={styles.hero__feature}>
+              <CheckCircle2 size={18} />
+              <span>5–8 strategic sections</span>
             </div>
 
-            <div className={styles.hero__actions}>
-              <button className={styles.hero__primaryBtn}>
-                Free Consultation
-                <ArrowRight size={18} />
-              </button>
+            <div className={styles.hero__feature}>
+              <CheckCircle2 size={18} />
+              <span>Mobile-first design</span>
+            </div>
 
-              <button className={styles.hero__secondaryBtn}>
-                <MousePointer2 size={18} />
-                View Demo
-              </button>
+            <div className={styles.hero__feature}>
+              <CheckCircle2 size={18} />
+              <span>Google Ads ready</span>
             </div>
           </div>
 
-          {/* RIGHT */}
-          <div className={styles.hero__previewWrapper}>
-            <div className={styles.hero__glow}></div>
+          <div className={styles.hero__actions}>
+            <button className={styles.hero__primaryBtn}>
+              Free Consultation
+              <ArrowRight size={18} />
+            </button>
 
-            <div className={styles.preview}>
-              {/* Browser */}
-              <div className={styles.preview__top}>
-                <div className={styles.preview__dots}>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-
-                <div className={styles.preview__url}>codevixstudio.com</div>
-              </div>
-
-              {/* Content */}
-              <div className={styles.preview__content}>
-                <div className={styles.preview__navbar}>
-                  <span>Logo</span>
-
-                  <div className={styles.preview__navLinks}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </div>
-
-                <div className={styles.preview__hero}>
-                  <div className={styles.preview__heroText}></div>
-                  <div className={styles.preview__heroTextSmall}></div>
-
-                  <div className={styles.preview__buttons}>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-
-                <div className={styles.preview__section}>
-                  <div className={styles.preview__sectionTitle}></div>
-
-                  <div className={styles.preview__cards}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </div>
-
-                <div className={styles.preview__section}>
-                  <div className={styles.preview__sectionTitle}></div>
-
-                  <div className={styles.preview__reviews}>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </div>
-
-                <div className={styles.preview__contact}></div>
-              </div>
-            </div>
+            <button className={styles.hero__secondaryBtn}>
+              <MousePointer2 size={18} />
+              View Demo
+            </button>
           </div>
         </div>
       </div>
