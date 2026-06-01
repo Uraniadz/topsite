@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "badge": "Modern Landing Pages",
+
+    "title": {
+      "line1": "Landing Pages",
+      "line2": "That Convert",
+      "line3": "Visitors Into Clients"
+    },
+
+    "description": "Modern, fast and conversion-focused landing pages designed for businesses, services and Google Ads campaigns.",
+
+    "features": {
+      "feature1": "Single indexed page",
+      "feature2": "5–8 strategic sections",
+      "feature3": "Mobile-first design",
+      "feature4": "Google Ads ready"
+    },
+
+    "buttons": {
+      "consultation": "Free Consultation",
+      "demo": "View Demo"
+    },
+
+    "imageAlt": "Business owner working on a laptop"
+  }
+}

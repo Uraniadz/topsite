@@ -6,6 +6,7 @@ import about from './en/about.json';
 import service from './en/service.json';
 import price from './en/price.json';
 import contact from './en/contact.json';
+import landing from './en/landing.json';
 
 export type Resources = {
   common: typeof сommon;
@@ -16,4 +17,5 @@ export type Resources = {
   service: typeof service;
   price: typeof price;
   contact: typeof contact;
+  landing: typeof landing;
 };

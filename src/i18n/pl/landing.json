@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "badge": "Nowoczesne Landing Page",
+
+    "title": {
+      "line1": "Landing Page",
+      "line2": "Które Zamieniają",
+      "line3": "Odwiedzających w Klientów"
+    },
+
+    "description": "Nowoczesne, szybkie i nastawione na konwersję landing page dla firm, usług oraz kampanii Google Ads.",
+
+    "features": {
+      "feature1": "Jedna indeksowana strona",
+      "feature2": "5–8 strategicznych sekcji",
+      "feature3": "Mobile-first design",
+      "feature4": "Gotowe pod Google Ads"
+    },
+
+    "buttons": {
+      "consultation": "Bezpłatna konsultacja",
+      "demo": "Zobacz przykład"
+    },
+
+    "imageAlt": "Właściciel firmy pracujący przy laptopie"
+  }
+}

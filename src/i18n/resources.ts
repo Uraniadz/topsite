@@ -7,6 +7,7 @@ import enAbout from './en/about.json';
 import enService from './en/service.json';
 import enPrice from './en/price.json';
 import enContact from './en/contact.json';
+import enLanding from './en/landing.json';
 // Ukraine
 import uaCommon from './uk/common.json';
 import uaCookies from './uk/cookies.json';
@@ -16,6 +17,7 @@ import uaAbout from './uk/about.json';
 import uaService from './uk/service.json';
 import uaPrice from './uk/price.json';
 import uaContact from './uk/contact.json';
+import uaLanding from './uk/landing.json';
 // Polish
 import plCommon from './pl/common.json';
 import plCookies from './pl/cookies.json';
@@ -25,6 +27,7 @@ import plAbout from './pl/about.json';
 import plService from './pl/service.json';
 import plPrice from './pl/price.json';
 import plContact from './pl/contact.json';
+import plLanding from './pl/landing.json';
 
 export const resources = {
   en: {
@@ -36,6 +39,7 @@ export const resources = {
     service: enService,
     price: enPrice,
     contact: enContact,
+    landing: enLanding,
   },
   uk: {
     common: uaCommon,
@@ -46,6 +50,7 @@ export const resources = {
     service: uaService,
     price: uaPrice,
     contact: uaContact,
+    landing: uaLanding,
   },
   pl: {
     common: plCommon,
@@ -56,5 +61,6 @@ export const resources = {
     service: plService,
     price: plPrice,
     contact: plContact,
+    landing: plLanding,
   },
 };
