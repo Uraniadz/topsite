@@ -10,6 +10,7 @@ import PricePage from '@/pages/PricePage/PricePage';
 import RootRedirect from './RootRedirect';
 import CookiesPolicyPage from '@/pages/CookiesPolicy/CookiesPolicy';
 import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage/PrivacyPolicyPage';
+import LandingPage from '@/pages/LandingPage/LandingPage';
 
 function AppRouter() {
   return (
@@ -24,6 +25,7 @@ function AppRouter() {
           <Route path={routesPath.price} element={<PricePage />} />
           <Route path={routesPath.cookies} element={<CookiesPolicyPage />} />
           <Route path={routesPath.privacy} element={<PrivacyPolicyPage />} />
+          <Route path={routesPath.landing} element={<LandingPage />} />
           <Route path="*" element={<NotFoundPage404 />} />
         </Route>
       </Routes>

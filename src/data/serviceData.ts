@@ -2,6 +2,7 @@
 import landing from '@/assets/images/services/landing.png';
 import business from '@/assets/images/services/business.png';
 import ecommerce from '@/assets/images/services/ecommerce.png';
+import routesPath from '@/routes/routesPath';
 
 export interface Service {
   id: string;
@@ -21,7 +22,7 @@ export const servicesData: Service[] = [
 
     image: landing,
 
-    link: '/services/landing-page',
+    link: routesPath.landing,
   },
 
   {
@@ -33,7 +34,7 @@ export const servicesData: Service[] = [
 
     image: business,
 
-    link: '/services/business-website',
+    link: routesPath.business,
   },
 
   {
@@ -45,7 +46,7 @@ export const servicesData: Service[] = [
 
     image: ecommerce,
 
-    link: '/services/ecommerce',
+    link: routesPath.ecommerce,
   },
 ];
 
