@@ -108,29 +108,38 @@
       }
     }
   },
-  "preview": {
-    "badge": "Interactive Preview",
+  "examples": {
+    "badge": "Landing Page Examples",
 
-    "title": "Experience a Real Landing Page",
-
-    "description": "Explore how visitors navigate through a landing page and discover how each section guides them toward taking action.",
-
-    "navigation": {
-      "home": "Home",
-      "about": "About",
-      "services": "Services",
-      "contact": "Contact"
+    "title": {
+      "line1": "Real Examples",
+      "line2": "Across Different Industries"
     },
 
-    "sections": {
-      "about": "About Us",
-      "services": "Our Services",
-      "contact": "Ready to Start?"
+    "description": "Explore how landing pages can look for different businesses and services. Each design is focused on conversions and lead generation.",
+
+    "features": {
+      "conversion": "Conversion Focused",
+      "responsive": "Mobile Responsive",
+      "fast": "Fast Loading"
     },
 
-    "button": "Contact Us",
+    "items": {
+      "firstAid": {
+        "title": "First Aid Course",
+        "description": "Landing page designed for first aid training and educational programs."
+      },
 
-    "domain": "yourbusiness.com"
+      "hair": {
+        "title": "Hair Stylist",
+        "description": "Personal brand landing page focused on appointments and services."
+      },
+
+      "tile": {
+        "title": "Tile Installation",
+        "description": "Service-based landing page designed to generate local inquiries."
+      }
+    }
   },
   "pricing": {
     "launchTime": "Launch in 7–14 days",

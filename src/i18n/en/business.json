@@ -111,5 +111,30 @@
         "description": "Built to support advertising campaigns and maximize lead generation."
       }
     }
+  },
+  "examples": {
+    "badge": "Business Website Example",
+
+    "title": {
+      "line1": "Explore A Real",
+      "line2": "Multi-Page Website"
+    },
+
+    "description": "See how a professional business website is structured. Each page serves a unique purpose and helps build trust, improve SEO, and generate inquiries.",
+
+    "features": {
+      "seo": "SEO Friendly",
+      "ads": "Google Ads Ready",
+      "growth": "Built For Growth"
+    },
+
+    "pages": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "reviews": "Reviews",
+      "blog": "Blog",
+      "contact": "Contact"
+    }
   }
 }

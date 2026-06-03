@@ -1,5 +1,6 @@
 import BusinessAbout from '@/components/business/BusinessAbout/BusinessAbout';
 import BusinessBenefits from '@/components/business/BusinessBenefits/BusinessBenefits';
+import BusinessExamples from '@/components/business/BusinessExample/BusinessExample';
 import BusinessHero from '@/components/business/BusinessHero/BusinessHero';
 
 const BusinessPage = () => {
@@ -8,6 +9,7 @@ const BusinessPage = () => {
       <BusinessHero />
       <BusinessAbout />
       <BusinessBenefits />
+      <BusinessExamples />
     </>
   );
 };

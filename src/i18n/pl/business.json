@@ -112,5 +112,30 @@
         "description": "Przygotowana do kampanii reklamowych i pozyskiwania klientów."
       }
     }
+  },
+  "examples": {
+    "badge": "Przykład Strony Firmowej",
+
+    "title": {
+      "line1": "Zobacz Prawdziwą",
+      "line2": "Wielostronicową Witrynę"
+    },
+
+    "description": "Każda podstrona ma określony cel: buduje zaufanie, wspiera SEO i pomaga pozyskiwać nowych klientów.",
+
+    "features": {
+      "seo": "Przyjazna SEO",
+      "ads": "Google Ads Ready",
+      "growth": "Dla Rozwoju Firmy"
+    },
+
+    "pages": {
+      "home": "Home",
+      "about": "O Nas",
+      "services": "Usługi",
+      "reviews": "Opinie",
+      "blog": "Blog",
+      "contact": "Kontakt"
+    }
   }
 }

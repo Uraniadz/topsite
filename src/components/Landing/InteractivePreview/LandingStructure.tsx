@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   ArrowLeft,
   ArrowRight,
@@ -15,36 +16,29 @@ import firstAid from '@/assets/images/landingPage/landing-example1.png';
 import hairSalon from '@/assets/images/landingPage/landing-example2.png';
 import tileExpert from '@/assets/images/landingPage/landing-example3.png';
 
-const examples = [
-  {
-    title: 'First Aid Course',
-
-    description:
-      'Landing page designed for first aid training and educational programs.',
-
-    image: firstAid,
-  },
-
-  {
-    title: 'Hair Stylist',
-
-    description:
-      'Personal brand landing page focused on appointments and services.',
-
-    image: hairSalon,
-  },
-
-  {
-    title: 'Tile Installation',
-
-    description:
-      'Service-based landing page designed to generate local inquiries.',
-
-    image: tileExpert,
-  },
-];
-
 const LandingExamples = () => {
+  const { t } = useTranslation('landing');
+
+  const examples = [
+    {
+      title: t('examples.items.firstAid.title'),
+      description: t('examples.items.firstAid.description'),
+      image: firstAid,
+    },
+
+    {
+      title: t('examples.items.hair.title'),
+      description: t('examples.items.hair.description'),
+      image: hairSalon,
+    },
+
+    {
+      title: t('examples.items.tile.title'),
+      description: t('examples.items.tile.description'),
+      image: tileExpert,
+    },
+  ];
+
   const [current, setCurrent] = useState(0);
 
   const [isOpen, setIsOpen] = useState(false);
@@ -63,35 +57,33 @@ const LandingExamples = () => {
         <div className={styles.examples__wrapper}>
           <div className={styles.examples__content}>
             <span className={styles.examples__badge}>
-              Landing Page Examples
+              {t('examples.badge')}
             </span>
 
             <h2 className={styles.examples__title}>
-              Real Examples
+              {t('examples.title.line1')}
               <br />
-              Across Different Industries
+              {t('examples.title.line2')}
             </h2>
 
             <p className={styles.examples__description}>
-              Explore how landing pages can look for different businesses and
-              services. Each design is focused on conversions and lead
-              generation.
+              {t('examples.description')}
             </p>
 
             <div className={styles.examples__features}>
               <div>
                 <Target size={18} />
-                Conversion Focused
+                {t('examples.features.conversion')}
               </div>
 
               <div>
                 <MonitorSmartphone size={18} />
-                Mobile Responsive
+                {t('examples.features.responsive')}
               </div>
 
               <div>
                 <Zap size={18} />
-                Fast Loading
+                {t('examples.features.fast')}
               </div>
             </div>
 

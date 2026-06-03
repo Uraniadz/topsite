@@ -108,29 +108,38 @@
       }
     }
   },
-  "preview": {
-    "badge": "Interaktywny Podgląd",
+  "examples": {
+    "badge": "Przykłady Landing Page",
 
-    "title": "Poznaj Prawdziwy Landing Page",
-
-    "description": "Zobacz, jak użytkownicy poruszają się po landing page i jak każda sekcja prowadzi ich do wykonania określonego działania.",
-
-    "navigation": {
-      "home": "Start",
-      "about": "O Nas",
-      "services": "Usługi",
-      "contact": "Kontakt"
+    "title": {
+      "line1": "Realne Przykłady",
+      "line2": "Dla Różnych Branż"
     },
 
-    "sections": {
-      "about": "O Nas",
-      "services": "Nasze Usługi",
-      "contact": "Gotowy, Aby Zacząć?"
+    "description": "Zobacz, jak mogą wyglądać landing page dla różnych firm i usług. Każdy projekt został stworzony z myślą o konwersjach i pozyskiwaniu klientów.",
+
+    "features": {
+      "conversion": "Skoncentrowane na Konwersji",
+      "responsive": "Responsywne",
+      "fast": "Szybkie Ładowanie"
     },
 
-    "button": "Skontaktuj Się",
+    "items": {
+      "firstAid": {
+        "title": "Kurs Pierwszej Pomocy",
+        "description": "Landing page dla szkoleń i kursów z zakresu pierwszej pomocy."
+      },
 
-    "domain": "yourbusiness.com"
+      "hair": {
+        "title": "Stylistka Fryzur",
+        "description": "Strona osobista skupiona na rezerwacjach wizyt i prezentacji usług."
+      },
+
+      "tile": {
+        "title": "Układanie Płytek",
+        "description": "Landing page dla usług glazurniczych i pozyskiwania nowych klientów."
+      }
+    }
   },
   "pricing": {
     "launchTime": "Uruchomienie w 7–14 dni",
