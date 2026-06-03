@@ -23,5 +23,94 @@
     },
 
     "imageAlt": "Struktura profesjonalnej strony firmowej"
+  },
+  "about": {
+    "badge": "O Stronach Firmowych",
+
+    "title": "Czym Jest Strona Firmowa?",
+
+    "description1": "Strona firmowa to rozbudowana witryna internetowa zaprojektowana do prezentacji firmy, usług, doświadczenia i osiągnięć. Pomaga potencjalnym klientom lepiej poznać Twoją markę i zbudować zaufanie jeszcze przed pierwszym kontaktem.",
+
+    "description2": "W przeciwieństwie do landing page, strona firmowa może rozwijać się wraz z biznesem, wspierać SEO, zawierać blog, portfolio, podstrony usług oraz stanowić solidną podstawę dla kampanii Google Ads.",
+
+    "stats": {
+      "pages": "Indywidualne Podstrony",
+      "services": "Podstrony Usług",
+      "seo": "Potencjał SEO",
+      "ads": "Gotowa Na Reklamę"
+    },
+
+    "mainCard": {
+      "title": "Cyfrowe Centrum Twojej Firmy",
+      "description": "Profesjonalna strona internetowa, która buduje zaufanie, wspiera SEO i doskonale współpracuje z Google Ads."
+    },
+
+    "features": {
+      "seo": {
+        "title": "Przyjazna SEO",
+        "description": "Więcej podstron oznacza więcej możliwości na wysokie pozycje w Google."
+      },
+
+      "portfolio": {
+        "title": "Portfolio I Realizacje",
+        "description": "Prezentuj swoje projekty, osiągnięcia i historie sukcesu klientów."
+      },
+      "googleAds": {
+        "title": "Gotowy Na Google Ads",
+        "description": "Przygotowany do kampanii reklamowych i skutecznego pozyskiwania klientów."
+      },
+
+      "blog": {
+        "title": "Gotowa Na Blog",
+        "description": "Publikuj wartościowe treści i zdobywaj ruch organiczny."
+      },
+
+      "scalable": {
+        "title": "Skalowalna Struktura",
+        "description": "Łatwo dodawaj nowe podstrony i funkcje wraz z rozwojem firmy."
+      }
+    }
+  },
+  "benefits": {
+    "badge": "Zalety Strony Firmowej",
+
+    "title": {
+      "line1": "Stworzona Dla Rozwoju Firmy,",
+      "line2": "A Nie Tylko Obecności Online"
+    },
+
+    "description": "Strona firmowa pomaga budować zaufanie, pozyskiwać klientów z Google, prezentować usługi oraz rozwijać obecność firmy w internecie wraz ze wzrostem biznesu.",
+
+    "items": {
+      "seo": {
+        "title": "Przyjazna SEO",
+        "description": "Oddzielne podstrony tworzą więcej możliwości osiągania wysokich pozycji w Google."
+      },
+
+      "credibility": {
+        "title": "Profesjonalny Wizerunek",
+        "description": "Profesjonalna strona buduje zaufanie do marki i firmy."
+      },
+
+      "portfolio": {
+        "title": "Portfolio I Realizacje",
+        "description": "Prezentuj swoje projekty, osiągnięcia i udane realizacje."
+      },
+
+      "blog": {
+        "title": "Blog I Content Marketing",
+        "description": "Publikuj wartościowe treści i zdobywaj ruch organiczny."
+      },
+
+      "multilang": {
+        "title": "Wielojęzyczność",
+        "description": "Docieraj do klientów z różnych krajów dzięki wielu wersjom językowym."
+      },
+
+      "ads": {
+        "title": "Google Ads Ready",
+        "description": "Przygotowana do kampanii reklamowych i pozyskiwania klientów."
+      }
+    }
   }
 }

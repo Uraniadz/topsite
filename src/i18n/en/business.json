@@ -23,5 +23,93 @@
     },
 
     "imageAlt": "Professional business website structure"
+  },
+  "about": {
+    "badge": "About Business Websites",
+
+    "title": "What Is a Business Website?",
+
+    "description1": "A business website is a multi-page online presence designed to showcase your company, services, expertise, and achievements. It helps potential customers learn more about your business and build trust before making contact.",
+
+    "description2": "Unlike a landing page, a business website can grow with your company, support SEO, include a blog, portfolio, service pages, and provide a solid foundation for Google Ads campaigns.",
+
+    "stats": {
+      "pages": "Custom Pages",
+      "services": "Service Pages",
+      "seo": "SEO Potential",
+      "ads": "Advertising Ready"
+    },
+
+    "mainCard": {
+      "title": "Your Digital Business Hub",
+      "description": "A professional website that builds trust, supports SEO, and works seamlessly with Google Ads campaigns."
+    },
+
+    "features": {
+      "seo": {
+        "title": "SEO Friendly",
+        "description": "Multiple pages create more opportunities to rank in Google."
+      },
+
+      "portfolio": {
+        "title": "Portfolio & Case Studies",
+        "description": "Show your work, achievements, and client success stories."
+      },
+      "googleAds": {
+        "title": "Google Ads Ready",
+        "description": "Built to support advertising campaigns and maximize lead generation."
+      },
+      "blog": {
+        "title": "Blog Ready",
+        "description": "Publish useful content and attract organic traffic."
+      },
+
+      "scalable": {
+        "title": "Scalable Structure",
+        "description": "Easily add new pages and features as your business grows."
+      }
+    }
+  },
+  "benefits": {
+    "badge": "Why Choose a Business Website",
+
+    "title": {
+      "line1": "Built For Business Growth,",
+      "line2": "Not Just Online Presence"
+    },
+
+    "description": "A business website helps build trust, attract customers through Google, showcase your services, and grow your online presence as your company expands.",
+
+    "items": {
+      "seo": {
+        "title": "SEO Friendly",
+        "description": "Separate pages create more opportunities to rank higher in Google search results."
+      },
+
+      "credibility": {
+        "title": "Professional Credibility",
+        "description": "Build trust with a professional online presence that represents your brand."
+      },
+
+      "portfolio": {
+        "title": "Portfolio & Case Studies",
+        "description": "Show your work, achievements, and successful projects to potential clients."
+      },
+
+      "blog": {
+        "title": "Blog & Content Marketing",
+        "description": "Publish valuable content and attract long-term organic traffic."
+      },
+
+      "multilang": {
+        "title": "Multi-Language Support",
+        "description": "Reach customers in different countries with multiple language versions."
+      },
+
+      "ads": {
+        "title": "Google Ads Ready",
+        "description": "Built to support advertising campaigns and maximize lead generation."
+      }
+    }
   }
 }
