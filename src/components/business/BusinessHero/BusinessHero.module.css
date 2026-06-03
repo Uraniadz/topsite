@@ -1,0 +1,281 @@
+.hero {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 100vh;
+
+  overflow: hidden;
+}
+
+.hero__image {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+.hero__mobileImage {
+  display: none;
+}
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.97) 0%,
+    rgba(255, 255, 255, 0.94) 25%,
+    rgba(255, 255, 255, 0.78) 50%,
+    rgba(255, 255, 255, 0.28) 75%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 760px;
+
+  padding: 140px 0;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 28px;
+  padding: 12px 18px;
+
+  border: 1px solid rgba(99, 102, 241, 0.12);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  backdrop-filter: blur(16px);
+
+  color: #4f46e5;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero__title {
+  margin-bottom: 24px;
+
+  color: #0f172a;
+
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
+
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.hero__title span {
+  color: #6366f1;
+}
+
+.hero__description {
+  max-width: 620px;
+
+  margin-bottom: 40px;
+
+  color: #475569;
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.hero__features {
+  display: grid;
+
+  grid-template-columns: repeat(2, max-content);
+
+  gap: 14px 18px;
+
+  margin-bottom: 42px;
+}
+
+.hero__feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 16px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.82);
+
+  backdrop-filter: blur(12px);
+
+  color: #334155;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.hero__feature svg {
+  color: #22c55e;
+  flex-shrink: 0;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hero__primaryBtn,
+.hero__secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 18px 28px;
+
+  border-radius: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.hero__primaryBtn {
+  border: none;
+
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+
+  color: white;
+
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.25);
+}
+
+.hero__primaryBtn:hover {
+  transform: translateY(-3px);
+}
+
+.hero__secondaryBtn {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+
+  background: rgba(255, 255, 255, 0.82);
+
+  backdrop-filter: blur(12px);
+
+  color: #0f172a;
+}
+
+.hero__secondaryBtn:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+  .hero__overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.82) 50%,
+      rgba(255, 255, 255, 0.55) 100%
+    );
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+
+    padding-top: 60px;
+  }
+
+  .hero__image,
+  .hero__overlay {
+    display: none;
+  }
+
+  .hero__mobileImage {
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 32px;
+    overflow: hidden;
+  }
+
+  .hero__mobileImage img {
+    display: block;
+
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 20px;
+  }
+
+  .hero__content {
+    max-width: 100%;
+
+    padding: 0 0 50px;
+  }
+
+  .hero__title {
+    font-size: 2.6rem;
+  }
+
+  .hero__description {
+    font-size: 16px;
+  }
+
+  .hero__features {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+  }
+
+  .hero__primaryBtn,
+  .hero__secondaryBtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 40px;
+  }
+  .hero__mobileImage img {
+    height: 220px;
+    margin-bottom: 12px;
+  }
+
+  .hero__badge {
+    font-size: 13px;
+  }
+
+  .hero__title {
+    font-size: 2.2rem;
+  }
+
+  .hero__feature {
+    font-size: 14px;
+  }
+}

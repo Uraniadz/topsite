@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "badge": "Profesjonalne Strony Firmowe",
+
+    "title": {
+      "line1": "Strony Internetowe",
+      "line2": "Dla Rozwoju",
+      "line3": "I Długoterminowego Sukcesu"
+    },
+
+    "description": "Profesjonalne strony internetowe dla firm, które budują zaufanie, zwiększają widoczność w Google i pomagają pozyskiwać nowych klientów.",
+
+    "features": {
+      "feature1": "5–20+ indywidualnych podstron",
+      "feature2": "Struktura przyjazna SEO",
+      "feature3": "Portfolio i realizacje",
+      "feature4": "Gotowe na blog i treści"
+    },
+
+    "buttons": {
+      "consultation": "Bezpłatna konsultacja",
+      "demo": "Zobacz demo"
+    },
+
+    "imageAlt": "Struktura profesjonalnej strony firmowej"
+  }
+}

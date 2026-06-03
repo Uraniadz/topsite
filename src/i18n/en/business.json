@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "badge": "Professional Business Websites",
+
+    "title": {
+      "line1": "Business Websites",
+      "line2": "Built For Growth",
+      "line3": "And Long-Term Success"
+    },
+
+    "description": "Professional multi-page websites designed to showcase your business, build trust, improve visibility in Google, and generate more enquiries.",
+
+    "features": {
+      "feature1": "5–20+ custom pages",
+      "feature2": "SEO-friendly structure",
+      "feature3": "Scalable architecture",
+      "feature4": "Built for long-term growth"
+    },
+
+    "buttons": {
+      "consultation": "Free Consultation",
+      "demo": "View Demo"
+    },
+
+    "imageAlt": "Professional business website structure"
+  }
+}
