@@ -6,75 +6,73 @@ import {
   BadgeCheck,
 } from 'lucide-react';
 
+import { useTranslation } from 'react-i18next';
+
 import styles from './LandingAds.module.css';
 
-const features = [
-  {
-    icon: <Target size={24} />,
-    title: 'Conversion Focused',
-    description:
-      'Every landing page is designed to maximize inquiries and leads.',
-  },
-
-  {
-    icon: <Search size={24} />,
-    title: 'Keyword Strategy',
-    description:
-      'Pages are structured around real search intent and user needs.',
-  },
-
-  {
-    icon: <MousePointerClick size={24} />,
-    title: 'Better Quality Score',
-    description: 'Optimized landing pages can improve Google Ads performance.',
-  },
-
-  {
-    icon: <BarChart3 size={24} />,
-    title: 'Analytics & Tracking',
-    description: 'Track conversions and understand how visitors interact.',
-  },
-];
-
 const LandingAds = () => {
+  const { t } = useTranslation('landing');
+
+  const features = [
+    {
+      icon: <Target size={24} />,
+      title: t('ads.features.conversion.title'),
+      description: t('ads.features.conversion.description'),
+    },
+
+    {
+      icon: <Search size={24} />,
+      title: t('ads.features.keywords.title'),
+      description: t('ads.features.keywords.description'),
+    },
+
+    {
+      icon: <MousePointerClick size={24} />,
+      title: t('ads.features.quality.title'),
+      description: t('ads.features.quality.description'),
+    },
+
+    {
+      icon: <BarChart3 size={24} />,
+      title: t('ads.features.analytics.title'),
+      description: t('ads.features.analytics.description'),
+    },
+  ];
+
   return (
     <section className={styles.ads}>
       <div className="container">
         <div className={styles.ads__wrapper}>
           <div className={styles.ads__content}>
-            <span className={styles.ads__badge}>Google Ads Ready</span>
+            <span className={styles.ads__badge}>{t('ads.badge')}</span>
 
             <h2 className={styles.ads__title}>
-              More Than Just
-              <br />a Landing Page
+              {t('ads.title.line1')}
+              <br />
+              {t('ads.title.line2')}
             </h2>
 
-            <p className={styles.ads__description}>
-              We don't just design beautiful landing pages. We create pages that
-              are prepared to work with Google Ads campaigns and help generate
-              real leads.
-            </p>
+            <p className={styles.ads__description}>{t('ads.description1')}</p>
 
-            <p className={styles.ads__description}>
-              By combining conversion-focused design, analytics, and advertising
-              strategy, we help businesses get better results from their
-              marketing investment.
-            </p>
+            <p className={styles.ads__description}>{t('ads.description2')}</p>
 
             <div className={styles.ads__stats}>
               <div>
-                <strong>Google Ads</strong>
-                <span>Campaign Ready</span>
+                <strong>{t('ads.stats.ads.title')}</strong>
+
+                <span>{t('ads.stats.ads.subtitle')}</span>
               </div>
 
               <div>
-                <strong>GA4</strong>
-                <span>Analytics Setup</span>
+                <strong>{t('ads.stats.analytics.title')}</strong>
+
+                <span>{t('ads.stats.analytics.subtitle')}</span>
               </div>
 
               <div>
-                <strong>Tracking</strong>
-                <span>Conversion Events</span>
+                <strong>{t('ads.stats.tracking.title')}</strong>
+
+                <span>{t('ads.stats.tracking.subtitle')}</span>
               </div>
             </div>
           </div>
@@ -93,14 +91,12 @@ const LandingAds = () => {
             <div className={styles.resultCard}>
               <BadgeCheck size={32} />
 
-              <h3>Complete Lead Generation System</h3>
+              <h3>{t('ads.result.title')}</h3>
 
-              <p>
-                Landing Page + Google Ads + Analytics + Conversion Tracking.
-              </p>
+              <p>{t('ads.result.description')}</p>
 
               <div className={styles.resultCard__badge}>
-                Recommended for businesses that want measurable growth.
+                {t('ads.result.badge')}
               </div>
             </div>
           </div>

@@ -1,7 +1,26 @@
 .faq {
-  padding: 140px 0;
+  padding: 60px 0;
 }
+.faqItem {
+  margin-bottom: 18px;
 
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+
+  background: var(--card-bg);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.faqItem:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(99, 102, 241, 0.18);
+}
 .faq__top {
   max-width: 760px;
   margin: 0 auto 60px;
@@ -61,9 +80,29 @@
 .faqItem.active {
   border-color: rgba(99, 102, 241, 0.25);
 
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  background: white;
+
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+.faqItem__left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
+.faqItem__icon {
+  flex-shrink: 0;
+
+  font-size: 22px;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.faqItem.active .faqItem__icon {
+  transform: scale(1.15);
+}
 .faqItem__button {
   display: flex;
   align-items: center;
@@ -83,11 +122,10 @@
   font-size: 18px;
   font-weight: 600;
 }
-
 .faqItem__button svg {
   flex-shrink: 0;
 
-  transition: transform 0.3s ease;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .faqItem.active .faqItem__button svg {
@@ -116,7 +154,7 @@
 
 @media (max-width: 768px) {
   .faq {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 
   .faqItem__button {

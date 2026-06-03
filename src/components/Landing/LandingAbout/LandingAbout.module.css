@@ -1,5 +1,5 @@
 .about {
-  padding: 140px 0;
+  padding: 80px 0;
 }
 
 .about__wrapper {
@@ -167,7 +167,10 @@
 
 @media (max-width: 640px) {
   .about {
-    padding: 100px 0;
+    padding: 50px 0;
+  }
+  .about__visual {
+    text-align: center;
   }
 
   .visualGrid {
@@ -176,6 +179,7 @@
 
   .about__stats {
     flex-direction: column;
+    text-align: center;
   }
 
   .stat {

@@ -131,5 +131,191 @@
     "button": "Skontaktuj Się",
 
     "domain": "yourbusiness.com"
+  },
+  "pricing": {
+    "launchTime": "Uruchomienie w 7–14 dni",
+    "badge": "Co Zawiera Pakiet",
+
+    "title": {
+      "line1": "Wszystko, Czego Potrzebujesz",
+      "line2": "Do Uruchomienia Profesjonalnego Landing Page"
+    },
+
+    "description": "Kompletne rozwiązanie stworzone do pozyskiwania klientów, generowania leadów i wspierania rozwoju Twojej firmy.",
+
+    "features": {
+      "feature1": "Indywidualny Projekt",
+      "feature2": "Responsywny Układ",
+      "feature3": "Formularz Kontaktowy",
+      "feature4": "Podstawowe SEO",
+      "feature5": "Szybkie Ładowanie",
+      "feature6": "Gotowość Pod Google Ads",
+      "feature7": "Konfiguracja Analityki",
+      "feature8": "Struktura Nastawiona Na Konwersję"
+    },
+
+    "startingFrom": "Cena Od",
+
+    "price": "$300",
+
+    "button": "Zobacz Pełny Cennik"
+  },
+  "ads": {
+    "badge": "Gotowy Pod Google Ads",
+
+    "title": {
+      "line1": "Więcej Niż Tylko",
+      "line2": "Landing Page"
+    },
+
+    "description1": "Nie tworzymy wyłącznie atrakcyjnych landing page. Projektujemy strony przygotowane do współpracy z kampaniami Google Ads i generowania realnych leadów.",
+
+    "description2": "Łącząc projektowanie nastawione na konwersję, analitykę i strategię reklamową, pomagamy firmom osiągać lepsze wyniki marketingowe.",
+
+    "stats": {
+      "ads": {
+        "title": "Google Ads",
+        "subtitle": "Gotowe Do Kampanii"
+      },
+
+      "analytics": {
+        "title": "GA4",
+        "subtitle": "Konfiguracja Analityki"
+      },
+
+      "tracking": {
+        "title": "Tracking",
+        "subtitle": "Śledzenie Konwersji"
+      }
+    },
+
+    "features": {
+      "conversion": {
+        "title": "Nastawienie Na Konwersję",
+        "description": "Każdy landing page jest projektowany tak, aby maksymalizować liczbę zapytań i leadów."
+      },
+
+      "keywords": {
+        "title": "Strategia Słów Kluczowych",
+        "description": "Strony są budowane w oparciu o rzeczywiste intencje wyszukiwania i potrzeby użytkowników."
+      },
+
+      "quality": {
+        "title": "Lepszy Quality Score",
+        "description": "Zoptymalizowane landing page mogą poprawić skuteczność kampanii Google Ads."
+      },
+
+      "analytics": {
+        "title": "Analityka i Tracking",
+        "description": "Monitoruj konwersje i analizuj zachowania odwiedzających."
+      }
+    },
+
+    "result": {
+      "title": "Kompletny System Pozyskiwania Klientów",
+
+      "description": "Landing Page + Google Ads + Analityka + Śledzenie Konwersji.",
+
+      "badge": "Polecane dla firm, które chcą osiągać mierzalny wzrost."
+    }
+  },
+  "process": {
+    "badge": "Nasz Proces",
+
+    "title": "Od Pomysłu Do Uruchomienia",
+
+    "description": "Prosty i przejrzysty proces, który pozwala tworzyć landing page szybko i bez zbędnej komplikacji.",
+
+    "steps": {
+      "discovery": {
+        "title": "Analiza",
+        "description": "Poznajemy Twój biznes, grupę docelową, cele oraz działania, które mają wykonywać odwiedzający."
+      },
+
+      "design": {
+        "title": "Struktura i Design",
+        "description": "Tworzymy strukturę nastawioną na konwersję oraz nowoczesny projekt dopasowany do Twojej firmy."
+      },
+
+      "development": {
+        "title": "Realizacja",
+        "description": "Budujemy szybki, responsywny landing page z formularzami, analityką i najlepszymi praktykami."
+      },
+
+      "launch": {
+        "title": "Start i Rozwój",
+        "description": "Po uruchomieniu pomagamy w Google Ads, analityce oraz dalszym rozwoju projektu."
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+
+    "title": "Najczęściej Zadawane Pytania",
+
+    "description": "Odpowiedzi na najczęstsze pytania dotyczące landing page, procesu realizacji, SEO oraz Google Ads.",
+
+    "items": {
+      "item1": {
+        "question": "Ile czasu zajmuje stworzenie landing page?",
+        "answer": "Większość landing page realizujemy w ciągu 1–2 tygodni, w zależności od zakresu projektu, dostępności materiałów i wymaganych integracji."
+      },
+
+      "item2": {
+        "question": "Czy landing page będzie działał na urządzeniach mobilnych?",
+        "answer": "Tak. Każdy landing page jest w pełni responsywny i zoptymalizowany pod smartfony, tablety oraz komputery."
+      },
+
+      "item3": {
+        "question": "Czy można stworzyć wielojęzyczny landing page?",
+        "answer": "Oczywiście. Możemy przygotować landing page w wielu językach wraz z funkcją przełączania języka."
+      },
+
+      "item4": {
+        "question": "Czy pomagacie w Google Ads?",
+        "answer": "Tak. Możemy przygotować landing page pod kampanie reklamowe, skonfigurować analitykę, śledzenie konwersji oraz pomóc z uruchomieniem Google Ads."
+      },
+
+      "item5": {
+        "question": "Czy SEO jest wliczone w cenę?",
+        "answer": "Tak. Podstawowa optymalizacja SEO jest częścią każdego projektu i obejmuje strukturę strony, metadane, wydajność oraz responsywność."
+      },
+
+      "item6": {
+        "question": "Czy landing page można później rozbudować?",
+        "answer": "Tak. W przyszłości landing page może zostać rozbudowany do pełnej strony firmowej z dodatkowymi podstronami i funkcjonalnościami."
+      }
+    }
+  },
+  "relatedServices": {
+    "badge": "Poznaj Inne Usługi",
+
+    "title": "Może Cię Również Zainteresować",
+
+    "description": "Szukasz czegoś więcej? Poznaj nasze dodatkowe usługi wspierające rozwój firm w internecie.",
+
+    "button": "Dowiedz Się Więcej",
+
+    "items": {
+      "landing": {
+        "title": "Landing Page",
+        "description": "Jednostronicowe strony internetowe zaprojektowane do pozyskiwania klientów."
+      },
+
+      "business": {
+        "title": "Strona Firmowa",
+        "description": "Profesjonalne wielostronicowe strony dla firm i marek."
+      },
+
+      "ecommerce": {
+        "title": "Sklep Internetowy",
+        "description": "Sklepy online z płatnościami, zamówieniami i zarządzaniem produktami."
+      },
+
+      "ads": {
+        "title": "Google Ads",
+        "description": "Kampanie reklamowe nastawione na leady, sprzedaż i rozwój firmy."
+      }
+    }
   }
 }

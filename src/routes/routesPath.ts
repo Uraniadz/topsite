@@ -7,9 +7,9 @@ const routesPath = {
   privacy: 'polityka-prywatnosci',
   cookies: 'polityka-cookies',
   landing: 'landing-page',
-  business: '/business-website',
-  ecommerce: '/ecommerce',
-  ads: '/google-ads',
+  business: 'business-website',
+  ecommerce: 'ecommerce',
+  ads: 'google-ads',
 };
 
 // чи потрібена мені ця функція

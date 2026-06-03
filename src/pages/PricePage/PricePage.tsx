@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 
 import {
   Rocket,
@@ -17,12 +18,30 @@ import styles from './PricePage.module.css';
 import landingImg from '@/assets/images/price/landing.png';
 import businessImg from '@/assets/images/price/buisness.png';
 import ecommerceImg from '@/assets/images/price/ecommerce.png';
+import { useEffect } from 'react';
 
 const PricePage = () => {
   const { t } = useTranslation('price');
+  const { hash } = useLocation();
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    if (hash === '#landing-price') {
+      const el = document.getElementById('landing-price');
+      if (!el) {
+        return;
+      }
+      const raf = requestAnimationFrame(() => {
+        el.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      return () => cancelAnimationFrame(raf);
+    }
+  }, [hash, i18n.language]);
 
   const packages = [
     {
+      id: 'landing-price',
       icon: <Rocket size={28} strokeWidth={2.2} />,
       title: t('packages.landing.title'),
       subtitle: t('packages.landing.subtitle'),
@@ -45,6 +64,7 @@ const PricePage = () => {
     },
 
     {
+      id: 'business-price',
       icon: <BriefcaseBusiness size={28} strokeWidth={2.2} />,
       title: t('packages.business.title'),
       subtitle: t('packages.business.subtitle'),
@@ -67,6 +87,7 @@ const PricePage = () => {
     },
 
     {
+      id: 'ecommerce-price',
       icon: <ShoppingCart size={28} strokeWidth={2.2} />,
       title: t('packages.ecommerce.title'),
       subtitle: t('packages.ecommerce.subtitle'),
@@ -145,7 +166,11 @@ const PricePage = () => {
           <div className="container">
             <div className={styles.packagesWrapper}>
               {packages.map((item, index) => (
-                <div className={styles.cardWrapper} key={item.title}>
+                <div
+                  className={styles.cardWrapper}
+                  id={item.id}
+                  key={item.title}
+                >
                   <motion.article
                     className={`${styles.card} ${
                       index % 2 !== 0 ? styles.reverse : ''

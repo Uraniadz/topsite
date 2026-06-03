@@ -131,5 +131,191 @@
     "button": "Contact Us",
 
     "domain": "yourbusiness.com"
+  },
+  "pricing": {
+    "launchTime": "Launch in 7–14 days",
+    "badge": "What's Included",
+
+    "title": {
+      "line1": "Everything You Need To Launch",
+      "line2": "A Professional Landing Page"
+    },
+
+    "description": "A complete solution designed to attract visitors, generate leads, and support your business growth.",
+
+    "features": {
+      "feature1": "Custom Design",
+      "feature2": "Mobile Responsive",
+      "feature3": "Contact Form",
+      "feature4": "Basic SEO",
+      "feature5": "Fast Loading",
+      "feature6": "Google Ads Ready",
+      "feature7": "Analytics Setup",
+      "feature8": "Conversion Focused Structure"
+    },
+
+    "startingFrom": "Starting From",
+
+    "price": "$300",
+
+    "button": "View Full Pricing"
+  },
+  "ads": {
+    "badge": "Google Ads Ready",
+
+    "title": {
+      "line1": "More Than Just",
+      "line2": "a Landing Page"
+    },
+
+    "description1": "We don't just design beautiful landing pages. We create pages that are prepared to work with Google Ads campaigns and help generate real leads.",
+
+    "description2": "By combining conversion-focused design, analytics, and advertising strategy, we help businesses get better results from their marketing investment.",
+
+    "stats": {
+      "ads": {
+        "title": "Google Ads",
+        "subtitle": "Campaign Ready"
+      },
+
+      "analytics": {
+        "title": "GA4",
+        "subtitle": "Analytics Setup"
+      },
+
+      "tracking": {
+        "title": "Tracking",
+        "subtitle": "Conversion Events"
+      }
+    },
+
+    "features": {
+      "conversion": {
+        "title": "Conversion Focused",
+        "description": "Every landing page is designed to maximize inquiries and leads."
+      },
+
+      "keywords": {
+        "title": "Keyword Strategy",
+        "description": "Pages are structured around real search intent and user needs."
+      },
+
+      "quality": {
+        "title": "Better Quality Score",
+        "description": "Optimized landing pages can improve Google Ads performance."
+      },
+
+      "analytics": {
+        "title": "Analytics & Tracking",
+        "description": "Track conversions and understand how visitors interact."
+      }
+    },
+
+    "result": {
+      "title": "Complete Lead Generation System",
+
+      "description": "Landing Page + Google Ads + Analytics + Conversion Tracking.",
+
+      "badge": "Recommended for businesses that want measurable growth."
+    }
+  },
+  "process": {
+    "badge": "Our Process",
+
+    "title": "From Idea to Launch",
+
+    "description": "A simple and transparent process designed to deliver landing pages efficiently and without unnecessary complexity.",
+
+    "steps": {
+      "discovery": {
+        "title": "Discovery",
+        "description": "We learn about your business, audience, goals and the actions you want visitors to take."
+      },
+
+      "design": {
+        "title": "Structure & Design",
+        "description": "We create a conversion-focused structure and modern design tailored to your business."
+      },
+
+      "development": {
+        "title": "Development",
+        "description": "We build a fast, responsive landing page with forms, analytics and best practices."
+      },
+
+      "launch": {
+        "title": "Launch & Growth",
+        "description": "After launch we can help with Google Ads, analytics and future improvements."
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+
+    "title": "Frequently Asked Questions",
+
+    "description": "Answers to the most common questions about landing pages, development process, SEO, and Google Ads.",
+
+    "items": {
+      "item1": {
+        "question": "How long does it take to build a landing page?",
+        "answer": "Most landing pages are completed within 1–2 weeks, depending on the project scope, content availability, and required integrations."
+      },
+
+      "item2": {
+        "question": "Will the landing page work on mobile devices?",
+        "answer": "Yes. Every landing page is fully responsive and optimized for smartphones, tablets, and desktop devices."
+      },
+
+      "item3": {
+        "question": "Can you create a multilingual landing page?",
+        "answer": "Absolutely. We can build landing pages in multiple languages and provide language switching functionality."
+      },
+
+      "item4": {
+        "question": "Do you help with Google Ads?",
+        "answer": "Yes. We can prepare the landing page for advertising campaigns, configure analytics, conversion tracking, and assist with Google Ads setup."
+      },
+
+      "item5": {
+        "question": "Is SEO included?",
+        "answer": "Basic SEO optimization is included in every project, including proper page structure, metadata, performance optimization, and mobile usability."
+      },
+
+      "item6": {
+        "question": "Can the landing page be expanded later?",
+        "answer": "Yes. A landing page can later be expanded into a full business website with additional pages and functionality."
+      }
+    }
+  },
+  "relatedServices": {
+    "badge": "Explore More Services",
+
+    "title": "You May Also Be Interested In",
+
+    "description": "Looking for something more? Explore our additional services designed to help businesses grow online.",
+
+    "button": "Learn More",
+
+    "items": {
+      "landing": {
+        "title": "Landing Page",
+        "description": "Single-page websites designed to convert visitors into customers."
+      },
+
+      "business": {
+        "title": "Business Website",
+        "description": "Professional multi-page websites for companies and brands."
+      },
+
+      "ecommerce": {
+        "title": "E-Commerce",
+        "description": "Online stores with payments, orders and product management."
+      },
+
+      "ads": {
+        "title": "Google Ads",
+        "description": "Advertising campaigns focused on leads, sales and growth."
+      }
+    }
   }
 }

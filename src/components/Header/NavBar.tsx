@@ -61,6 +61,9 @@ const NavBar = () => {
               <NavLink to={routePath.about} onClick={handleNavClick}>
                 {t('nav.about')}
               </NavLink>
+              <NavLink to={routePath.landing} onClick={handleNavClick}>
+                Landing
+              </NavLink>
               <NavLink to={routePath.services} onClick={handleNavClick}>
                 {t('nav.services')}
               </NavLink>
@@ -100,6 +103,7 @@ const NavBar = () => {
               {t('nav.home')}
             </NavLink>
             <NavLink to={routePath.about}>{t('nav.about')}</NavLink>
+            <NavLink to={routePath.landing}>Landing</NavLink>
             <NavLink to={routePath.services}>{t('nav.services')}</NavLink>
             <NavLink to={routePath.price}>{t('nav.price')}</NavLink>
             <NavLink to={routePath.contact}>{t('nav.contacts')}</NavLink>

@@ -1,4 +1,4 @@
-import InteractivePreview from '@/components/Landing/InteractivePreview/InteractivePreview';
+import LandingStructure from '@/components/Landing/InteractivePreview/LandingStructure';
 import LandingAbout from '@/components/Landing/LandingAbout/LandingAbout';
 import LandingAds from '@/components/Landing/LandingAds/LandingAds';
 import LandingBenefits from '@/components/Landing/LandingBenefits/LandingBenefits';
@@ -15,7 +15,7 @@ const LandingPage = () => {
       <LandingHero />
       <LandingAbout />
       <LandingBenefits />
-      <InteractivePreview />
+      <LandingStructure />
       <LandingPricing />
       <LandingAds />
       <LandingProcess />

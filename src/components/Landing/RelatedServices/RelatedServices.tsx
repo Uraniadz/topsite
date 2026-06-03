@@ -5,8 +5,10 @@ import {
   BadgeDollarSign,
   MonitorSmartphone,
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { getLocalizedPath } from '@/routes/routesPath';
 import styles from './RelatedServices.module.css';
 import routesPath from '@/routes/routesPath';
 
@@ -16,56 +18,55 @@ interface RelatedServicesProps {
   exclude?: ServiceType;
 }
 
-const services = [
-  {
-    id: 'landing' as const,
-    title: 'Landing Page',
-    description:
-      'Single-page websites designed to convert visitors into customers.',
-    icon: <MonitorSmartphone size={28} />,
-    link: routesPath.landing,
-  },
-
-  {
-    id: 'business-website' as const,
-    title: 'Business Website',
-    description: 'Professional multi-page websites for companies and brands.',
-    icon: <Globe size={28} />,
-    link: routesPath.business,
-  },
-
-  {
-    id: 'ecommerce' as const,
-    title: 'E-Commerce',
-    description: 'Online stores with payments, orders and product management.',
-    icon: <ShoppingCart size={28} />,
-    link: routesPath.ecommerce,
-  },
-
-  {
-    id: 'google-ads' as const,
-    title: 'Google Ads',
-    description: 'Advertising campaigns focused on leads, sales and growth.',
-    icon: <BadgeDollarSign size={28} />,
-    link: routesPath.ads,
-  },
-];
-
 const RelatedServices = ({ exclude }: RelatedServicesProps) => {
+  const { t } = useTranslation('landing');
+  const { i18n } = useTranslation();
+
+  const services = [
+    {
+      id: 'landing' as const,
+      title: t('relatedServices.items.landing.title'),
+      description: t('relatedServices.items.landing.description'),
+      icon: <MonitorSmartphone size={28} />,
+      link: getLocalizedPath(i18n.language, `/${routesPath.landing}`),
+    },
+
+    {
+      id: 'business-website' as const,
+      title: t('relatedServices.items.business.title'),
+      description: t('relatedServices.items.business.description'),
+      icon: <Globe size={28} />,
+      link: getLocalizedPath(i18n.language, `/${routesPath.business}`),
+    },
+
+    {
+      id: 'ecommerce' as const,
+      title: t('relatedServices.items.ecommerce.title'),
+      description: t('relatedServices.items.ecommerce.description'),
+      icon: <ShoppingCart size={28} />,
+      link: getLocalizedPath(i18n.language, `/${routesPath.ecommerce}`),
+    },
+
+    {
+      id: 'google-ads' as const,
+      title: t('relatedServices.items.ads.title'),
+      description: t('relatedServices.items.ads.description'),
+      icon: <BadgeDollarSign size={28} />,
+      link: getLocalizedPath(i18n.language, `/${routesPath.ads}`),
+    },
+  ];
+
   const filteredServices = services.filter((service) => service.id !== exclude);
 
   return (
     <section className={styles.related}>
       <div className="container">
         <div className={styles.related__top}>
-          <span>Explore More Services</span>
+          <span>{t('relatedServices.badge')}</span>
 
-          <h2>You May Also Be Interested In</h2>
+          <h2>{t('relatedServices.title')}</h2>
 
-          <p>
-            Looking for something more? Explore our additional services designed
-            to help businesses grow online.
-          </p>
+          <p>{t('relatedServices.description')}</p>
         </div>
 
         <div className={styles.related__grid}>
@@ -78,7 +79,8 @@ const RelatedServices = ({ exclude }: RelatedServicesProps) => {
               <p>{service.description}</p>
 
               <span className={styles.card__link}>
-                Learn More
+                {t('relatedServices.button')}
+
                 <ArrowRight size={18} />
               </span>
             </Link>
