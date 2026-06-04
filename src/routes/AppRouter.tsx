@@ -12,6 +12,7 @@ import CookiesPolicyPage from '@/pages/CookiesPolicy/CookiesPolicy';
 import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage/PrivacyPolicyPage';
 import LandingPage from '@/pages/LandingPage/LandingPage';
 import BusinessPage from '@/pages/BusinessPage/BusinessPage';
+import ECommercePage from '@/pages/ECommercePage/EcommercePage';
 
 function AppRouter() {
   return (
@@ -28,6 +29,7 @@ function AppRouter() {
           <Route path={routesPath.privacy} element={<PrivacyPolicyPage />} />
           <Route path={routesPath.landing} element={<LandingPage />} />
           <Route path={routesPath.business} element={<BusinessPage />} />
+          <Route path={routesPath.ecommerce} element={<ECommercePage />} />
           <Route path="*" element={<NotFoundPage404 />} />
         </Route>
       </Routes>

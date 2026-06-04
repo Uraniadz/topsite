@@ -8,6 +8,7 @@ import price from './en/price.json';
 import contact from './en/contact.json';
 import landing from './en/landing.json';
 import business from './en/business.json';
+import ecommerce from './en/ecommerce.json';
 
 export type Resources = {
   common: typeof сommon;
@@ -20,4 +21,5 @@ export type Resources = {
   contact: typeof contact;
   landing: typeof landing;
   business: typeof business;
+  ecommerce: typeof ecommerce;
 };

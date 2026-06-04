@@ -1,0 +1,179 @@
+{
+  "hero": {
+    "badge": "Professional E-commerce Stores",
+
+    "title": {
+      "line1": "Online Stores",
+      "line2": "Built To Sell",
+      "line3": "And Scale Your Business"
+    },
+
+    "description": "Modern e-commerce websites designed to help you sell products online, automate orders, accept secure payments, and grow your business efficiently.",
+
+    "features": {
+      "feature1": "Product catalog management",
+      "feature2": "Online payments integration",
+      "feature3": "Order & customer accounts",
+      "feature4": "Built for future growth"
+    },
+
+    "buttons": {
+      "consultation": "Free Consultation",
+      "demo": "View Features"
+    },
+
+    "imageAlt": "Professional ecommerce website"
+  },
+  "features": {
+    "badge": "Store Features",
+
+    "title": {
+      "line1": "Everything You Need",
+      "line2": "To Sell Online"
+    },
+
+    "description": "A complete e-commerce solution designed to help you manage products, process orders, accept payments, and grow your online business.",
+
+    "items": {
+      "item1": {
+        "title": "Product Catalog",
+        "description": "Organize products with categories, images, descriptions, pricing, and inventory management."
+      },
+
+      "item2": {
+        "title": "Shopping Cart & Checkout",
+        "description": "Simple and intuitive checkout process designed to maximize conversions and reduce abandoned carts."
+      },
+
+      "item3": {
+        "title": "Online Payments",
+        "description": "Secure payment gateway integration for card payments, BLIK, PayPal, Stripe, and more."
+      },
+
+      "item4": {
+        "title": "Customer Accounts",
+        "description": "Allow customers to track orders, save information, and manage their account settings."
+      },
+
+      "item5": {
+        "title": "Order Management",
+        "description": "Easily manage orders, statuses, shipping details, and customer communication."
+      },
+
+      "item6": {
+        "title": "SEO & Growth Ready",
+        "description": "Built with SEO best practices and prepared for Google Ads, analytics, and future marketing campaigns."
+      }
+    }
+  },
+  "benefits": {
+    "badge": "Business Benefits",
+
+    "title": {
+      "line1": "More Than A Store",
+      "line2": "A Tool For Growth"
+    },
+
+    "description": "A professional e-commerce website helps attract new customers, increase sales, automate daily operations, and build a stronger brand online.",
+
+    "items": {
+      "item1": {
+        "title": "Sell 24/7",
+        "description": "Your online store continues generating orders even when your business is closed."
+      },
+
+      "item2": {
+        "title": "Reach More Customers",
+        "description": "Expand beyond your local area and sell products across your country or internationally."
+      },
+
+      "item3": {
+        "title": "Automate Processes",
+        "description": "Reduce manual work with automated order handling, payments, and customer notifications."
+      },
+
+      "item4": {
+        "title": "Build Trust",
+        "description": "A professional online presence increases credibility and customer confidence."
+      },
+
+      "item5": {
+        "title": "Grow With SEO & Ads",
+        "description": "Get discovered through Google Search and scale faster with Google Ads campaigns."
+      },
+
+      "item6": {
+        "title": "Scalable Solution",
+        "description": "Add products, integrations, and new features as your business grows."
+      }
+    }
+  },
+  "process": {
+    "badge": "Our Process",
+
+    "title": {
+      "line1": "From Idea",
+      "line2": "To Your First Orders"
+    },
+
+    "description": "A structured process designed to launch your online store quickly, efficiently, and ready for future growth.",
+
+    "steps": {
+      "step1": {
+        "number": "01",
+        "title": "Discovery & Planning",
+        "description": "We learn about your business, products, target audience, and define the structure of your online store."
+      },
+
+      "step2": {
+        "number": "02",
+        "title": "Design & Store Setup",
+        "description": "We create the design, product catalog structure, categories, and prepare the shopping experience."
+      },
+
+      "step3": {
+        "number": "03",
+        "title": "Development & Integrations",
+        "description": "We build the store and connect payments, delivery methods, customer accounts, and essential features."
+      },
+
+      "step4": {
+        "number": "04",
+        "title": "Launch & Growth",
+        "description": "After launch, your store is ready for SEO, Google Ads, analytics, and future business growth."
+      }
+    }
+  },
+  "pricing": {
+    "badge": "What's Included",
+    "card": {
+      "label": "Starting From",
+      "price": "$1000",
+      "title": "Online Store",
+      "button": "View Full Pricing"
+    },
+    "title": {
+      "line1": "Everything You Need",
+      "line2": "To Launch Your Online Store"
+    },
+
+    "description": "A complete e-commerce solution designed to help you start selling online, manage orders, accept payments, and grow your business.",
+
+    "launchTime": "Launch in 3–6 weeks",
+
+    "items": {
+      "item1": "Custom e-commerce design",
+      "item2": "Product catalog setup",
+      "item3": "Shopping cart & checkout",
+      "item4": "Online payment integration",
+      "item5": "Customer accounts",
+      "item6": "Order management system",
+      "item7": "Mobile-friendly design",
+      "item8": "SEO-ready structure",
+      "item9": "Google Analytics setup",
+      "item10": "Training & support"
+    },
+
+    "bottomText": "Need additional features such as marketplace integrations, advanced filters, loyalty programs, or custom functionality? We can tailor the solution to your business."
+  }
+}

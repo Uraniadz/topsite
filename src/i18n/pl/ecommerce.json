@@ -1,0 +1,179 @@
+{
+  "hero": {
+    "badge": "Profesjonalne Sklepy Internetowe",
+
+    "title": {
+      "line1": "Sklepy Internetowe",
+      "line2": "Stworzone Do Sprzedaży",
+      "line3": "I Rozwoju Biznesu"
+    },
+
+    "description": "Nowoczesne sklepy internetowe zaprojektowane do sprzedaży produktów online, automatyzacji zamówień, bezpiecznych płatności oraz skalowania biznesu.",
+
+    "features": {
+      "feature1": "Zarządzanie katalogiem produktów",
+      "feature2": "Integracja płatności online",
+      "feature3": "Zamówienia i konta klientów",
+      "feature4": "Gotowość do rozwoju"
+    },
+
+    "buttons": {
+      "consultation": "Bezpłatna Konsultacja",
+      "demo": "Zobacz Funkcje"
+    },
+
+    "imageAlt": "Profesjonalny sklep internetowy"
+  },
+  "features": {
+    "badge": "Funkcje Sklepu",
+
+    "title": {
+      "line1": "Wszystko, Czego Potrzebujesz",
+      "line2": "Do Sprzedaży Online"
+    },
+
+    "description": "Kompletne rozwiązanie e-commerce, które pomaga zarządzać produktami, obsługiwać zamówienia, przyjmować płatności i rozwijać sprzedaż online.",
+
+    "items": {
+      "item1": {
+        "title": "Katalog Produktów",
+        "description": "Łatwe zarządzanie produktami, kategoriami, zdjęciami, opisami, cenami oraz stanami magazynowymi."
+      },
+
+      "item2": {
+        "title": "Koszyk i Finalizacja Zamówienia",
+        "description": "Prosty proces zakupowy zaprojektowany w celu zwiększenia konwersji i ograniczenia porzuconych koszyków."
+      },
+
+      "item3": {
+        "title": "Płatności Online",
+        "description": "Bezpieczna integracja płatności kartą, BLIK, PayPal, Stripe i innymi popularnymi metodami płatności."
+      },
+
+      "item4": {
+        "title": "Konta Klientów",
+        "description": "Klienci mogą śledzić zamówienia, przeglądać historię zakupów i zarządzać swoim profilem."
+      },
+
+      "item5": {
+        "title": "Zarządzanie Zamówieniami",
+        "description": "Wygodne zarządzanie zamówieniami, statusami, wysyłką oraz komunikacją z klientami."
+      },
+
+      "item6": {
+        "title": "SEO i Gotowość Do Rozwoju",
+        "description": "Sklep jest przygotowany pod SEO, Google Ads, analitykę oraz dalszy rozwój biznesu."
+      }
+    }
+  },
+  "benefits": {
+    "badge": "Korzyści Dla Biznesu",
+
+    "title": {
+      "line1": "Więcej Niż Sklep",
+      "line2": "Narzędzie Rozwoju"
+    },
+
+    "description": "Profesjonalny sklep internetowy pomaga zdobywać nowych klientów, zwiększać sprzedaż, automatyzować procesy i budować silniejszą markę online.",
+
+    "items": {
+      "item1": {
+        "title": "Sprzedaż 24/7",
+        "description": "Twój sklep przyjmuje zamówienia nawet wtedy, gdy nie pracujesz."
+      },
+
+      "item2": {
+        "title": "Więcej Klientów",
+        "description": "Sprzedawaj lokalnie, w całym kraju lub na rynkach zagranicznych."
+      },
+
+      "item3": {
+        "title": "Automatyzacja Procesów",
+        "description": "Zamówienia, płatności i powiadomienia działają automatycznie, oszczędzając Twój czas."
+      },
+
+      "item4": {
+        "title": "Budowanie Zaufania",
+        "description": "Profesjonalny sklep internetowy zwiększa wiarygodność firmy i zaufanie klientów."
+      },
+
+      "item5": {
+        "title": "SEO i Google Ads",
+        "description": "Pozyskuj klientów z Google Search i rozwijaj sprzedaż dzięki kampaniom reklamowym."
+      },
+
+      "item6": {
+        "title": "Gotowość Do Rozwoju",
+        "description": "Łatwo dodawaj nowe produkty, integracje i funkcje wraz z rozwojem biznesu."
+      }
+    }
+  },
+  "process": {
+    "badge": "Nasz Proces",
+
+    "title": {
+      "line1": "Od Pomysłu",
+      "line2": "Do Pierwszych Zamówień"
+    },
+
+    "description": "Przemyślany proces tworzenia sklepu internetowego, który pozwala szybko rozpocząć sprzedaż i przygotować biznes do dalszego rozwoju.",
+
+    "steps": {
+      "step1": {
+        "number": "01",
+        "title": "Analiza i Planowanie",
+        "description": "Poznajemy Twój biznes, produkty oraz grupę docelową i planujemy strukturę sklepu internetowego."
+      },
+
+      "step2": {
+        "number": "02",
+        "title": "Projekt i Konfiguracja Sklepu",
+        "description": "Tworzymy projekt, strukturę katalogu produktów oraz wygodną ścieżkę zakupową dla klientów."
+      },
+
+      "step3": {
+        "number": "03",
+        "title": "Programowanie i Integracje",
+        "description": "Integrujemy płatności online, dostawy, konta klientów oraz wszystkie kluczowe funkcje sklepu."
+      },
+
+      "step4": {
+        "number": "04",
+        "title": "Uruchomienie i Rozwój",
+        "description": "Po uruchomieniu sklep jest gotowy pod SEO, Google Ads, analitykę i dalszy rozwój sprzedaży."
+      }
+    }
+  },
+  "pricing": {
+    "badge": "Co Otrzymujesz",
+    "card": {
+      "label": "Od",
+      "price": "$1000",
+      "title": "Sklep Internetowy",
+      "button": "Zobacz Pełny Cennik"
+    },
+    "title": {
+      "line1": "Wszystko, Czego Potrzebujesz",
+      "line2": "Do Uruchomienia Sklepu Internetowego"
+    },
+
+    "description": "Kompletne rozwiązanie e-commerce umożliwiające sprzedaż online, zarządzanie zamówieniami, obsługę płatności oraz rozwój biznesu.",
+
+    "launchTime": "Uruchomienie w 3–6 tygodni",
+
+    "items": {
+      "item1": "Indywidualny projekt sklepu",
+      "item2": "Konfiguracja katalogu produktów",
+      "item3": "Koszyk i finalizacja zamówienia",
+      "item4": "Integracja płatności online",
+      "item5": "Konta klientów",
+      "item6": "System zarządzania zamówieniami",
+      "item7": "Responsywny design",
+      "item8": "Struktura przygotowana pod SEO",
+      "item9": "Konfiguracja Google Analytics",
+      "item10": "Szkolenie i wsparcie"
+    },
+
+    "bottomText": "Potrzebujesz integracji z marketplace, zaawansowanych filtrów, programów lojalnościowych lub dedykowanych funkcji? Dopasujemy rozwiązanie do Twojego biznesu."
+  }
+}

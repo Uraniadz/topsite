@@ -1,23 +1,25 @@
 import { CheckCircle2, MousePointer2, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-import styles from './BusinessHero.module.css';
+import styles from './EcommerceHero.module.css';
 
-import businessFoto from '@/assets/images/businessPage/business-hero.png';
+import ecommerceFoto from '@/assets/images/ecommercePage/ecommerce-hero.png';
 import ContactModalButton from '@/components/UI_components/ContactModal/ContactModalButton';
 
-const BusinessHero = () => {
-  const { t } = useTranslation('business');
-  const scrollToExample = () => {
-    document.getElementById('demo')?.scrollIntoView({
+const EcommerceHero = () => {
+  const { t } = useTranslation('ecommerce');
+
+  const scrollToFeatures = () => {
+    document.getElementById('features')?.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
   };
+
   return (
     <section className={styles.hero}>
       <div className={styles.hero__image}>
-        <img src={businessFoto} alt={t('hero.imageAlt')} />
+        <img src={ecommerceFoto} alt={t('hero.imageAlt')} />
       </div>
 
       <div className={styles.hero__overlay}></div>
@@ -25,7 +27,7 @@ const BusinessHero = () => {
       <div className="container">
         <div className={styles.hero__content}>
           <div className={styles.hero__mobileImage}>
-            <img src={businessFoto} alt={t('hero.imageAlt')} />
+            <img src={ecommerceFoto} alt={t('hero.imageAlt')} />
           </div>
 
           <div className={styles.hero__badge}>
@@ -74,7 +76,7 @@ const BusinessHero = () => {
             </div>
 
             <button
-              onClick={scrollToExample}
+              onClick={scrollToFeatures}
               className={styles.hero__secondaryBtn}
             >
               <MousePointer2 size={18} />
@@ -87,4 +89,4 @@ const BusinessHero = () => {
   );
 };
 
-export default BusinessHero;
+export default EcommerceHero;
