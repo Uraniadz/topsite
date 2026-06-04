@@ -1,5 +1,5 @@
 .examples {
-  padding: 140px 0;
+  padding: 60px 0;
 
   background: #f8fafc;
 }
@@ -265,7 +265,7 @@
 }
 @media (max-width: 768px) {
   .examples {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .examples__wrapper {

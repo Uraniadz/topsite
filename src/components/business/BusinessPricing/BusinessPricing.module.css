@@ -1,0 +1,165 @@
+.pricing {
+  padding: 60px 0;
+
+  background: #f8fafc;
+}
+
+.pricing__card {
+  display: grid;
+  grid-template-columns: 1.5fr 420px;
+  gap: 60px;
+
+  padding: 60px;
+
+  border: 1px solid var(--border-color);
+  border-radius: 32px;
+
+  background: white;
+}
+
+.badge {
+  display: inline-block;
+
+  margin-bottom: 18px;
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(99, 102, 241, 0.08);
+
+  color: #6366f1;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.title {
+  margin-bottom: 20px;
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+
+  line-height: 1.1;
+}
+
+.description {
+  max-width: 650px;
+
+  margin-bottom: 40px;
+
+  color: var(--text-secondary);
+
+  line-height: 1.8;
+}
+
+.features {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px 28px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature svg {
+  color: #22c55e;
+
+  flex-shrink: 0;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.priceCard {
+  width: 100%;
+
+  padding: 40px 32px;
+
+  border-radius: 28px;
+
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+
+  color: white;
+
+  text-align: center;
+}
+
+.priceCard svg {
+  margin-bottom: 18px;
+}
+
+.priceLabel {
+  display: block;
+
+  margin-bottom: 12px;
+
+  opacity: 0.9;
+}
+
+.priceCard strong {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-size: clamp(3rem, 5vw, 4.5rem);
+
+  line-height: 1;
+}
+
+.priceCard p {
+  margin-bottom: 28px;
+
+  opacity: 0.95;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 18px;
+
+  border-radius: 16px;
+
+  background: white;
+
+  color: #6366f1;
+
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+  .pricing__card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    padding: 50px 0;
+  }
+
+  .pricing__card {
+    padding: 32px 24px;
+    gap: 40px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}

@@ -136,5 +136,165 @@
       "blog": "Blog",
       "contact": "Contact"
     }
+  },
+  "pricing": {
+    "launchTime": "Launch in 14–30 days",
+
+    "badge": "What's Included",
+
+    "title": {
+      "line1": "Everything You Need For",
+      "line2": "A Professional Business Website"
+    },
+
+    "description": "A scalable multi-page website designed to build trust, improve SEO visibility, support Google Ads campaigns, and help your business grow online.",
+
+    "features": {
+      "feature1": "Custom Website Design",
+      "feature2": "5–20 Custom Pages",
+      "feature3": "Mobile Responsive",
+      "feature4": "Contact Forms",
+      "feature5": "SEO-Friendly Structure",
+      "feature6": "Google Ads Ready",
+      "feature7": "Blog Integration",
+      "feature8": "Analytics Setup"
+    },
+
+    "startingFrom": "Starting From",
+
+    "price": "$500",
+
+    "button": "View Full Pricing"
+  },
+  "ads": {
+    "badge": "SEO & Google Ads Ready",
+
+    "title": {
+      "line1": "More Than Just",
+      "line2": "A Business Website"
+    },
+
+    "description1": "A professional business website is not only a digital brochure. It becomes the foundation of your online marketing, helping customers find, trust, and contact your business.",
+
+    "description2": "By combining SEO, Google Ads, analytics, and a scalable website structure, we create a system designed for long-term business growth.",
+
+    "stats": {
+      "seo": {
+        "title": "SEO",
+        "subtitle": "Growth Ready"
+      },
+
+      "analytics": {
+        "title": "GA4",
+        "subtitle": "Analytics Setup"
+      },
+
+      "tracking": {
+        "title": "Tracking",
+        "subtitle": "Conversion Events"
+      }
+    },
+
+    "features": {
+      "seo": {
+        "title": "SEO Foundation",
+        "description": "Multi-page websites provide more opportunities to rank in Google search results."
+      },
+
+      "ads": {
+        "title": "Google Ads Ready",
+        "description": "Landing pages and service pages work perfectly with advertising campaigns."
+      },
+
+      "blog": {
+        "title": "Content Marketing",
+        "description": "A blog helps attract organic traffic and build authority in your industry."
+      },
+
+      "analytics": {
+        "title": "Analytics & Tracking",
+        "description": "Track visitors, conversions, and marketing performance."
+      }
+    },
+
+    "result": {
+      "title": "Complete Business Growth System",
+
+      "description": "Business Website + SEO + Google Ads + Analytics + Conversion Tracking.",
+
+      "badge": "Recommended for businesses focused on long-term growth."
+    }
+  },
+  "process": {
+    "badge": "Our Process",
+
+    "title": "From Strategy to Growth",
+
+    "description": "A clear and structured process designed to build professional business websites that support long-term growth.",
+
+    "steps": {
+      "discovery": {
+        "label": "Strategy",
+        "title": "Discovery & Planning",
+        "description": "We learn about your business, services, target audience, competitors, and define the structure of your future website."
+      },
+
+      "design": {
+        "label": "Design",
+        "title": "Website Structure & Design",
+        "description": "We create a user-friendly sitemap, page hierarchy, and modern design tailored to your business."
+      },
+
+      "development": {
+        "label": "Development",
+        "title": "Development & SEO Setup",
+        "description": "We build the website, connect forms, analytics, and implement SEO best practices."
+      },
+
+      "launch": {
+        "label": "Growth",
+        "title": "Launch & Marketing",
+        "description": "After launch we can help with SEO, Google Ads, analytics, and ongoing website improvements."
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+
+    "title": "Frequently Asked Questions",
+
+    "description": "Answers to common questions about business websites, SEO, content, and long-term growth.",
+
+    "items": {
+      "item1": {
+        "question": "How long does it take to build a business website?",
+        "answer": "Most business websites are completed within 2–4 weeks depending on the number of pages, content, and required functionality."
+      },
+
+      "item2": {
+        "question": "How many pages can my website have?",
+        "answer": "Business websites typically include 5–20 pages, but the structure can be expanded at any time as your company grows."
+      },
+
+      "item3": {
+        "question": "Is SEO included?",
+        "answer": "Yes. Every website includes SEO-friendly structure, metadata, performance optimization, and mobile responsiveness."
+      },
+
+      "item4": {
+        "question": "Can you create a multilingual website?",
+        "answer": "Absolutely. We can build websites in multiple languages with language switching functionality."
+      },
+
+      "item5": {
+        "question": "Do you help with Google Ads and analytics?",
+        "answer": "Yes. We can set up Google Ads, GA4 analytics, conversion tracking, and help optimize marketing performance."
+      },
+
+      "item6": {
+        "question": "Can the website be expanded later?",
+        "answer": "Yes. New pages, blog sections, services, integrations, and additional functionality can be added at any time."
+      }
+    }
   }
 }

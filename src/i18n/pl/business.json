@@ -137,5 +137,165 @@
       "blog": "Blog",
       "contact": "Kontakt"
     }
+  },
+  "pricing": {
+    "launchTime": "Realizacja w 14–30 dni",
+
+    "badge": "Co Zawiera Oferta",
+
+    "title": {
+      "line1": "Wszystko, Czego Potrzebujesz",
+      "line2": "Do Profesjonalnej Strony Firmowej"
+    },
+
+    "description": "Rozbudowana strona firmowa zaprojektowana w celu budowania zaufania, poprawy SEO, wspierania kampanii Google Ads i rozwoju firmy online.",
+
+    "features": {
+      "feature1": "Indywidualny Projekt",
+      "feature2": "5–20 Dedykowanych Podstron",
+      "feature3": "Responsywność Mobilna",
+      "feature4": "Formularze Kontaktowe",
+      "feature5": "Struktura Przyjazna SEO",
+      "feature6": "Google Ads Ready",
+      "feature7": "Integracja Bloga",
+      "feature8": "Konfiguracja Analityki"
+    },
+
+    "startingFrom": "Od",
+
+    "price": "$500",
+
+    "button": "Zobacz Pełny Cennik"
+  },
+  "ads": {
+    "badge": "SEO i Google Ads Ready",
+
+    "title": {
+      "line1": "Więcej Niż Tylko",
+      "line2": "Strona Firmowa"
+    },
+
+    "description1": "Profesjonalna strona firmowa to nie tylko wizytówka online. Stanowi fundament marketingu internetowego i pomaga klientom znaleźć, zaufać oraz skontaktować się z Twoją firmą.",
+
+    "description2": "Łącząc SEO, Google Ads, analitykę i skalowalną strukturę strony, tworzymy system wspierający długoterminowy rozwój biznesu.",
+
+    "stats": {
+      "seo": {
+        "title": "SEO",
+        "subtitle": "Gotowe Na Rozwój"
+      },
+
+      "analytics": {
+        "title": "GA4",
+        "subtitle": "Konfiguracja Analityki"
+      },
+
+      "tracking": {
+        "title": "Tracking",
+        "subtitle": "Śledzenie Konwersji"
+      }
+    },
+
+    "features": {
+      "seo": {
+        "title": "Fundament SEO",
+        "description": "Wielostronicowa witryna daje więcej możliwości osiągania wysokich pozycji w wynikach wyszukiwania Google."
+      },
+
+      "ads": {
+        "title": "Google Ads Ready",
+        "description": "Podstrony usług i strony docelowe doskonale współpracują z kampaniami reklamowymi."
+      },
+
+      "blog": {
+        "title": "Content Marketing",
+        "description": "Blog pomaga pozyskiwać ruch organiczny i budować autorytet marki w branży."
+      },
+
+      "analytics": {
+        "title": "Analityka i Śledzenie",
+        "description": "Monitoruj odwiedzających, konwersje i skuteczność działań marketingowych."
+      }
+    },
+
+    "result": {
+      "title": "Kompletny System Rozwoju Biznesu",
+
+      "description": "Strona Firmowa + SEO + Google Ads + Analityka + Śledzenie Konwersji.",
+
+      "badge": "Polecane dla firm nastawionych na długoterminowy rozwój."
+    }
+  },
+  "process": {
+    "badge": "Nasz Proces",
+
+    "title": "Od Strategii Do Rozwoju",
+
+    "description": "Przejrzysty i uporządkowany proces tworzenia profesjonalnych stron firmowych wspierających rozwój biznesu.",
+
+    "steps": {
+      "discovery": {
+        "label": "Strategia",
+        "title": "Analiza i Planowanie",
+        "description": "Poznajemy Twoją firmę, usługi, grupę docelową i konkurencję, aby zaplanować strukturę strony."
+      },
+
+      "design": {
+        "label": "Projekt",
+        "title": "Struktura i Design Strony",
+        "description": "Tworzymy przejrzystą strukturę podstron, intuicyjny UX oraz nowoczesny projekt dopasowany do firmy."
+      },
+
+      "development": {
+        "label": "Rozwój",
+        "title": "Programowanie i SEO",
+        "description": "Budujemy stronę, konfigurujemy formularze, analitykę oraz wdrażamy podstawy SEO."
+      },
+
+      "launch": {
+        "label": "Rozwój Firmy",
+        "title": "Uruchomienie i Marketing",
+        "description": "Po uruchomieniu pomagamy rozwijać stronę poprzez SEO, Google Ads oraz analitykę."
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+
+    "title": "Najczęściej Zadawane Pytania",
+
+    "description": "Odpowiedzi na najczęstsze pytania dotyczące stron firmowych, SEO, treści i rozwoju biznesu.",
+
+    "items": {
+      "item1": {
+        "question": "Jak długo trwa stworzenie strony firmowej?",
+        "answer": "Większość stron firmowych realizujemy w ciągu 2–4 tygodni, w zależności od liczby podstron i wymaganych funkcji."
+      },
+
+      "item2": {
+        "question": "Ile podstron może mieć moja witryna?",
+        "answer": "Strony firmowe zwykle posiadają od 5 do 20 podstron, ale można je rozbudowywać w dowolnym momencie."
+      },
+
+      "item3": {
+        "question": "Czy SEO jest wliczone w cenę?",
+        "answer": "Tak. Każda strona zawiera strukturę przyjazną SEO, metadane, optymalizację wydajności i responsywność."
+      },
+
+      "item4": {
+        "question": "Czy można stworzyć stronę wielojęzyczną?",
+        "answer": "Oczywiście. Możemy wdrożyć wiele wersji językowych oraz wygodne przełączanie języków."
+      },
+
+      "item5": {
+        "question": "Czy pomagacie z Google Ads i analityką?",
+        "answer": "Tak. Możemy skonfigurować Google Ads, GA4, śledzenie konwersji oraz pomóc w analizie wyników marketingowych."
+      },
+
+      "item6": {
+        "question": "Czy stronę można rozbudować w przyszłości?",
+        "answer": "Tak. W każdej chwili można dodać nowe podstrony, blog, usługi, integracje i dodatkowe funkcjonalności."
+      }
+    }
   }
 }
