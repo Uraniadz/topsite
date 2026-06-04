@@ -1,18 +1,20 @@
-import {
-  ArrowRight,
-  CheckCircle2,
-  MousePointer2,
-  Sparkles,
-} from 'lucide-react';
+import { CheckCircle2, MousePointer2, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 import styles from './LandingHero.module.css';
 
 import landingFoto from '@/assets/images/landingPage/landing-foto.png';
+import ContactModalButton from '@/components/UI_components/ContactModal/ContactModalButton';
 
 const LandingHero = () => {
   const { t } = useTranslation('landing');
 
+  const scrollToExample = () => {
+    document.getElementById('demo')?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
   return (
     <section className={styles.hero}>
       <div className={styles.hero__image}>
@@ -65,12 +67,17 @@ const LandingHero = () => {
           </div>
 
           <div className={styles.hero__actions}>
-            <button className={styles.hero__primaryBtn}>
-              {t('hero.buttons.consultation')}
-              <ArrowRight size={18} />
-            </button>
+            <div className={styles.hero__primaryBtn}>
+              <ContactModalButton
+                variant="primary"
+                label={t('hero.primaryButton')}
+              />
+            </div>
 
-            <button className={styles.hero__secondaryBtn}>
+            <button
+              onClick={scrollToExample}
+              className={styles.hero__secondaryBtn}
+            >
               <MousePointer2 size={18} />
               {t('hero.buttons.demo')}
             </button>

@@ -26,6 +26,7 @@ const fadeUp = {
 
 const ServicePage = () => {
   const { t } = useTranslation('service');
+
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({
       behavior: 'smooth',

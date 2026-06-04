@@ -57,7 +57,7 @@ const BusinessExamples = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className={styles.examples}>
+    <section id="demo" className={styles.examples}>
       <div className="container">
         <div className={styles.examples__wrapper}>
           <div className={styles.examples__content}>

@@ -52,7 +52,7 @@ const LandingExamples = () => {
   };
 
   return (
-    <section className={styles.examples}>
+    <section className={styles.examples} id="demo">
       <div className="container">
         <div className={styles.examples__wrapper}>
           <div className={styles.examples__content}>
