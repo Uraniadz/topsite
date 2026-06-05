@@ -22,5 +22,160 @@
       "consultation": "Bezpłatna konsultacja",
       "learnMore": "Dowiedz się więcej"
     }
+  },
+  "benefits": {
+    "badge": "Korzyści",
+
+    "title": {
+      "line1": "Dlaczego Warto Inwestować W",
+      "line2": "Google Ads?"
+    },
+
+    "description": "Google Ads pomaga dotrzeć do osób aktywnie poszukujących Twoich usług lub produktów i zamieniać ich zainteresowanie w wartościowe leady.",
+
+    "items": {
+      "leads": {
+        "title": "Wartościowe Leady",
+        "description": "Docieraj do osób realnie zainteresowanych Twoją ofertą i gotowych do kontaktu."
+      },
+
+      "results": {
+        "title": "Szybkie Efekty",
+        "description": "Zacznij pozyskiwać ruch i leady już kilka dni po uruchomieniu kampanii."
+      },
+
+      "budget": {
+        "title": "Kontrola Budżetu",
+        "description": "Sam decyduj o wydatkach reklamowych i skaluj kampanie wraz z wynikami."
+      },
+
+      "analytics": {
+        "title": "Przejrzysta Analityka",
+        "description": "Śledź leady, połączenia, formularze oraz skuteczność kampanii."
+      },
+
+      "targeting": {
+        "title": "Precyzyjne Targetowanie",
+        "description": "Wyświetlaj reklamy osobom aktywnie szukającym Twoich usług."
+      },
+
+      "growth": {
+        "title": "Rozwój Firmy",
+        "description": "Buduj stabilne źródło leadów i wspieraj długoterminowy rozwój biznesu."
+      }
+    }
+  },
+  "services": {
+    "badge": "Rozwiązania Reklamowe",
+
+    "title": {
+      "line1": "Google Ads Dla",
+      "line2": "Twojego Biznesu"
+    },
+
+    "description": "Tworzymy i zarządzamy różnymi typami kampanii Google Ads w zależności od celów biznesowych, branży i grupy docelowej.",
+
+    "items": {
+      "search": {
+        "title": "Reklamy Wyszukiwania",
+        "description": "Wyświetlaj reklamy na szczycie wyników wyszukiwania Google dokładnie wtedy, gdy potencjalni klienci szukają Twoich usług."
+      },
+
+      "local": {
+        "title": "Reklamy Lokalne",
+        "description": "Docieraj do klientów w swoim mieście lub regionie i zwiększaj widoczność lokalnej firmy."
+      },
+
+      "ecommerce": {
+        "title": "Reklamy E-commerce",
+        "description": "Promuj produkty za pomocą Google Shopping oraz kampanii Performance Max."
+      },
+
+      "remarketing": {
+        "title": "Remarketing",
+        "description": "Przypominaj się użytkownikom, którzy odwiedzili już Twoją stronę, ale jeszcze nie skontaktowali się z firmą lub nie dokonali zakupu."
+      }
+    }
+  },
+  "process": {
+    "badge": "Nasz Proces",
+
+    "title": {
+      "line1": "Jak Tworzymy",
+      "line2": "Skuteczne Kampanie"
+    },
+
+    "description": "Nasze uporządkowane podejście pozwala budować kampanie Google Ads w oparciu o dane, stale je optymalizować i skutecznie pozyskiwać wartościowe leady.",
+
+    "steps": {
+      "step1": {
+        "number": "01",
+        "title": "Analiza Biznesu",
+        "description": "Poznajemy Twoją firmę, cele, konkurencję oraz grupę docelową, aby stworzyć odpowiednią strategię reklamową."
+      },
+
+      "step2": {
+        "number": "02",
+        "title": "Analiza Słów Kluczowych",
+        "description": "Wyszukujemy frazy o wysokim potencjale konwersji używane przez potencjalnych klientów."
+      },
+
+      "step3": {
+        "number": "03",
+        "title": "Konfiguracja Kampanii",
+        "description": "Tworzymy strukturę kampanii, grupy reklam, treści reklamowe oraz wszystkie niezbędne ustawienia."
+      },
+
+      "step4": {
+        "number": "04",
+        "title": "Śledzenie Konwersji",
+        "description": "Konfigurujemy analitykę i śledzenie połączeń, formularzy oraz innych ważnych działań użytkowników."
+      },
+
+      "step5": {
+        "number": "05",
+        "title": "Optymalizacja i Raportowanie",
+        "description": "Regularnie poprawiamy skuteczność kampanii i dostarczamy przejrzyste raporty z wyników."
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+
+    "title": "Najczęściej Zadawane Pytania",
+
+    "description": "Odpowiedzi na najczęstsze pytania dotyczące Google Ads, budżetów reklamowych, pozyskiwania leadów i zarządzania kampaniami.",
+
+    "items": {
+      "item1": {
+        "question": "Jaki budżet jest potrzebny na Google Ads?",
+        "answer": "Optymalny budżet zależy od branży, poziomu konkurencji i celów biznesowych. Pomożemy określić budżet dopasowany do Twoich potrzeb."
+      },
+
+      "item2": {
+        "question": "Kiedy mogę zobaczyć pierwsze wyniki?",
+        "answer": "Wyświetlenia i kliknięcia pojawiają się zazwyczaj w ciągu kilku dni od uruchomienia kampanii. Pierwsze leady często pojawiają się już w pierwszych tygodniach."
+      },
+
+      "item3": {
+        "question": "Czy potrzebuję strony internetowej, aby uruchomić Google Ads?",
+        "answer": "W większości przypadków tak. Profesjonalna strona internetowa pomaga zamieniać odwiedzających w leady i znacząco zwiększa skuteczność kampanii."
+      },
+
+      "item4": {
+        "question": "Czy Google Ads sprawdzi się w lokalnym biznesie?",
+        "answer": "Tak. Google Ads jest bardzo skuteczny dla lokalnych firm, ponieważ pozwala docierać do osób szukających usług w określonym mieście lub regionie."
+      },
+
+      "item5": {
+        "question": "Czy otrzymam raporty z kampanii?",
+        "answer": "Tak. Regularnie dostarczamy przejrzyste raporty oraz wyjaśniamy najważniejsze wskaźniki, takie jak kliknięcia, leady, konwersje i skuteczność kampanii."
+      },
+
+      "item6": {
+        "question": "Czy mogę zatrzymać kampanię w dowolnym momencie?",
+        "answer": "Tak. Zachowujesz pełną kontrolę nad budżetem reklamowym i kampaniami, które można w każdej chwili wstrzymać lub zmodyfikować."
+      }
+    }
   }
 }

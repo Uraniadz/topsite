@@ -22,5 +22,160 @@
       "consultation": "Free Consultation",
       "learnMore": "Learn More"
     }
+  },
+  "benefits": {
+    "badge": "Benefits",
+
+    "title": {
+      "line1": "Why Invest In",
+      "line2": "Google Ads?"
+    },
+
+    "description": "Google Ads helps your business reach people who are actively searching for your products or services and turn that interest into valuable leads.",
+
+    "items": {
+      "leads": {
+        "title": "Qualified Leads",
+        "description": "Reach people who are genuinely interested in your services and ready to take action."
+      },
+
+      "results": {
+        "title": "Fast Results",
+        "description": "Start generating traffic and leads within days instead of waiting months."
+      },
+
+      "budget": {
+        "title": "Budget Control",
+        "description": "Decide how much you want to spend and scale campaigns when they perform."
+      },
+
+      "analytics": {
+        "title": "Clear Analytics",
+        "description": "Track calls, forms, leads, and campaign performance with precision."
+      },
+
+      "targeting": {
+        "title": "Precise Targeting",
+        "description": "Show ads only to people searching for your products or services."
+      },
+
+      "growth": {
+        "title": "Business Growth",
+        "description": "Build a consistent source of leads and support long-term business growth."
+      }
+    }
+  },
+  "services": {
+    "badge": "Advertising Solutions",
+
+    "title": {
+      "line1": "Google Ads For",
+      "line2": "Your Business"
+    },
+
+    "description": "We create and manage different types of Google Ads campaigns based on your business goals, industry, and target audience.",
+
+    "items": {
+      "search": {
+        "title": "Search Ads",
+        "description": "Appear at the top of Google search results when potential customers are actively looking for your services."
+      },
+
+      "local": {
+        "title": "Local Ads",
+        "description": "Reach customers in your city or service area and increase local business visibility."
+      },
+
+      "ecommerce": {
+        "title": "E-commerce Ads",
+        "description": "Promote products through Google Shopping and Performance Max campaigns."
+      },
+
+      "remarketing": {
+        "title": "Remarketing",
+        "description": "Reconnect with visitors who have already interacted with your website but haven't converted yet."
+      }
+    }
+  },
+  "process": {
+    "badge": "Our Process",
+
+    "title": {
+      "line1": "How We Build",
+      "line2": "Successful Campaigns"
+    },
+
+    "description": "Our structured approach helps ensure your Google Ads campaigns are built on data, optimized for performance, and focused on generating qualified leads.",
+
+    "steps": {
+      "step1": {
+        "number": "01",
+        "title": "Business Analysis",
+        "description": "We learn about your business, goals, competitors, and target audience to create the right advertising strategy."
+      },
+
+      "step2": {
+        "number": "02",
+        "title": "Keyword Research",
+        "description": "We identify high-intent search terms that potential customers use when looking for your products or services."
+      },
+
+      "step3": {
+        "number": "03",
+        "title": "Campaign Setup",
+        "description": "We build campaigns, create ad groups, write ad copy, and configure all necessary campaign settings."
+      },
+
+      "step4": {
+        "number": "04",
+        "title": "Conversion Tracking",
+        "description": "We set up analytics and conversion tracking to measure calls, form submissions, and other important actions."
+      },
+
+      "step5": {
+        "number": "05",
+        "title": "Optimization & Reporting",
+        "description": "We continuously improve campaign performance and provide transparent reports on results."
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+
+    "title": "Frequently Asked Questions",
+
+    "description": "Answers to the most common questions about Google Ads campaigns, budgets, lead generation, and campaign management.",
+
+    "items": {
+      "item1": {
+        "question": "How much should I spend on Google Ads?",
+        "answer": "The ideal budget depends on your industry, competition, and goals. We help determine a realistic budget that aligns with your business objectives."
+      },
+
+      "item2": {
+        "question": "How quickly can I see results?",
+        "answer": "Most campaigns start generating impressions and clicks within a few days. Lead generation results often become visible within the first weeks after launch."
+      },
+
+      "item3": {
+        "question": "Do I need a website before running Google Ads?",
+        "answer": "In most cases, yes. A professional and conversion-focused website helps turn visitors into qualified leads and improves campaign performance."
+      },
+
+      "item4": {
+        "question": "Can Google Ads work for local businesses?",
+        "answer": "Absolutely. Google Ads is highly effective for local businesses by targeting people searching for services in specific cities or regions."
+      },
+
+      "item5": {
+        "question": "Do you provide campaign reports?",
+        "answer": "Yes. We provide transparent reports and explain key metrics such as clicks, leads, conversions, and campaign performance."
+      },
+
+      "item6": {
+        "question": "Can I stop my campaigns at any time?",
+        "answer": "Yes. You remain in full control of your advertising budget and campaigns, and they can be paused or adjusted whenever needed."
+      }
+    }
   }
 }
