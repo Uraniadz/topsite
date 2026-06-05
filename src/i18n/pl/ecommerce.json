@@ -175,5 +175,44 @@
     },
 
     "bottomText": "Potrzebujesz integracji z marketplace, zaawansowanych filtrów, programów lojalnościowych lub dedykowanych funkcji? Dopasujemy rozwiązanie do Twojego biznesu."
+  },
+  "faq": {
+    "badge": "FAQ",
+
+    "title": "Najczęściej Zadawane Pytania",
+
+    "description": "Odpowiedzi na najczęstsze pytania dotyczące sklepów internetowych, płatności online, zarządzania produktami i rozwoju sprzedaży.",
+
+    "items": {
+      "item1": {
+        "question": "Ile czasu zajmuje stworzenie sklepu internetowego?",
+        "answer": "Większość projektów realizujemy w ciągu 3–6 tygodni, w zależności od liczby produktów, integracji i dodatkowych funkcji."
+      },
+
+      "item2": {
+        "question": "Czy będę mógł samodzielnie zarządzać produktami?",
+        "answer": "Tak. Otrzymasz dostęp do panelu administracyjnego, gdzie możesz dodawać, edytować i usuwać produkty, kategorie, ceny oraz stany magazynowe."
+      },
+
+      "item3": {
+        "question": "Czy możecie zintegrować płatności online?",
+        "answer": "Tak. Integrujemy Stripe, PayPal, BLIK, Przelewy24 oraz inne systemy płatności dopasowane do rynku i potrzeb biznesu."
+      },
+
+      "item4": {
+        "question": "Czy sklep może obsługiwać integracje dostaw?",
+        "answer": "Tak. Możemy połączyć sklep z firmami kurierskimi, paczkomatami oraz innymi rozwiązaniami logistycznymi."
+      },
+
+      "item5": {
+        "question": "Czy sklep będzie zoptymalizowany pod Google?",
+        "answer": "Tak. Tworzymy sklepy z myślą o SEO, odpowiedniej strukturze oraz zoptymalizowanych stronach produktów."
+      },
+
+      "item6": {
+        "question": "Czy pomagacie rozwijać sklep po uruchomieniu?",
+        "answer": "Tak. Możemy pomóc w prowadzeniu kampanii Google Ads, konfiguracji analityki oraz dalszym rozwoju sprzedaży online."
+      }
+    }
   }
 }

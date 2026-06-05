@@ -75,9 +75,6 @@ const EcommercePricing = () => {
             >
               {t('pricing.card.button')}
             </HashLink>
-            {/* <button className={styles.pricing__button}>
-              {t('pricing.card.button')}
-            </button> */}
           </div>
         </div>
 

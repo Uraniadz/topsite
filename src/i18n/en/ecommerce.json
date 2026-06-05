@@ -175,5 +175,44 @@
     },
 
     "bottomText": "Need additional features such as marketplace integrations, advanced filters, loyalty programs, or custom functionality? We can tailor the solution to your business."
+  },
+  "faq": {
+    "badge": "FAQ",
+
+    "title": "Frequently Asked Questions",
+
+    "description": "Answers to common questions about e-commerce websites, online payments, product management, and store growth.",
+
+    "items": {
+      "item1": {
+        "question": "How long does it take to build an online store?",
+        "answer": "Most e-commerce projects are completed within 3–6 weeks, depending on the number of products, required integrations, and custom functionality."
+      },
+
+      "item2": {
+        "question": "Can I manage products myself?",
+        "answer": "Yes. You'll have access to an administration panel where you can add, edit, remove products, manage categories, prices, and inventory."
+      },
+
+      "item3": {
+        "question": "Can you integrate online payments?",
+        "answer": "Absolutely. We can integrate payment providers such as Stripe, PayPal, BLIK, Przelewy24, and other solutions depending on your market."
+      },
+
+      "item4": {
+        "question": "Can the store support delivery integrations?",
+        "answer": "Yes. We can integrate delivery services, parcel lockers, courier companies, and shipping management solutions."
+      },
+
+      "item5": {
+        "question": "Will my store be optimized for Google?",
+        "answer": "Yes. We build stores with SEO best practices, optimized structure, metadata, and product pages designed for search visibility."
+      },
+
+      "item6": {
+        "question": "Can you help grow the store after launch?",
+        "answer": "Yes. We can assist with Google Ads, analytics, conversion tracking, and long-term growth strategies."
+      }
+    }
   }
 }
