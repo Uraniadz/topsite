@@ -10,6 +10,7 @@ import enContact from './en/contact.json';
 import enLanding from './en/landing.json';
 import enBusiness from './en/business.json';
 import enEcommerce from './en/ecommerce.json';
+import enAds from './en/ads.json';
 // Ukraine
 import uaCommon from './uk/common.json';
 import uaCookies from './uk/cookies.json';
@@ -22,6 +23,7 @@ import uaContact from './uk/contact.json';
 import uaLanding from './uk/landing.json';
 import uaBusiness from './uk/business.json';
 import uaEcommerce from './uk/ecommerce.json';
+import uaAds from './uk/ads.json';
 // Polish
 import plCommon from './pl/common.json';
 import plCookies from './pl/cookies.json';
@@ -34,6 +36,7 @@ import plContact from './pl/contact.json';
 import plLanding from './pl/landing.json';
 import plBusiness from './pl/business.json';
 import plEcommerce from './pl/ecommerce.json';
+import plAds from './pl/ads.json';
 
 export const resources = {
   en: {
@@ -48,6 +51,7 @@ export const resources = {
     landing: enLanding,
     business: enBusiness,
     ecommerce: enEcommerce,
+    ads: enAds,
   },
   uk: {
     common: uaCommon,
@@ -61,6 +65,7 @@ export const resources = {
     landing: uaLanding,
     business: uaBusiness,
     ecommerce: uaEcommerce,
+    ads: uaAds,
   },
   pl: {
     common: plCommon,
@@ -74,5 +79,6 @@ export const resources = {
     landing: plLanding,
     business: plBusiness,
     ecommerce: plEcommerce,
+    ads: plAds,
   },
 };

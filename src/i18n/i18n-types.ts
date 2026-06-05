@@ -9,6 +9,7 @@ import contact from './en/contact.json';
 import landing from './en/landing.json';
 import business from './en/business.json';
 import ecommerce from './en/ecommerce.json';
+import ads from './en/ads.json';
 
 export type Resources = {
   common: typeof сommon;
@@ -22,4 +23,5 @@ export type Resources = {
   landing: typeof landing;
   business: typeof business;
   ecommerce: typeof ecommerce;
+  ads: typeof ads;
 };

@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "imageAlt": "Zarządzanie kampaniami Google Ads",
+
+    "badge": "Usługi Google Ads",
+
+    "title": {
+      "line1": "Pozyskuj Więcej",
+      "line2": "Wartościowych Leadów"
+    },
+
+    "description": "Tworzymy, konfigurujemy i optymalizujemy kampanie Google Ads, które pomagają Twojej firmie pozyskiwać wartościowe leady, zwiększać rozpoznawalność marki i rozwijać biznes online.",
+
+    "features": {
+      "feature1": "Wartościowe leady",
+      "feature2": "Śledzenie konwersji",
+      "feature3": "Optymalizacja kampanii",
+      "feature4": "Przejrzyste raportowanie"
+    },
+
+    "buttons": {
+      "consultation": "Bezpłatna konsultacja",
+      "learnMore": "Dowiedz się więcej"
+    }
+  }
+}

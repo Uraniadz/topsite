@@ -28,6 +28,10 @@ const Footer = () => {
           <nav className="footer__nav">
             <Link to={routesPath.home}>{t('footer.nav.home')}</Link>
             <Link to={routesPath.about}>{t('footer.nav.about')}</Link>
+            <Link to={routesPath.landing}>{t('landingPage')}</Link>
+            <Link to={routesPath.business}>{t('businessWebsite')}</Link>
+            <Link to={routesPath.ecommerce}>{t('ecommerce')}</Link>
+            <Link to={routesPath.services}>{t('nav.services')}</Link>
             <Link to={routesPath.price}>{t('footer.nav.price')}</Link>
             <Link to={routesPath.contact}>{t('footer.nav.contact')}</Link>
             <Link to={routesPath.cookies}>{t('footer.nav.cookies')}</Link>

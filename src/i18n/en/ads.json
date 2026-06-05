@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "imageAlt": "Google Ads campaign management",
+
+    "badge": "Google Ads Services",
+
+    "title": {
+      "line1": "Generate More",
+      "line2": "Qualified Leads"
+    },
+
+    "description": "We create, manage, and optimize Google Ads campaigns that help your business attract qualified leads, increase visibility, and grow online.",
+
+    "features": {
+      "feature1": "Qualified Leads",
+      "feature2": "Conversion Tracking",
+      "feature3": "Campaign Optimization",
+      "feature4": "Transparent Reporting"
+    },
+
+    "buttons": {
+      "consultation": "Free Consultation",
+      "learnMore": "Learn More"
+    }
+  }
+}

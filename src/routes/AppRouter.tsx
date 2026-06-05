@@ -13,6 +13,7 @@ import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage/PrivacyPolicyPage';
 import LandingPage from '@/pages/LandingPage/LandingPage';
 import BusinessPage from '@/pages/BusinessPage/BusinessPage';
 import ECommercePage from '@/pages/ECommercePage/EcommercePage';
+import AdsPage from '@/pages/AdsPage/AdsPage';
 
 function AppRouter() {
   return (
@@ -30,6 +31,7 @@ function AppRouter() {
           <Route path={routesPath.landing} element={<LandingPage />} />
           <Route path={routesPath.business} element={<BusinessPage />} />
           <Route path={routesPath.ecommerce} element={<ECommercePage />} />
+          <Route path={routesPath.ads} element={<AdsPage />} />
           <Route path="*" element={<NotFoundPage404 />} />
         </Route>
       </Routes>
