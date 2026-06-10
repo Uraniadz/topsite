@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { X, ArrowLeft, ArrowRight } from 'lucide-react';
 
@@ -8,9 +9,7 @@ import styles from './PortfolioModal.module.css';
 
 type Project = {
   id: number;
-  title: string;
-  category: string;
-  description: string;
+  key: string;
   stack: string[];
   image: string;
 };
@@ -40,6 +39,8 @@ const PortfolioModal = ({
   nextProject,
   prevProject,
 }: PortfolioModalProps) => {
+  const { t } = useTranslation('home');
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -115,8 +116,6 @@ const PortfolioModal = ({
               ease: [0.22, 1, 0.36, 1],
             }}
           >
-            {/* ===== Top Bar ===== */}
-
             <div className={styles.modal__topbar}>
               <div className={styles.modal__navigation}>
                 <button onClick={prevProject} className={styles.modal__navBtn}>
@@ -137,42 +136,35 @@ const PortfolioModal = ({
               </button>
             </div>
 
-            {/* ===== Hero Image ===== */}
-
             <div className={styles.modal__imageWrapper}>
               <img
                 src={project.image}
-                alt={project.title}
+                alt={t(`portfolio.projects.${project.key}.title`)}
                 className={styles.modal__image}
               />
             </div>
 
-            {/* ===== Body ===== */}
-
             <div className={styles.modal__body}>
-              <span className={styles.modal__category}>{project.category}</span>
+              <span className={styles.modal__category}>
+                {t(`portfolio.projects.${project.key}.category`)}
+              </span>
 
-              <h2 className={styles.modal__title}>{project.title}</h2>
+              <h2 className={styles.modal__title}>
+                {t(`portfolio.projects.${project.key}.title`)}
+              </h2>
 
-              <p className={styles.modal__description}>{project.description}</p>
-
-              {/* ===== Overview ===== */}
+              <p className={styles.modal__description}>
+                {t(`portfolio.projects.${project.key}.description`)}
+              </p>
 
               <div className={styles.modal__section}>
-                <h3>Project Overview</h3>
+                <h3>{t('portfolio.modal.overviewTitle')}</h3>
 
-                <p>
-                  This project was designed with focus on performance,
-                  scalability, responsive experience and modern UI architecture.
-                  The solution includes reusable components, optimized layouts
-                  and clean frontend structure.
-                </p>
+                <p>{t('portfolio.modal.overviewText')}</p>
               </div>
 
-              {/* ===== Technologies ===== */}
-
               <div className={styles.modal__section}>
-                <h3>Technologies</h3>
+                <h3>{t('portfolio.modal.technologiesTitle')}</h3>
 
                 <div className={styles.modal__stack}>
                   {project.stack.map((item) => (
@@ -181,18 +173,22 @@ const PortfolioModal = ({
                 </div>
               </div>
 
-              {/* ===== Gallery ===== */}
-
               <div className={styles.modal__section}>
-                <h3>Project Gallery</h3>
+                <h3>{t('portfolio.modal.galleryTitle')}</h3>
 
                 <div className={styles.modal__gallery}>
                   <div className={styles.modal__galleryItem}>
-                    <img src={project.image} alt={project.title} />
+                    <img
+                      src={project.image}
+                      alt={t(`portfolio.projects.${project.key}.title`)}
+                    />
                   </div>
 
                   <div className={styles.modal__galleryItem}>
-                    <img src={project.image} alt={project.title} />
+                    <img
+                      src={project.image}
+                      alt={t(`portfolio.projects.${project.key}.title`)}
+                    />
                   </div>
                 </div>
               </div>

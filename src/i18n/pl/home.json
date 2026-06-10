@@ -138,6 +138,51 @@
       }
     }
   },
+  "portfolio": {
+    "badge": "Portfolio",
+
+    "title": "Wybrane Projekty i Case Study",
+
+    "description": "Prezentacja nowoczesnych stron internetowych i aplikacji webowych tworzonych z naciskiem na wydajność, doświadczenie użytkownika oraz skalowalność.",
+
+    "viewCaseStudy": "Zobacz Case Study",
+
+    "modal": {
+      "overviewTitle": "Opis Projektu",
+
+      "overviewText": "Projekt został zaprojektowany z naciskiem na wydajność, skalowalność, responsywność oraz nowoczesną architekturę interfejsu. Rozwiązanie obejmuje wielokrotnego użytku komponenty, zoptymalizowane układy oraz przejrzystą strukturę frontendu.",
+
+      "technologiesTitle": "Technologie",
+
+      "galleryTitle": "Galeria Projektu"
+    },
+
+    "projects": {
+      "project1": {
+        "category": "E-commerce",
+        "title": "Sklep internetowy z karmą dla psów",
+        "description": "Nowoczesna platforma ecommerce z logowaniem użytkowników, płatnościami online, integracją dostaw i własnym panelem administracyjnym."
+      },
+
+      "project2": {
+        "category": "Strona Firmowa",
+        "title": "Strona firmy sprzątającej",
+        "description": "Wielostronicowa witryna zoptymalizowana pod lokalne SEO i pozyskiwanie klientów."
+      },
+
+      "project3": {
+        "category": "Strona Korporacyjna",
+        "title": "Platforma usług prawnych",
+        "description": "Profesjonalna wielojęzyczna strona internetowa dla kancelarii prawnej z nowoczesnym responsywnym układem."
+      },
+
+      "project4": {
+        "category": "Landing Page",
+        "title": "Usługa czyszczenia wnętrz",
+        "description": "Nowoczesny landing page z płynnymi animacjami i układem skoncentrowanym na konwersji."
+      }
+    }
+  },
   "reviews": {
     "badge": "OPINIE KLIENTÓW",
 

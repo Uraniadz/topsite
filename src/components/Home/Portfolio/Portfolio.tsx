@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence, type Variants } from 'framer-motion';
+
 import PortfolioModal from './PortfolioModal';
 
 import { ArrowLeft, ArrowRight, ArrowUpRight } from 'lucide-react';
@@ -9,10 +11,7 @@ import styles from './Portfolio.module.css';
 const projects = [
   {
     id: 1,
-    category: 'E-commerce',
-    title: 'Pet Food Online Store',
-    description:
-      'Modern ecommerce platform with authentication, online payments, delivery integrations and custom admin dashboard.',
+    key: 'project1',
 
     image:
       'https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=1600&auto=format&fit=crop',
@@ -22,10 +21,7 @@ const projects = [
 
   {
     id: 2,
-    category: 'Business Website',
-    title: 'Cleaning Company Website',
-    description:
-      'SEO-focused multi-page company website designed for lead generation and local visibility.',
+    key: 'project2',
 
     image:
       'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop',
@@ -35,10 +31,7 @@ const projects = [
 
   {
     id: 3,
-    category: 'Corporate Website',
-    title: 'Lawyer Services Platform',
-    description:
-      'Professional multilingual website for legal services with modern responsive layout.',
+    key: 'project3',
 
     image:
       'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop',
@@ -48,10 +41,7 @@ const projects = [
 
   {
     id: 4,
-    category: 'Landing Page',
-    title: 'Interior Cleaning Service',
-    description:
-      'Modern landing page with smooth animations and conversion-focused sections.',
+    key: 'project4',
 
     image:
       'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop',
@@ -105,8 +95,11 @@ const slideVariants: Variants = {
 };
 
 const Portfolio = () => {
+  const { t } = useTranslation('home');
+
   const [activeIndex, setActiveIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const activeProject = projects[activeIndex];
 
   const nextProject = () => {
@@ -127,15 +120,14 @@ const Portfolio = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <span className={styles.portfolio__badge}>Portfolio</span>
+          <span className={styles.portfolio__badge}>
+            {t('portfolio.badge')}
+          </span>
 
-          <h2 className={styles.portfolio__title}>
-            Selected Projects & Case Studies
-          </h2>
+          <h2 className={styles.portfolio__title}>{t('portfolio.title')}</h2>
 
           <p className={styles.portfolio__description}>
-            A showcase of modern websites and web applications focused on
-            performance, user experience, and scalable architecture.
+            {t('portfolio.description')}
           </p>
         </motion.div>
 
@@ -151,15 +143,15 @@ const Portfolio = () => {
             >
               <div className={styles.showcase__content}>
                 <span className={styles.showcase__category}>
-                  {activeProject.category}
+                  {t(`portfolio.projects.${activeProject.key}.category`)}
                 </span>
 
                 <h3 className={styles.showcase__title}>
-                  {activeProject.title}
+                  {t(`portfolio.projects.${activeProject.key}.title`)}
                 </h3>
 
                 <p className={styles.showcase__text}>
-                  {activeProject.description}
+                  {t(`portfolio.projects.${activeProject.key}.description`)}
                 </p>
 
                 <div className={styles.showcase__stack}>
@@ -173,7 +165,8 @@ const Portfolio = () => {
                     className={styles.primaryBtn}
                     onClick={() => setIsModalOpen(true)}
                   >
-                    View Case Study
+                    {t('portfolio.viewCaseStudy')}
+
                     <ArrowUpRight size={18} />
                   </button>
 
@@ -196,7 +189,7 @@ const Portfolio = () => {
               <div className={styles.showcase__imageWrapper}>
                 <img
                   src={activeProject.image}
-                  alt={activeProject.title}
+                  alt={t(`portfolio.projects.${activeProject.key}.title`)}
                   className={styles.showcase__image}
                 />
               </div>
@@ -204,6 +197,7 @@ const Portfolio = () => {
           </AnimatePresence>
         </div>
       </div>
+
       <PortfolioModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

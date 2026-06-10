@@ -138,6 +138,51 @@
       }
     }
   },
+  "portfolio": {
+    "badge": "Portfolio",
+
+    "title": "Selected Projects & Case Studies",
+
+    "description": "A showcase of modern websites and web applications focused on performance, user experience, and scalable architecture.",
+
+    "viewCaseStudy": "View Case Study",
+
+    "modal": {
+      "overviewTitle": "Project Overview",
+
+      "overviewText": "This project was designed with focus on performance, scalability, responsive experience and modern UI architecture. The solution includes reusable components, optimized layouts and clean frontend structure.",
+
+      "technologiesTitle": "Technologies",
+
+      "galleryTitle": "Project Gallery"
+    },
+
+    "projects": {
+      "project1": {
+        "category": "E-commerce",
+        "title": "Pet Food Online Store",
+        "description": "Modern ecommerce platform with authentication, online payments, delivery integrations and custom admin dashboard."
+      },
+
+      "project2": {
+        "category": "Business Website",
+        "title": "Cleaning Company Website",
+        "description": "SEO-focused multi-page company website designed for lead generation and local visibility."
+      },
+
+      "project3": {
+        "category": "Corporate Website",
+        "title": "Lawyer Services Platform",
+        "description": "Professional multilingual website for legal services with modern responsive layout."
+      },
+
+      "project4": {
+        "category": "Landing Page",
+        "title": "Interior Cleaning Service",
+        "description": "Modern landing page with smooth animations and conversion-focused sections."
+      }
+    }
+  },
   "reviews": {
     "badge": "CLIENT FEEDBACK",
 
