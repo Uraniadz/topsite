@@ -12,9 +12,9 @@ import {
 
 import googleads from '@/assets/icons/adwords.png';
 
-import teamHero from '@/assets/images/about/team-hero.png';
-import myFoto from '@/assets/images/about/myFoto.png';
-import myWife from '@/assets/images/about/myWife2.png';
+import teamHero from '@/assets/images/about/foto-we-about.webp';
+import myFoto from '@/assets/images/about/my-foto-about.webp';
+import myWife from '@/assets/images/about/wife-foto-about.webp';
 
 import styles from './AboutPage.module.css';
 

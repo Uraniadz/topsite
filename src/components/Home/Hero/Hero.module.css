@@ -13,7 +13,9 @@
     ),
     #ffffff;
 }
-
+.hero__primaryWrapper {
+  display: inline-flex;
+}
 .hero__content {
   display: grid;
   grid-template-columns: 1fr 1fr;

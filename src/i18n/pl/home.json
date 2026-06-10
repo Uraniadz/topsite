@@ -1,39 +1,43 @@
 {
+  "seo": {
+    "title": "Tworzenie Stron Internetowych i Google Ads",
+    "description": "Profesjonalne tworzenie stron internetowych, landing page, stron firmowych, sklepów internetowych oraz prowadzenie kampanii Google Ads."
+  },
   "hero": {
-    "badge": "Full Stack Web Development",
+    "badge": "Strony internetowe i Google Ads dla firm",
 
-    "title": "Nowoczesne strony internetowe dla rozwijających się firm",
+    "title": "Pomagamy firmom pozyskiwać więcej klientów online",
 
-    "text": "Landing page, strony firmowe oraz skalowalne sklepy internetowe tworzone w React, TypeScript i Node.js.",
+    "text": "Tworzymy nowoczesne strony internetowe, prowadzimy kampanie Google Ads i pomagamy firmom zdobywać więcej zapytań, telefonów oraz sprzedaży online.",
 
     "buttons": {
-      "primary": "Rozpocznij projekt",
+      "primary": "Bezpłatna konsultacja",
       "secondary": "Zobacz usługi"
     },
 
     "stats": {
-      "react": {
-        "title": "React",
-        "subtitle": "Frontend"
+      "websites": {
+        "title": "Strony WWW",
+        "subtitle": "Tworzenie od podstaw"
       },
 
-      "node": {
-        "title": "Node.js",
-        "subtitle": "Backend"
+      "ads": {
+        "title": "Google Ads",
+        "subtitle": "Pozyskiwanie klientów"
       },
 
       "seo": {
         "title": "SEO",
-        "subtitle": "Optymalizacja"
+        "subtitle": "Widoczność i rozwój"
       }
     },
 
     "floating": {
-      "top": "Szybki i nowoczesny UI",
-      "bottom": "Responsywny design"
+      "top": "Google Ads i analityka",
+      "bottom": "Więcej klientów i sprzedaży"
     },
 
-    "imageAlt": "Podgląd nowoczesnej strony internetowej"
+    "imageAlt": "Strony internetowe i Google Ads dla rozwoju firmy"
   },
   "services": {
     "badge": "Usługi",

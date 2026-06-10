@@ -7,7 +7,7 @@ import styles from './Services.module.css';
 const Services = () => {
   const { t } = useTranslation('home');
   return (
-    <section className={styles.services}>
+    <section id="services" className={styles.services}>
       <div className="container">
         <div className={styles.services__top}>
           <span>{t('services.badge')}</span>

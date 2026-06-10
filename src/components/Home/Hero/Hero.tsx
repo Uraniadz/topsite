@@ -1,8 +1,32 @@
 import { useTranslation } from 'react-i18next';
-import styles from './Hero.module.css';
+
 import heroImage from '@/assets/images/hero/hero2.png';
+
+import styles from './Hero.module.css';
+import ContactModalButton from '@/components/UI_components/ContactModal/ContactModalButton';
+
 const Hero = () => {
   const { t } = useTranslation('home');
+  const scrollToExample = () => {
+    document.getElementById('services')?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
+  const stats = [
+    {
+      title: t('hero.stats.websites.title'),
+      subtitle: t('hero.stats.websites.subtitle'),
+    },
+    {
+      title: t('hero.stats.ads.title'),
+      subtitle: t('hero.stats.ads.subtitle'),
+    },
+    {
+      title: t('hero.stats.seo.title'),
+      subtitle: t('hero.stats.seo.subtitle'),
+    },
+  ];
 
   return (
     <section className={styles.hero}>
@@ -14,44 +38,33 @@ const Hero = () => {
             <h1 className={styles.hero__title}>{t('hero.title')}</h1>
 
             <p className={styles.hero__text}>{t('hero.text')}</p>
-
             <div className={styles.hero__actions}>
-              <button className={styles.hero__primary}>
-                {t('hero.buttons.primary')}
-              </button>
+              <div className={styles.hero__primaryWrapper}>
+                <ContactModalButton
+                  variant="primary"
+                  label={t('hero.buttons.primary')}
+                />
+              </div>
 
-              <button className={styles.hero__secondary}>
+              <button
+                onClick={scrollToExample}
+                className={styles.hero__secondary}
+              >
                 {t('hero.buttons.secondary')}
               </button>
             </div>
 
             <div className={styles.hero__stats}>
-              <div className={styles.hero__stat}>
-                <strong>
-                  <span className={styles.hero__statDot} />
-                  {t('hero.stats.react.title')}
-                </strong>
+              {stats.map((stat) => (
+                <div key={stat.title} className={styles.hero__stat}>
+                  <strong>
+                    <span className={styles.hero__statDot} />
+                    {stat.title}
+                  </strong>
 
-                <span> {t('hero.stats.react.subtitle')}</span>
-              </div>
-
-              <div className={styles.hero__stat}>
-                <strong>
-                  <span className={styles.hero__statDot} />
-                  {t('hero.stats.node.title')}
-                </strong>
-
-                <span> {t('hero.stats.node.subtitle')}</span>
-              </div>
-
-              <div className={styles.hero__stat}>
-                <strong>
-                  <span className={styles.hero__statDot} />
-                  {t('hero.stats.seo.title')}
-                </strong>
-
-                <span> {t('hero.stats.seo.subtitle')}</span>
-              </div>
+                  <span>{stat.subtitle}</span>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -79,7 +92,6 @@ const Hero = () => {
             </div>
 
             <div className={styles.hero__floatingBottom}>
-              {' '}
               {t('hero.floating.bottom')}
             </div>
           </div>

@@ -1,39 +1,43 @@
 {
+  "seo": {
+    "title": "Website Development & Google Ads",
+    "description": "Professional website development, landing pages, business websites, e-commerce stores, and Google Ads management."
+  },
   "hero": {
-    "badge": "Full Stack Web Development",
+    "badge": "Websites & Google Ads for Business",
 
-    "title": "Modern websites for growing businesses",
+    "title": "Helping Businesses Get More Customers Online",
 
-    "text": "Landing pages, business websites and scalable e-commerce platforms built with React, TypeScript and Node.js.",
+    "text": "We build modern websites, launch Google Ads campaigns, and help businesses generate more leads, calls, and sales online.",
 
     "buttons": {
-      "primary": "Start Project",
+      "primary": "Free Consultation",
       "secondary": "View Services"
     },
 
     "stats": {
-      "react": {
-        "title": "React",
-        "subtitle": "Frontend"
+      "websites": {
+        "title": "Websites",
+        "subtitle": "Custom Development"
       },
 
-      "node": {
-        "title": "Node.js",
-        "subtitle": "Backend"
+      "ads": {
+        "title": "Google Ads",
+        "subtitle": "Customer Acquisition"
       },
 
       "seo": {
         "title": "SEO",
-        "subtitle": "Optimization"
+        "subtitle": "Visibility & Growth"
       }
     },
 
     "floating": {
-      "top": "Fast & Modern UI",
-      "bottom": "Responsive Design"
+      "top": "Google Ads & Analytics",
+      "bottom": "More Leads & Sales"
     },
 
-    "imageAlt": "Modern website preview"
+    "imageAlt": "Websites and Google Ads for business growth"
   },
   "services": {
     "badge": "Services",

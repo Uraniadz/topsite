@@ -1,3 +1,7 @@
+import { useTranslation } from 'react-i18next';
+
+import Seo from '@/components/UI_components/Seo/Seo';
+
 import Cta from '@/components/Home/Cta/Cta';
 import FAQ from '@/components/Home/Faq/Faq';
 import Hero from '@/components/Home/Hero/Hero';
@@ -9,8 +13,12 @@ import WhyChooseUs from '@/components/Home/WhyChooseUs/WhyChooseUs';
 import ContactForm from '@/components/UI_components/ContactForm/ContactForm';
 
 const HomePage = () => {
+  const { t } = useTranslation('home');
+
   return (
     <>
+      <Seo title={t('seo.title')} description={t('seo.description')} />
+
       <Hero />
       <Services />
       <WhyChooseUs />
