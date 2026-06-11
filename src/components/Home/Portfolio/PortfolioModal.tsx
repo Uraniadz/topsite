@@ -1,9 +1,10 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { X, ArrowLeft, ArrowRight } from 'lucide-react';
 
 import { motion, AnimatePresence } from 'framer-motion';
+import ImagePreviewModal from './ImagePreviewModal';
 
 import styles from './PortfolioModal.module.css';
 
@@ -12,6 +13,7 @@ type Project = {
   key: string;
   stack: string[];
   image: string;
+  gallery?: string[];
 };
 
 type PortfolioModalProps = {
@@ -40,6 +42,7 @@ const PortfolioModal = ({
   prevProject,
 }: PortfolioModalProps) => {
   const { t } = useTranslation('home');
+  const [previewIndex, setPreviewIndex] = useState<number | null>(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -177,25 +180,47 @@ const PortfolioModal = ({
                 <h3>{t('portfolio.modal.galleryTitle')}</h3>
 
                 <div className={styles.modal__gallery}>
-                  <div className={styles.modal__galleryItem}>
-                    <img
-                      src={project.image}
-                      alt={t(`portfolio.projects.${project.key}.title`)}
-                    />
-                  </div>
-
-                  <div className={styles.modal__galleryItem}>
-                    <img
-                      src={project.image}
-                      alt={t(`portfolio.projects.${project.key}.title`)}
-                    />
-                  </div>
+                  {project.gallery?.map((image, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      className={styles.modal__galleryItem}
+                      onClick={() => setPreviewIndex(index)}
+                    >
+                      <img
+                        src={image}
+                        alt={`${t(
+                          `portfolio.projects.${project.key}.title`,
+                        )} ${index + 1}`}
+                      />
+                    </button>
+                  ))}
                 </div>
               </div>
             </div>
           </motion.div>
         </motion.div>
       )}
+      <ImagePreviewModal
+        isOpen={previewIndex !== null}
+        images={project.gallery || []}
+        currentIndex={previewIndex ?? 0}
+        onClose={() => setPreviewIndex(null)}
+        onNext={() =>
+          setPreviewIndex((prev) =>
+            prev === null ? 0 : (prev + 1) % (project.gallery?.length || 1),
+          )
+        }
+        onPrev={() =>
+          setPreviewIndex((prev) =>
+            prev === null
+              ? 0
+              : prev === 0
+                ? (project.gallery?.length || 1) - 1
+                : prev - 1,
+          )
+        }
+      />
     </AnimatePresence>
   );
 };

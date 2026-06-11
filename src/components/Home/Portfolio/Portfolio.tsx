@@ -1,31 +1,50 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence, type Variants } from 'framer-motion';
+import fotoDogsTitle from '@/assets/images/portfolio/dogsfood/portfolio-dogs1.webp';
+import fotoDogsSub from '@/assets/images/portfolio/dogsfood/portfolio-dogs2.webp';
+import fotoDogsSub2 from '@/assets/images/portfolio/dogsfood/portfolio-dogs3.webp';
+
+import fotoEcoTitle from '@/assets/images/portfolio/cleaning/portfolio-eco-home.webp';
+import fotoEcoSub from '@/assets/images/portfolio/cleaning/portfolio-eco-dom.webp';
+import fotoEcoSub2 from '@/assets/images/portfolio/cleaning/portfolio-eco-reviews.webp';
+import fotoEcoSub3 from '@/assets/images/portfolio/cleaning/portfolio-eco-contact.webp';
+
+import fotoAdvocateTitle from '@/assets/images/portfolio/advocate/portfolio-advocate-title.webp';
+import fotoAdvocateSub from '@/assets/images/portfolio/advocate/portfolio-advocate-services.webp';
+import fotoAdvocateSub2 from '@/assets/images/portfolio/advocate/portfolio-advocate-blog.webp';
+import fotoAdvocateSub3 from '@/assets/images/portfolio/advocate/portfolio-advocate-home.webp';
+
+import fotoPlumTitle from '@/assets/images/portfolio/plum/portfolio-plum-about.webp';
+import fotoPlumSub from '@/assets/images/portfolio/plum/portfolio-plum-home.webp';
 
 import PortfolioModal from './PortfolioModal';
 
 import { ArrowLeft, ArrowRight, ArrowUpRight } from 'lucide-react';
 
 import styles from './Portfolio.module.css';
-
-const projects = [
+type Project = {
+  id: number;
+  key: string;
+  image: string;
+  gallery?: string[];
+  stack: string[];
+};
+const projects: Project[] = [
   {
     id: 1,
     key: 'project1',
-
-    image:
-      'https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=1600&auto=format&fit=crop',
-
-    stack: ['React', 'Node.js', 'MongoDB', 'BLIK'],
+    image: fotoDogsTitle,
+    gallery: [fotoDogsTitle, fotoDogsSub, fotoDogsSub2],
+    stack: ['React', 'Node.js', 'MongoDB', 'Strip', 'BLIK'],
   },
 
   {
     id: 2,
     key: 'project2',
 
-    image:
-      'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop',
-
+    image: fotoEcoTitle,
+    gallery: [fotoEcoTitle, fotoEcoSub, fotoEcoSub2, fotoEcoSub3],
     stack: ['React', 'TypeScript', 'i18next'],
   },
 
@@ -33,8 +52,8 @@ const projects = [
     id: 3,
     key: 'project3',
 
-    image:
-      'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop',
+    image: fotoAdvocateTitle,
+    gallery: [fotoAdvocateSub3, fotoAdvocateSub, fotoAdvocateSub2],
 
     stack: ['React', 'Framer Motion'],
   },
@@ -43,9 +62,8 @@ const projects = [
     id: 4,
     key: 'project4',
 
-    image:
-      'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop',
-
+    image: fotoPlumTitle,
+    gallery: [fotoPlumSub],
     stack: ['React', 'CSS Modules'],
   },
 ];
