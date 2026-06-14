@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import heroImage from '@/assets/images/hero/hero2.png';
+import heroImage from '@/assets/images/hero/hero2.webp';
 
 import styles from './Hero.module.css';
 import ContactModalButton from '@/components/UI_components/ContactModal/ContactModalButton';

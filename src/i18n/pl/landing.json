@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Landing Page | {{company}}",
+    "description": "Profesjonalne Landing Page od {{company}}, stworzone do pozyskiwania klientów, wspierania kampanii Google Ads i zwiększania konwersji."
+  },
   "hero": {
     "badge": "Nowoczesne Landing Page",
     "primaryButton": "Darmowa konsultacja",

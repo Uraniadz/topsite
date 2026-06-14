@@ -96,3 +96,33 @@
 .messenger--footer.email:hover {
   background: #64748b;
 }
+/* mobile */
+.messenger--desktop.whatsapp,
+.messenger--menu.whatsapp,
+.messenger--mobile.whatsapp {
+  background: #25d366;
+}
+
+.messenger--desktop.telegram,
+.messenger--menu.telegram,
+.messenger--mobile.telegram {
+  background: #0088cc;
+}
+
+.messenger--desktop.facebook,
+.messenger--menu.facebook,
+.messenger--mobile.facebook {
+  background: #0084ff;
+}
+
+.messenger--desktop.email,
+.messenger--menu.email,
+.messenger--mobile.email {
+  background: #555;
+}
+
+.messenger--desktop,
+.messenger--menu,
+.messenger--mobile {
+  color: #fff;
+}

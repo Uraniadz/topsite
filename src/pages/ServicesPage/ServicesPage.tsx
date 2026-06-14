@@ -6,6 +6,8 @@ import { useTranslation } from 'react-i18next';
 import styles from './ServicePage.module.css';
 import ContactCta from '@/components/UI_components/ContactCta/ContactCta';
 import ContactModalButton from '@/components/UI_components/ContactModal/ContactModalButton';
+import Seo from '@/components/UI_components/Seo/Seo';
+import { CONTACTS } from '@/config/contact';
 
 const fadeUp = {
   hidden: {
@@ -91,6 +93,12 @@ const ServicePage = () => {
 
   return (
     <main className={styles.servicesPage}>
+      <Seo
+        title={t('seo.title', { company: CONTACTS.companyName })}
+        description={t('seo.description', {
+          company: CONTACTS.companyName,
+        })}
+      />
       {/* HERO */}
 
       <section className={styles.hero}>

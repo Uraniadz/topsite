@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Strony Internetowe dla Firm | {{company}}",
+    "description": "Rozwijaj swoją firmę dzięki profesjonalnej stronie internetowej od {{company}}. Tworzymy nowoczesne, responsywne i przyjazne SEO strony firmowe, które pomagają pozyskiwać klientów, wspierają kampanie Google Ads i zwiększają widoczność w internecie."
+  },
   "hero": {
     "badge": "Profesjonalne Strony Firmowe",
     "title": {

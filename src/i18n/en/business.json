@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Business Websites | {{company}}",
+    "description": "Grow your business with a professional multi-page website from {{company}}. SEO-ready, mobile-friendly, and built to generate leads, support Google Ads, and increase your online visibility."
+  },
   "hero": {
     "badge": "Professional Business Websites",
     "title": {

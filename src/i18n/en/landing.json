@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Landing Pages | {{company}}",
+    "description": "Professional landing pages by {{company}} designed to generate leads, support Google Ads campaigns, and convert visitors into customers."
+  },
   "hero": {
     "badge": "Modern Landing Pages",
     "primaryButton": "Free Consultation",

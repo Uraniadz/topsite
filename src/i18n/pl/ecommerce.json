@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Sklepy Internetowe | {{company}}",
+    "description": "Profesjonalne sklepy internetowe od {{company}}. Sprzedawaj produkty online, przyjmuj płatności, zarządzaj zamówieniami i rozwijaj swój biznes dzięki nowoczesnym rozwiązaniom e-commerce."
+  },
   "hero": {
     "badge": "Profesjonalne Sklepy Internetowe",
 

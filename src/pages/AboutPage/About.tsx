@@ -17,6 +17,8 @@ import myFoto from '@/assets/images/about/my-foto-about.webp';
 import myWife from '@/assets/images/about/wife-foto-about.webp';
 
 import styles from './AboutPage.module.css';
+import Seo from '@/components/UI_components/Seo/Seo';
+import { CONTACTS } from '@/config/contact';
 
 const AboutPage = () => {
   const { t } = useTranslation('about');
@@ -48,244 +50,258 @@ const AboutPage = () => {
   ];
 
   return (
-    <main className={styles.about}>
-      <section className={styles.hero}>
-        <div className="container">
-          <div className={styles.hero__imageWrapper}>
-            <img
-              src={teamHero}
-              alt="Codevix Studio Team"
-              className={styles.hero__image}
-            />
+    <>
+      <Seo
+        title={t('seo.title', { company: CONTACTS.companyName })}
+        description={t('seo.description', { company: CONTACTS.companyName })}
+      />
+      <main className={styles.about}>
+        <section className={styles.hero}>
+          <div className="container">
+            <div className={styles.hero__imageWrapper}>
+              <img
+                src={teamHero}
+                alt="Codevix Studio Team"
+                className={styles.hero__image}
+              />
 
-            {/* LEFT CARD */}
+              {/* LEFT CARD */}
 
-            <motion.div
-              animate={{
-                y: [0, -12, 0],
-              }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                ease: 'easeInOut',
-              }}
-              className={`${styles.floatingCard} ${styles.leftCard}`}
-            >
-              <div className={styles.cardIcon}>{'</>'}</div>
+              <motion.div
+                animate={{
+                  y: [0, -12, 0],
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+                }}
+                className={`${styles.floatingCard} ${styles.leftCard}`}
+              >
+                <div className={styles.cardIcon}>{'</>'}</div>
 
-              <h3>{t('hero.leftCard.title')}</h3>
+                <h3>{t('hero.leftCard.title')}</h3>
 
-              <div className={styles.cardLine}></div>
+                <div className={styles.cardLine}></div>
 
-              <ul>
-                <li>{t('hero.leftCard.items.react')}</li>
-                <li>{t('hero.leftCard.items.node')}</li>
-                <li>{t('hero.leftCard.items.mongo')}</li>
-                <li>{t('hero.leftCard.items.seo')}</li>
-              </ul>
-            </motion.div>
+                <ul>
+                  <li>{t('hero.leftCard.items.react')}</li>
+                  <li>{t('hero.leftCard.items.node')}</li>
+                  <li>{t('hero.leftCard.items.mongo')}</li>
+                  <li>{t('hero.leftCard.items.seo')}</li>
+                </ul>
+              </motion.div>
 
-            {/* RIGHT CARD */}
+              {/* RIGHT CARD */}
 
-            <motion.div
-              animate={{
-                y: [0, 12, 0],
-              }}
-              transition={{
-                duration: 7,
-                repeat: Infinity,
-                ease: 'easeInOut',
-              }}
-              className={`${styles.floatingCard} ${styles.rightCard}`}
-            >
-              <div className={styles.googleIcon}>
-                <img src={googleads} alt="Google Ads" />
-              </div>
+              <motion.div
+                animate={{
+                  y: [0, 12, 0],
+                }}
+                transition={{
+                  duration: 7,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+                }}
+                className={`${styles.floatingCard} ${styles.rightCard}`}
+              >
+                <div className={styles.googleIcon}>
+                  <img src={googleads} alt="Google Ads" />
+                </div>
 
-              <h3>{t('hero.rightCard.title')}</h3>
+                <h3>{t('hero.rightCard.title')}</h3>
 
-              <div className={styles.cardLine}></div>
+                <div className={styles.cardLine}></div>
 
-              <ul>
-                <li>{t('hero.rightCard.items.campaigns')}</li>
-                <li>{t('hero.rightCard.items.keywords')}</li>
-                <li>{t('hero.rightCard.items.optimization')}</li>
-                <li>{t('hero.rightCard.items.analytics')}</li>
-              </ul>
-            </motion.div>
+                <ul>
+                  <li>{t('hero.rightCard.items.campaigns')}</li>
+                  <li>{t('hero.rightCard.items.keywords')}</li>
+                  <li>{t('hero.rightCard.items.optimization')}</li>
+                  <li>{t('hero.rightCard.items.analytics')}</li>
+                </ul>
+              </motion.div>
 
-            {/* CENTER BRAND */}
+              {/* CENTER BRAND */}
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className={styles.heroBrand}
-            >
-              <span>{'</>'}</span>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                className={styles.heroBrand}
+              >
+                <span>{'</>'}</span>
 
-              <h2>Codevix Studio</h2>
+                <h2>Codevix Studio</h2>
 
-              <p>{t('hero.brand')}</p>
-            </motion.div>
-          </div>
-        </div>
-
-        <div className={styles.blurOne}></div>
-        <div className={styles.blurTwo}></div>
-      </section>
-
-      <section className={styles.features}>
-        <div className="container">
-          <div className={styles.sectionTop}>
-            <span className={styles.sectionBadge}>{t('features.badge')}</span>
-
-            <h2>{t('features.title')}</h2>
+                <p>{t('hero.brand')}</p>
+              </motion.div>
+            </div>
           </div>
 
-          <div className={styles.featuresGrid}>
-            {features.map((feature, index) => (
+          <div className={styles.blurOne}></div>
+          <div className={styles.blurTwo}></div>
+        </section>
+
+        <section className={styles.features}>
+          <div className="container">
+            <div className={styles.sectionTop}>
+              <span className={styles.sectionBadge}>{t('features.badge')}</span>
+
+              <h2>{t('features.title')}</h2>
+            </div>
+
+            <div className={styles.featuresGrid}>
+              {features.map((feature, index) => (
+                <motion.article
+                  key={feature.title}
+                  initial={{ opacity: 0, y: 35 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.5,
+                    delay: index * 0.1,
+                  }}
+                  className={styles.feature}
+                >
+                  <div className={styles.featureIcon}>{feature.icon}</div>
+
+                  <h3>{feature.title}</h3>
+
+                  <p>{feature.description}</p>
+                </motion.article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.team}>
+          <div className="container">
+            <div className={styles.sectionTop}>
+              <span className={styles.sectionBadge}>{t('team.badge')}</span>
+
+              <h2>{t('team.title')}</h2>
+            </div>
+
+            <div className={styles.teamGrid}>
+              {/* YURII */}
+
               <motion.article
-                key={feature.title}
                 initial={{ opacity: 0, y: 35 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1,
-                }}
-                className={styles.feature}
+                transition={{ duration: 0.6 }}
+                className={styles.member}
               >
-                <div className={styles.featureIcon}>{feature.icon}</div>
+                <div className={styles.memberImageWrapper}>
+                  <img
+                    src={myFoto}
+                    alt="Yurii"
+                    className={styles.memberImage}
+                  />
+                </div>
 
-                <h3>{feature.title}</h3>
+                <div className={styles.memberContent}>
+                  <h3>{t('team.yurii.name')}</h3>
 
-                <p>{feature.description}</p>
+                  <span>{t('team.yurii.role')}</span>
+
+                  <p>{t('team.yurii.description')}</p>
+
+                  <div className={styles.memberTags}>
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Node.js</span>
+                    <span>SEO</span>
+                  </div>
+                </div>
               </motion.article>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      <section className={styles.team}>
-        <div className="container">
-          <div className={styles.sectionTop}>
-            <span className={styles.sectionBadge}>{t('team.badge')}</span>
+              {/* AI */}
 
-            <h2>{t('team.title')}</h2>
-          </div>
+              <motion.article
+                initial={{ opacity: 0, y: 35 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className={`${styles.member} ${styles.aiMember}`}
+              >
+                <div className={styles.aiVisual}>
+                  <div className={styles.aiGlow}></div>
 
-          <div className={styles.teamGrid}>
-            {/* YURII */}
+                  <div className={styles.aiGrid}></div>
 
-            <motion.article
-              initial={{ opacity: 0, y: 35 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className={styles.member}
-            >
-              <div className={styles.memberImageWrapper}>
-                <img src={myFoto} alt="Yurii" className={styles.memberImage} />
-              </div>
-
-              <div className={styles.memberContent}>
-                <h3>{t('team.yurii.name')}</h3>
-
-                <span>{t('team.yurii.role')}</span>
-
-                <p>{t('team.yurii.description')}</p>
-
-                <div className={styles.memberTags}>
-                  <span>React</span>
-                  <span>TypeScript</span>
-                  <span>Node.js</span>
-                  <span>SEO</span>
+                  <div className={styles.aiIcon}>✦</div>
                 </div>
-              </div>
-            </motion.article>
 
-            {/* AI */}
+                <div className={styles.aiContent}>
+                  <h3>{t('team.ai.title')}</h3>
 
-            <motion.article
-              initial={{ opacity: 0, y: 35 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className={`${styles.member} ${styles.aiMember}`}
-            >
-              <div className={styles.aiVisual}>
-                <div className={styles.aiGlow}></div>
+                  <span>{t('team.ai.subtitle')}</span>
 
-                <div className={styles.aiGrid}></div>
+                  <p>{t('team.ai.description')}</p>
 
-                <div className={styles.aiIcon}>✦</div>
-              </div>
-
-              <div className={styles.aiContent}>
-                <h3>{t('team.ai.title')}</h3>
-
-                <span>{t('team.ai.subtitle')}</span>
-
-                <p>{t('team.ai.description')}</p>
-
-                <div className={styles.memberTags}>
-                  <span>AI Design</span>
-                  <span>Automation</span>
-                  <span>UX/UI</span>
+                  <div className={styles.memberTags}>
+                    <span>AI Design</span>
+                    <span>Automation</span>
+                    <span>UX/UI</span>
+                  </div>
                 </div>
-              </div>
-            </motion.article>
+              </motion.article>
 
-            {/* YULIIA */}
+              {/* YULIIA */}
 
-            <motion.article
-              initial={{ opacity: 0, y: 35 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className={styles.member}
-            >
-              <div className={styles.memberImageWrapper}>
-                <img src={myWife} alt="Yuliia" className={styles.memberImage} />
-              </div>
-
-              <div className={styles.memberContent}>
-                <h3>{t('team.yuliia.name')}</h3>
-
-                <span>{t('team.yuliia.role')}</span>
-
-                <p>{t('team.yuliia.description')}</p>
-
-                <div className={styles.memberTags}>
-                  <span>Google Ads</span>
-                  <span>Analytics</span>
-                  <span>Strategy</span>
-                  <span>Optimization</span>
+              <motion.article
+                initial={{ opacity: 0, y: 35 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7 }}
+                className={styles.member}
+              >
+                <div className={styles.memberImageWrapper}>
+                  <img
+                    src={myWife}
+                    alt="Yuliia"
+                    className={styles.memberImage}
+                  />
                 </div>
-              </div>
-            </motion.article>
+
+                <div className={styles.memberContent}>
+                  <h3>{t('team.yuliia.name')}</h3>
+
+                  <span>{t('team.yuliia.role')}</span>
+
+                  <p>{t('team.yuliia.description')}</p>
+
+                  <div className={styles.memberTags}>
+                    <span>Google Ads</span>
+                    <span>Analytics</span>
+                    <span>Strategy</span>
+                    <span>Optimization</span>
+                  </div>
+                </div>
+              </motion.article>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className={styles.cta}>
-        <div className="container">
-          <div className={styles.ctaBox}>
-            <Rocket size={38} />
+        <section className={styles.cta}>
+          <div className="container">
+            <div className={styles.ctaBox}>
+              <Rocket size={38} />
 
-            <h2>{t('cta.title')}</h2>
+              <h2>{t('cta.title')}</h2>
 
-            <p>{t('cta.description')}</p>
+              <p>{t('cta.description')}</p>
 
-            <button className={styles.primaryBtn}>
-              {t('cta.button')}
-              <ArrowRight size={18} />
-            </button>
+              <button className={styles.primaryBtn}>
+                {t('cta.button')}
+                <ArrowRight size={18} />
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </>
   );
 };
 

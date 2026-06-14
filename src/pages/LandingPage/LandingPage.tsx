@@ -8,10 +8,23 @@ import LandingPricing from '@/components/Landing/LandingPricing/LandingPricing';
 import LandingProcess from '@/components/Landing/LandingProcess/LandingProcess';
 import RelatedServices from '@/components/Landing/RelatedServices/RelatedServices';
 import ContactCta from '@/components/UI_components/ContactCta/ContactCta';
+import Seo from '@/components/UI_components/Seo/Seo';
+
+import { useTranslation } from 'react-i18next';
+import { CONTACTS } from '@/config/contact';
 
 const LandingPage = () => {
+  const { t } = useTranslation('landing');
+
   return (
     <>
+      <Seo
+        title={t('seo.title', { company: CONTACTS.companyName })}
+        description={t('seo.description', {
+          company: CONTACTS.companyName,
+        })}
+      />
+
       <LandingHero />
       <LandingAbout />
       <LandingBenefits />
@@ -21,6 +34,7 @@ const LandingPage = () => {
       <LandingProcess />
       <LandingFAQ />
       <ContactCta />
+
       <RelatedServices exclude="landing" />
     </>
   );

@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Kontakt | {{company}}",
+    "description": "Skontaktuj się z {{company}} przez WhatsApp, Telegram, Messenger lub e-mail. Porozmawiajmy o stronie internetowej, SEO lub kampanii Google Ads dla Twojej firmy."
+  },
   "hero": {
     "badge": "SKONTAKTUJ SIĘ Z NAMI",
     "title": "Rozwijamy Biznes Online",

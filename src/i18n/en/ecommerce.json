@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "E-Commerce Stores | {{company}}",
+    "description": "Professional e-commerce stores by {{company}}. Sell products online, accept secure payments, manage orders, and grow your business with a scalable online store."
+  },
   "hero": {
     "badge": "Professional E-commerce Stores",
 

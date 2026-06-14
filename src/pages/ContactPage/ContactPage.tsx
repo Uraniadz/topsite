@@ -13,12 +13,19 @@ import {
   FaWhatsapp,
 } from 'react-icons/fa';
 import { CONTACTS } from '@/config/contact';
+import Seo from '@/components/UI_components/Seo/Seo';
 
 const ContactPage = () => {
   const { t } = useTranslation('contact');
 
   return (
     <main className={styles.contactPage}>
+      <Seo
+        title={t('seo.title', { company: CONTACTS.companyName })}
+        description={t('seo.description', {
+          company: CONTACTS.companyName,
+        })}
+      />
       {/* HERO */}
       <section className={styles.hero}>
         <div className="container">

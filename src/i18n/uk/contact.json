@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Контакти | {{company}}",
+    "description": "Зв’яжіться з {{company}} через WhatsApp, Telegram, Messenger або електронну пошту. Обговоримо створення сайту, SEO чи рекламу Google Ads для вашого бізнесу."
+  },
   "hero": {
     "badge": "ЗВ'ЯЖІТЬСЯ З НАМИ",
     "title": "Розвиваємо Бізнес Онлайн",

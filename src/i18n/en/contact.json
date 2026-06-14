@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Contact Us | {{company}}",
+    "description": "Get in touch with {{company}}. Contact us via WhatsApp, Telegram, Messenger, or email to discuss your website, SEO, or Google Ads project."
+  },
   "hero": {
     "badge": "LET'S TALK",
     "title": "Growing Businesses Online",
