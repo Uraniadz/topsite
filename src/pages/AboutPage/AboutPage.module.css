@@ -7,7 +7,12 @@
 /* =========================
    HERO
 ========================= */
-
+.hero__primaryBtn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
 .hero {
   position: relative;
 
@@ -642,7 +647,7 @@
   text-align: center;
 }
 
-.ctaBox svg {
+.ctaBox > svg {
   margin-bottom: 28px;
 
   color: #7d5cff;
@@ -672,31 +677,7 @@
 }
 
 .primaryBtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-
-  height: 54px;
-
-  padding: 0 24px;
-
-  border: none;
-  border-radius: 16px;
-
-  background: linear-gradient(135deg, #6172ff, #7d5cff);
-
-  color: #ffffff;
-
-  font-size: 15px;
-  font-weight: 600;
-
-  cursor: pointer;
-
-  box-shadow: 0 14px 34px rgba(98, 104, 255, 0.28);
-
-  transition:
-    transform 0.3s ease,
-    background 0.3s ease;
+  display: inline-block;
 }
 
 .primaryBtn:hover {

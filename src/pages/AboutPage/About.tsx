@@ -1,14 +1,7 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-import {
-  ArrowRight,
-  Bot,
-  Code2,
-  Megaphone,
-  Rocket,
-  ShieldCheck,
-} from 'lucide-react';
+import { Bot, Code2, Megaphone, Rocket, ShieldCheck } from 'lucide-react';
 
 import googleads from '@/assets/icons/adwords.png';
 
@@ -19,6 +12,7 @@ import myWife from '@/assets/images/about/wife-foto-about.webp';
 import styles from './AboutPage.module.css';
 import Seo from '@/components/UI_components/Seo/Seo';
 import { CONTACTS } from '@/config/contact';
+import ContactModalButton from '@/components/UI_components/ContactModal/ContactModalButton';
 
 const AboutPage = () => {
   const { t } = useTranslation('about');
@@ -293,10 +287,9 @@ const AboutPage = () => {
 
               <p>{t('cta.description')}</p>
 
-              <button className={styles.primaryBtn}>
-                {t('cta.button')}
-                <ArrowRight size={18} />
-              </button>
+              <div className={styles.primaryBtn}>
+                <ContactModalButton variant="primary" label={t('cta.button')} />
+              </div>
             </div>
           </div>
         </section>

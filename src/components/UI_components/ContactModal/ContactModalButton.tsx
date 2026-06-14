@@ -50,8 +50,8 @@ const ContactModalButton = ({ label, variant = 'default' }: Props) => {
 
         {variant === 'primary' && (
           <>
-            {label ? label : t('buttons.orderSite')}{' '}
-            <FaArrowRight size={12} />{' '}
+            {label ? label : t('buttons.orderSite')}
+            <FaArrowRight size={12} />
           </>
         )}
 
