@@ -22,7 +22,7 @@ const NavBar = () => {
   const toggleMenu = () => setIsOpen((v) => !v);
 
   const handleNavClick = () => {
-    if (window.innerWidth < 1000) {
+    if (window.innerWidth < 1150) {
       setIsOpen(false);
     }
   };
